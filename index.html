@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  ...
+  <script src="lib/angular.min.js"></script>
+  <script src="ItemController.js"></script>
+</head>
+<body ng-controller="ItemController">
+
+<ul>
+  <li ng-repeat="table in tables">
+    {{table.rangeStart}}
+    <p>{{table.rangeEnd}}</p>
+    <ul>
+     <li ng-repeat="item in table.items">
+       {{item.description}}
+     </li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+</body>
+</html>
