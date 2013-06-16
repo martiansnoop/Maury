@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="maury">
 <head>
-  ...
   <script src="lib/angular.min.js"></script>
-
-
-  <script src="http://code.angularjs.org/1.1.5/angular-resource.min.js"></script>
+  <script src="lib/angular-resource.min.js"></script>
   <script src="ItemGenerator.js"></script>
   <script src="app.js"></script>
   <script src="services.js"></script>
@@ -13,17 +10,17 @@
 </head>
 <body ng-controller="ItemController">
 
-<ul>
-  <li ng-repeat="table in tables">
-    {{table.rangeStart}}
-    <p>{{table.rangeEnd}}</p>
-    <ul>
-     <li ng-repeat="item in table.items">
-       {{item.description}}
-     </li>
-    </ul>
-  </li>
-</ul>
+<!--<ul>-->
+  <!--<li ng-repeat="table in tables">-->
+    <!--{{table.rangeStart}}-->
+    <!--<p>{{table.rangeEnd}}</p>-->
+    <!--<ul>-->
+     <!--<li ng-repeat="item in table.items">-->
+       <!--{{item.description}}-->
+     <!--</li>-->
+    <!--</ul>-->
+  <!--</li>-->
+<!--</ul>-->
 
 <select ng-model="itemType">
   <option value="minor">Minor</option>
