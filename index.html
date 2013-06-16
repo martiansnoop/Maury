@@ -3,6 +3,7 @@
 <head>
   ...
   <script src="lib/angular.min.js"></script>
+  <script src="ItemGenerator.js"></script>
   <script src="ItemController.js"></script>
 </head>
 <body ng-controller="ItemController">
@@ -16,6 +17,20 @@
        {{item.description}}
      </li>
     </ul>
+  </li>
+</ul>
+
+<select ng-model="itemType">
+  <option value="minor">Minor</option>
+  <option value="medium">Medium</option>
+  <option value="major">Major</option>
+</select>
+
+<button ng-click="generateItem()"> Click </button>
+
+<ul>
+  <li ng-repeat="item in itemList">
+    {{item.description}}
   </li>
 </ul>
 
