@@ -4,16 +4,12 @@ function ItemController($scope, $http) {
     $scope.tables = data;
   });
 
-
   $scope.itemType = 'minor';
-
 
   $scope.generateItem = function() {
     var generator = new ItemGenerator($scope.tables);
 
-    var itemList = generator.rollForItem("table1");
-    $scope.itemList = itemList;
+    $scope.itemList = generator.rollForItem("table1", "minor");
   }
-
 
 }
