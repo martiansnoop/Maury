@@ -1,8 +1,6 @@
 var ItemGenerator = function(TABLES){
-  var me = this;
-  var resultSet = [];
 
-  function roll(table, itemType) {
+  function roll(table, itemType, resultSet) {
     if(!table)
       return;
 
@@ -14,20 +12,22 @@ var ItemGenerator = function(TABLES){
 
     resultSet.push(result);
 
-    roll(TABLES[result.nextTable], itemType);
+    roll(TABLES[result.nextTable], itemType, resultSet);
   }
 
-  function getRandomInt (min, max) {
+  function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  me.rollForItem = function (startingTableId, itemType) {
-    resultSet = [];
+  return {
+    rollForItem : function (masterTableId, itemType) {
+      var resultSet = [];
 
-    var startingTable = TABLES[startingTableId];
-    roll(startingTable, itemType);
+      var masterTable = TABLES[masterTableId];
+      roll(masterTable, itemType, resultSet);
 
-    return resultSet;
-  }
+      return resultSet;
+    }
+  };
 
 }

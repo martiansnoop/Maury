@@ -6,8 +6,9 @@ function ItemController($scope, MagicItemTable) {
 
   $scope.generateItem = function() {
     var generator = new ItemGenerator($scope.tables);
+    var masterTableId = "table1";
 
-    $scope.itemList = generator.rollForItem("table1", $scope.itemType);
+    $scope.itemList = generator.rollForItem(masterTableId, $scope.itemType);
   }
 
 }
