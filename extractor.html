@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="./node_modules/jquery/tmp/jquery.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      var tableElementId = "#table-15-2-random-magic-item-generation";
+      var testDiv = $("#newCrap");
+
+      var table = {};
+      table.min = 1;
+      table.max = 100;
+      table.items = [];
+
+      var tableElement = $(tableElementId);
+
+      function parseRangeCell(cellToParse) {
+        var mediumRange = $(cellToParse).text();
+        var stuff = mediumRange.split("-");
+        var range = {};
+        if (stuff.length > 1) {
+          range.min = Number(stuff[0]);
+          range.max = Number(stuff[1]);
+        }
+        return range;
+      }
+
+      $("tbody > tr", tableElement).each(function(){
+        var row = $(this);
+
+        var item = {};
+        var cells = $("td", row);
+
+        //It would be nice to just call each on props
+        item.minor = parseRangeCell(cells[0]);
+        item.medium = parseRangeCell(cells[1]);
+        item.major = parseRangeCell(cells[2]);
+
+        var descCell = $(cells[3]);
+        item.description = descCell.text();
+        item.url = $("a", descCell).attr("href");
+
+        table.items.push(item);
+
+      });
+
+      testDiv.append(JSON.stringify(table));
+
+    });
+
+  </script>
+</head>
+<body>
+
+<div id="newCrap">
+
+</div>
+
+
+<table id="table-15-2-random-magic-item-generation"><caption>Table: Random Magic Item Generation</caption>
+  <thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Item</th></tr></thead>
+  <tbody>
+  <tr class="odd">
+    <td>01-04</td><td>01-10</td><td>01-10</td><td><a href="magicItems/armor.html#_armor" >Armor and shields</a></td>
+  </tr>
+  <tr class="even">
+    <td>05-09</td><td>11-20</td><td>11-20</td><td><a href="magicItems/weapons.html#_weapons" >Weapons</a></td>
+  </tr>
+  <tr class="odd">
+    <td>10-44</td><td>21-30</td><td>21-25</td><td><a href="magicItems/potions.html#_potions" >Potions</a></td>
+  </tr>
+  <tr class="even">
+    <td>45-46</td><td>31-40</td><td>26-35</td><td><a href="magicItems/rings.html#_rings" >Rings</a></td>
+  </tr>
+  <tr class="odd">
+    <td>&mdash;</td><td>41-50</td><td>36-45</td><td><a href="magicItems/rods.html#_rods" >Rods</a></td>
+  </tr>
+  <tr class="even">
+    <td>47-81</td><td>51-65</td><td>46-55</td><td><a href="magicItems/scrolls.html#_scrolls" >Scrolls</a></td>
+  </tr>
+  <tr class="odd">
+    <td>&mdash;</td><td>66-68</td><td>56-75</td><td><a href="magicItems/staves.html#_staves" >Staves</a></td>
+  </tr>
+  <tr class="even">
+    <td>82-91</td><td>69-83</td><td>76-80</td><td><a href="magicItems/wands.html#_wands" >Wands</a></td>
+  </tr>
+  <tr class="odd">
+    <td>92-100</td><td>84-100</td><td>81-100</td><td><a href="magicItems/wondrousItems.html#_wondrous-items" >Wondrous items</a></td></tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
