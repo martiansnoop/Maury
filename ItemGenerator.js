@@ -19,17 +19,15 @@ define(["./data/data"], function(TABLES){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  function rollForItem(masterTableId, itemRarity) {
-    var resultSet = [];
+  return function ItemGenerator(masterTableId, itemRarity) {
+    this.rollForItem = function () {
+      var resultSet = [];
 
-    var masterTable = TABLES[masterTableId];
-    roll(masterTable, itemRarity, resultSet);
+      var masterTable = TABLES[masterTableId];
+      roll(masterTable, itemRarity, resultSet);
 
-    return resultSet;
+      return resultSet;
+    }
   }
-
-  return {
-    rollForItem : rollForItem
-  };
 
 });
