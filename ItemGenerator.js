@@ -1,4 +1,4 @@
-var ItemGenerator = function(TABLES){
+define(["./data/data"], function(TABLES){
 
   function roll(table, itemType, resultSet) {
     if(!table)
@@ -19,15 +19,17 @@ var ItemGenerator = function(TABLES){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  function rollForItem(masterTableId, itemType) {
+    var resultSet = [];
+
+    var masterTable = TABLES[masterTableId];
+    roll(masterTable, itemType, resultSet);
+
+    return resultSet;
+  }
+
   return {
-    rollForItem : function (masterTableId, itemType) {
-      var resultSet = [];
-
-      var masterTable = TABLES[masterTableId];
-      roll(masterTable, itemType, resultSet);
-
-      return resultSet;
-    }
+    rollForItem : rollForItem
   };
 
-}
+});
