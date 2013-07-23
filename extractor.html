@@ -2,20 +2,10 @@
 <html>
 <head>
   <title></title>
-  <script type="text/javascript" src="./node_modules/jquery/tmp/jquery.js"> </script>
+  <script type="text/javascript" src="./bower_components/jquery/jquery.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
-
-      var tableElementId = "#table-15-2-random-magic-item-generation";
-      var testDiv = $("#newCrap");
-
-      var table = {};
-      table.min = 1;
-      table.max = 100;
-      table.items = [];
-
-      var tableElement = $(tableElementId);
 
       function parseRangeCell(cellToParse) {
         var mediumRange = $(cellToParse).text();
@@ -28,25 +18,42 @@
         return range;
       }
 
-      $("tbody > tr", tableElement).each(function(){
-        var row = $(this);
+      function parseTable(tableElementId){
+        var table = {};
+        table.min = 1;
+        table.max = 100;
+        table.items = [];
 
-        var item = {};
-        var cells = $("td", row);
+        var tableElement = $(tableElementId);
 
-        //It would be nice to just call each on props
-        item.minor = parseRangeCell(cells[0]);
-        item.medium = parseRangeCell(cells[1]);
-        item.major = parseRangeCell(cells[2]);
+        $("tbody > tr", tableElement).each(function(){
+          var row = $(this);
 
-        var descCell = $(cells[3]);
-        item.description = descCell.text();
-        item.url = $("a", descCell).attr("href");
+          var item = {};
+          var cells = $("td", row);
 
-        table.items.push(item);
+          //It would be nice to just call each on props
+          item.minor = parseRangeCell(cells[0]);
+          item.medium = parseRangeCell(cells[1]);
+          item.major = parseRangeCell(cells[2]);
 
-      });
+          var descCell = $(cells[3]);
+          item.description = descCell.text();
+          item.nextTable = item.description.toLowerCase().replace(" ", "");
+          item.url = $("a", descCell).attr("href");
 
+          table.items.push(item);
+        });
+
+        return table;
+      }
+
+
+      var tableElementId = "#table-15-2-random-magic-item-generation";
+      var table = parseTable(tableElementId);
+
+
+      var testDiv = $("#newCrap");
       testDiv.append(JSON.stringify(table));
 
     });
