@@ -41,6 +41,12 @@
           item.description = descCell.text();
           item.nextTable = item.description.toLowerCase().replace(" ", "");
           item.url = $("a", descCell).attr("href");
+//
+//          if(item.url)
+//          {
+//            item.url = item.url.toArray();
+//            item.url.splice(0,0, 'http://paizo.com/prd/');
+//          }
 
           table.items.push(item);
         });
@@ -48,13 +54,35 @@
         return table;
       }
 
+      function parseAllTheTables(info) {
+        var tables = {};
+
+        info.forEach(function(item){
+          var tbl = parseTable(item.elementId);
+          tables[item.name] = tbl;
+        });
+
+        return tables;
+      }
+
 
       var tableElementId = "#table-15-2-random-magic-item-generation";
       var table = parseTable(tableElementId);
 
+      var tablesToParse = [ {
+                     name: "masterTable",
+                     elementId: "#table-15-2-random-magic-item-generation"
+                   },
+                   {
+                     name:"armorAndShields",
+                     elementId: "#table-15-3-armor-and-shields"
+                   }]
+
+      var tables = parseAllTheTables(tablesToParse);
+
 
       var testDiv = $("#newCrap");
-      testDiv.append(JSON.stringify(table));
+      testDiv.append(JSON.stringify(tables));
 
     });
 
@@ -99,6 +127,114 @@
   </tbody>
 </table>
 
+
+
+
+<table id="table-15-3-armor-and-shields"><caption>Table: Armor and Shields</caption>
+  <thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Item</th><th>Base Price</th></tr></thead>
+  <tr class="odd"><td>01-60</td><td>01-05</td><td>&mdash;</td><td><i>+1 shield</i></td><td>1,000 gp</td></tr>
+  <tr class="even"><td>61-80</td><td>06-10</td><td>&mdash;</td><td> <i>+1 armor </i></td><td>1,000 gp</td></tr>
+  <tr class="odd"><td>81-85</td><td>11-20</td><td>&mdash; </td><td><i>+2 shield </i></td><td>4,000 gp</td></tr>
+  <tr class="even"><td>86-87</td><td>21-30</td><td>&mdash; </td><td><i>+2 armor </i></td><td>4,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>31-40</td><td>01-08 </td><td><i>+3 shield </i></td><td>9,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>41-50</td><td>09-16 </td><td><i>+3 armor </i></td><td>9,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>51-55</td><td>17-27 </td><td><i>+4 shield </i></td><td>16,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>56-57</td><td>28-38 </td><td><i>+4 armor </i></td><td>16,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>39-49 </td><td><i>+5 shield </i></td><td>25,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>50-57 </td><td><i>+5 armor </i></td><td>25,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>&mdash; </td><td><i>+6 armor/shield</i><sup>1</sup> </td><td>36,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>&mdash; </td><td><i>+7 armor/shield</i><sup>1</sup> </td><td>49,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>&mdash; </td><td><i>+8 armor/shield</i><sup>1</sup> </td><td>64,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>&mdash; </td><td><i>+9 armor/shield</i><sup>1</sup> </td><td>81,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>&mdash; </td><td><i>+10 armor/shield</i><sup>1</sup> </td><td>100,000 gp</td></tr>
+  <tr class="even"><td>88-89</td><td>58-60 </td><td>58-60 </td><td>Specific armor<sup>2</sup> </td><td>&mdash;</td></tr>
+  <tr class="odd"><td>90-91</td><td>61-63</td><td> 61-63 </td><td>Specific shield<sup>3</sup> </td><td>&mdash;</td></tr>
+  <tr class="even"><td>92-100</td><td>64-100 </td><td>64-100 </td><td>Special ability  and roll again<sup>2,3</sup></td><td>&mdash;</td></tr>
+  <tfoot><tr><td colspan="5">1 Armor and shields can't have enhancement bonuses higher than +5. Use these lines to determine price when special abilities are added in.</td></tr>
+  <tr><td colspan="5">2 Roll on Table: Specific Armors. </td></tr>
+  <tr><td colspan="5">3 Roll on Table: Specific Shields.</td></tr></tfoot></table>
+
+
+<table id="table-15-4-armor-special-abilities"><caption>Table: Armor Special Abilities</caption>
+  <thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Special Ability</th><th>Base Price Modifier</th></tr></thead>
+  <tr class="odd"><td>01-25</td><td>01-05</td><td>01-03</td><td><i><a href="#armor-glamered" >Glamered</a></i> </td><td>+2,700 gp</td></tr>
+  <tr class="even"><td>26-32</td><td>06-08</td><td>04</td><td><i><a href="#armor-fortification" >Fortification</a>, light</i> </td><td>+1 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>33-52</td><td>09-11</td><td>&mdash;</td><td><i><a href="#armor-slick" >Slick</a></i> </td><td>+3,750 gp</td></tr>
+  <tr class="even"><td>53-92</td><td>12-17</td><td>&mdash;</td><td><i><a href="#armor-shadow" >Shadow</a></i> </td><td>+3,750 gp</td></tr>
+  <tr class="odd"><td>93-96</td><td>18-19</td><td>&mdash;</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (13)</i> </td><td>+2 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>97</td><td>20-29</td><td>05-07</td><td><i><a href="#armor-slick-improved" >Slick, improved</a></i> </td><td>+15,000 gp</td></tr>
+  <tr class="odd"><td>98-99</td><td>30-49</td><td>08-13</td><td><i><a href="#armor-shadow-improved" >Shadow, improved</a></i> </td><td>+15,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>50-74</td><td>14-28</td><td><i><a href="#armor-energy-resistance" >Energy resistance</a></i> </td><td>+18,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>75-79</td><td>29-33</td><td><i><a href="#armor-ghost-touch" >Ghost touch</a></i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>80-84</td><td>34-35</td><td><i><a href="#armor-invulnerability" >Invulnerability</a></i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>85-89</td><td>36-40</td><td><i><a href="#armor-fortification" >Fortification</a>, moderate</i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>90-94</td><td>41-42</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (15)</i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>95-99</td><td>43</td><td><i><a href="#armor-wild" >Wild</a> </i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>44-48</td><td><i><a href="#armor-slick-greater" >Slick, greater</a></i> </td><td>+33,750 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>49-58</td><td><i><a href="#armor-shadow-greater" >Shadow, greater</a></i> </td><td>+33,750 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>59-83</td><td><i><a href="#armor-energy-resistance-improved" >Energy resistance, improved</a></i> </td><td>+42,000 gp <i></i></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>84-88</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (17)</i> </td><td>+4 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>89</td><td><i><a href="#armor-etherealness" >Etherealness</a></i>  </td><td>+49,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>90</td><td><i><a href="#armor-undead-controlling" >Undead controlling</a></i> </td><td>+49,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>91-92</td><td><i><a href="#armor-fortification" >Fortification</a>, heavy</i> </td><td>+5 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>93-94</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (19) </i></td><td>+5 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>95-99</td><td><i><a href="#armor-energy-resistance-greater" >Energy resistance, greater</a></i> </td><td>+66,000 gp </td></tr>
+  <tr class="odd"><td>100</td><td>100</td><td>100</td><td>Roll twice again<sup>2</sup> </td><td>&mdash;</td></tr><tfoot>
+  <tr><td colspan="5">1 Add to enhancement bonus on Table: Armor and Shields to determine total market price</td></tr><tr><td colspan="5">2 If you roll a special ability twice, only one counts. If you roll two versions of the same special ability, use the better.</td></tr></tfoot></table>
+
+
+
+<table id="table-15-5-shield-special-abilities"><caption>Table: Shield Special Abilities</caption>
+  <thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Special Ability</th><th>Base Price Modifier</th></tr></thead>
+  <tr class="odd"><td>01-20</td><td>01-10</td><td>01-05</td><td><i><a href="#armor-arrow-catching" >Arrow catching</a></i> </td><td>+1 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>21-40</td><td>11-20</td><td>06-08</td><td><i><a href="#armor-bashing" >Bashing</a></i> </td><td>+1 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>41-50</td><td>21-25</td><td>09-10</td><td><i><a href="#armor-blinding" >Blinding</a></i> </td><td>+1 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>51-75</td><td>26-40</td><td>11-15</td><td><i><a href="#armor-fortification" >Fortification</a>, light</i> </td><td>+1 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>76-92</td><td>41-50</td><td>16-20</td><td><i><a href="#armor-arrow-deflection" >Arrow deflection</a></i> </td><td>+2 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>93-97</td><td>51-57</td><td>21-25</td><td><i><a href="#armor-animated" >Animated</a></i> </td><td>+2 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>98-99</td><td>58-59</td><td>&mdash;</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (13)</i> </td><td>+2 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>60-79</td><td>26-41</td><td><i><a href="#armor-energy-resistance" >Energy resistance</a></i> </td><td>+18,000 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>80-85</td><td>42-46</td><td><i><a href="#armor-ghost-touch" >Ghost touch</a></i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>86-95</td><td>47-56</td><td><i><a href="#armor-fortification" >Fortification</a>, moderate</i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>96-98</td><td>57-58</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (15) </i></td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>99</td><td>59</td><td><i><a href="#armor-wild" >Wild</a></i> </td><td>+3 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>60-84</td><td><i><a href="#armor-energy-resistance-improved" >Energy resistance, <a href="#armor-energy-resistance-improved" >improved</a></i></td><td>+42,000 gp </td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>85-86</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (17)</i> </td><td>+4 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>87</td><td><i><a href="#armor-undead-controlling" >Undead controlling</a></i> </td><td>+49,000 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>88-91</td><td><i><a href="#armor-fortification" >Fortification</a>, heavy</i> </td><td>+5 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>92-93</td><td><i><a href="#armor-reflecting" >Reflecting</a></i>  </td><td>+5 bonus<sup>1</sup></td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>94</td><td><i><a href="#armor-spell-resistance" >Spell resistance</a> (19) </i></td><td>+5 bonus<sup>1</sup></td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>95-99</td><td><i><a href="#armor-energy-resistance-greater" >Energy resistance, greater</a></i></td><td>+66,000 gp </td></tr>
+  <tr class="even"><td>100</td><td>100</td><td>100</td><td>Roll twice again<sup>2</sup> </td><td>&mdash;</td></tr><tfoot>
+  <tr><td colspan="5">1 Add to enhancement bonus on Table: Armor and Shields to determine total market price</td></tr><tr><td colspan="5">2 If you roll a special ability twice, only one counts. If you roll two versions of the same special ability, use the better.</td></tr></tfoot></table>
+
+
+<table id="armor-table-15-6-specific-armors"><caption>Table: Specific Armors</caption>
+  <thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Specific Armor</th><th>Market Price</th></tr></thead>
+  <tr class="odd"><td>01-50</td><td>01-25</td><td>&mdash;</td><td>Mithral shirt </td><td>1,100 gp</td></tr>
+  <tr class="even"><td>51-80</td><td>26-45</td><td>&mdash;</td><td>Dragonhide plate </td><td>3,300 gp</td></tr>
+  <tr class="odd"><td>81-100</td><td>46-57</td><td>&mdash;</td><td>Elven chain </td><td>5,150 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>58-67</td><td>&mdash;</td><td><i>Rhino hide </i></td><td>5,165 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>68-82</td><td>01-10</td><td>Adamantine breastplate</td><td>10,200 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>83-97</td><td>11-20</td><td>Dwarven plate </td><td>16,500 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>98-100</td><td>21-32</td><td><i>Banded mail of luck</i></td><td>18,900 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>33-50</td><td><i>Celestial armor </i></td><td>22,400 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>51-60</td><td><i>Plate armor of the deep</i></td><td>24,650 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>61-75</td><td><i>Breastplate of command</i></td><td>25,400 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>&mdash;</td><td>76-90</td><td><i>Mithral full plate of speed</i></td><td>26,500 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>91-100</td><td><i>Demon armor </i></td><td>52,260 gp</td></tr></table>
+
+
+<table id="table-15-7-specific-shields"><caption>Table: Specific Shields</caption>
+  <thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Specific Shield</th><th>Market Price</th></tr></thead>
+  <tr class="odd"><td>01-30</td><td>01-20</td><td>&mdash;</td><td><a href="#darkwood-buckler" >Darkwood buckler</a> </td><td>203 gp</td></tr>
+  <tr class="even"><td>31-80</td><td>21-45</td><td>&mdash;</td><td><a href="#darkwood-shield" >Darkwood shield</a> </td><td>257 gp</td></tr>
+  <tr class="odd"><td>81-95</td><td>46-70</td><td>&mdash;</td><td><a href="#mithral-heavy-shield" >Mithral heavy shield</a> </td><td>1,020 gp</td></tr>
+  <tr class="even"><td>96-100</td><td>71-85</td><td>01-20</td><td><i><a href="#caster-s-shield" >Caster's shield</a> </i></td><td>3,153 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>86-90</td><td>21-40</td><td><i><a href="#spined-shield" >Spined shield</a> </i></td><td>5,580 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>91-95</td><td>41-60</td><td><i><a href="#lion-s-shield" >Lion's shield</a> </i></td><td>9,170 gp</td></tr>
+  <tr class="odd"><td>&mdash;</td><td>96-100</td><td>61-90</td><td><i><a href="#winged-shield" >Winged shield</a> </i></td><td>17,257 gp</td></tr>
+  <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>91-100</td><td><i><a href="#absorbing-shield" >Absorbing shield</a> </i></td><td>50,170 gp</td></tr></table>
 
 </body>
 </html>
