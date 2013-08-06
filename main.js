@@ -12,9 +12,8 @@ require.config({
 
 define(["./ItemGenerator", "jquery", "ractive", "text!./template.html"], function (ItemGenerator, $, Ractive, template) {
 
-  var masterTableId = "table1";
   var itemRarity = "minor";
-  var minorGenerator = new ItemGenerator(masterTableId, itemRarity);
+  var minorGenerator = new ItemGenerator(itemRarity);
   var itemList = minorGenerator.rollForItem();
 
   var ractive = new Ractive({
