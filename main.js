@@ -6,6 +6,15 @@ require.config({
     underscore: "./bower_components/underscore/underscore",
     ractive: "./bower_components/ractive/Ractive",
     text: "./bower_components/requirejs-text/text"
+  },
+  shim: {
+    jquery: {
+      exports: "$"
+    },
+    bootstrap: {
+      exports: "bootstrap",
+      deps: ["jquery"]
+    }
   }
 });
 
@@ -15,8 +24,9 @@ define(["./js/generator", "jquery", "ractive", "text!./template.html"], function
   var generatedItem = itemGenerator.rollForItem(itemRarity);
 
   var ractive = new Ractive({
-    el: 'testDiv',
+    el: 'magicItemGenerator',
     template: template,
+    append: true,
     data: { test: "blah", itemComponents: generatedItem, numItems: 2 }
   });
 

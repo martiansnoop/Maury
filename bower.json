@@ -15,6 +15,7 @@
     "requirejs": "~2.1.8",
     "ractive": "*",
     "requirejs-text": "~2.0.9",
-    "require-ractive-plugin": "https://github.com/Rich-Harris/require-ractive-plugin.git"
+    "require-ractive-plugin": "https://github.com/Rich-Harris/require-ractive-plugin.git",
+    "bootstrap": "~3.0.0-rc1"
   }
 }

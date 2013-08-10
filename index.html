@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="bower_components/requirejs/require.js" data-main="main.js"></script>
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!--<script src="./bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>-->
+  <script src="./bower_components/requirejs/require.js" data-main="main.js"></script>
 </head>
 <body>
 
-  <div id="testDiv">
+<div id="header" class="navbar navbar-inverse navbar-fixed-top">
+  <!--<div class="navbar-inner">-->
+    <a class="navbar-brand" href="#">Maury</a>
+  <!--</div>-->
+</div>
 
+
+
+<div id="pageContent" class="container">
+
+  <div id="magicItemGenerator" class="panel">
+    <div class="panel-heading">
+      <h3 class="panel-title">Magic Item Generator</h3>
+    </div>
   </div>
+
+  <div id="testDiv"></div>
+</div> <!--panel-->
+
+
 
 </body>
 </html>
+
