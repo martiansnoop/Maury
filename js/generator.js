@@ -1,4 +1,4 @@
-define(["./data/data"], function(TABLES){
+define(["./tables"], function(dataTables){
 
   const masterTableId = "masterTable";
 
@@ -14,7 +14,7 @@ define(["./data/data"], function(TABLES){
 
     resultSet.push(result);
 
-    roll(TABLES[result.nextTable], itemRarity, resultSet);
+    roll(dataTables[result.nextTable], itemRarity, resultSet);
   }
 
   function getRandomInt(min, max) {
@@ -25,7 +25,7 @@ define(["./data/data"], function(TABLES){
     this.rollForItem = function (itemRarity) {
       var resultSet = [];
 
-      var masterTable = TABLES[masterTableId];
+      var masterTable = dataTables[masterTableId];
       roll(masterTable, itemRarity, resultSet);
 
       return resultSet;
