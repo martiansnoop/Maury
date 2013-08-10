@@ -18,22 +18,6 @@ define(["./tableManager"], function(tableManager) {
     return [intermediary].concat(getItemRecursive(intermediary.nextTable, itemRarity));
   }
 
-//  Iterative solution
-//  function getItem(itemRarity) {
-//
-//    var tableId = masterTableId;
-//    var resultSetSoFar = [];
-//
-//    while (tableManager.tableExists(tableId)) {
-//      var dieRoll = tableManager.roll(tableId);
-//      var intermediary = tableManager.lookup(tableId, dieRoll, itemRarity);
-//      resultSetSoFar.push(intermediary);
-//      tableId = intermediary.nextTable;
-//    }
-//
-//    return resultSetSoFar;
-//  }
-
   return {
     rollForItem: getItem
   };
