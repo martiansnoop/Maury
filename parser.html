@@ -22,25 +22,25 @@
         var table = {};
         table.min = 1;
         table.max = 100;
-        table.items = [];
+        table.entries = [];
 
         var tableElement = $(tableElementId);
 
         $("tbody > tr", tableElement).each(function(){
           var row = $(this);
 
-          var item = {};
+          var entry = {};
           var cells = $("td", row);
 
           //It would be nice to just call each on props
-          item.minor = parseRangeCell(cells[0]);
-          item.medium = parseRangeCell(cells[1]);
-          item.major = parseRangeCell(cells[2]);
+          entry.minor = parseRangeCell(cells[0]);
+          entry.medium = parseRangeCell(cells[1]);
+          entry.major = parseRangeCell(cells[2]);
 
           var descCell = $(cells[3]);
-          item.description = descCell.text();
-          item.nextTable = item.description.toLowerCase().replace(" ", "");
-          item.url = $("a", descCell).attr("href");
+          entry.description = descCell.text();
+          entry.nextTableId = entry.description.toLowerCase().replace(" ", "");
+          entry.url = $("a", descCell).attr("href");
 //
 //          if(item.url)
 //          {
@@ -48,7 +48,7 @@
 //            item.url.splice(0,0, 'http://paizo.com/prd/');
 //          }
 
-          table.items.push(item);
+          table.entries.push(entry);
         });
 
         return table;

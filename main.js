@@ -17,7 +17,7 @@ define(["./js/generator", "jquery", "ractive", "text!./template.html"], function
   var ractive = new Ractive({
     el: 'testDiv',
     template: template,
-    data: { test: "blah", items: generatedItem, numItems: 2 }
+    data: { test: "blah", itemComponents: generatedItem, numItems: 2 }
   });
 
 });

@@ -1,7 +1,7 @@
 define(["./data", "./random"], function(dataTables, rand) {
 
   function lookup(tableId, dieRoll, itemRarity) {
-    var entries = dataTables[tableId].items;
+    var entries = dataTables[tableId].entries;
 
     return entries.filter(function(entry) {
       return dieRoll >= entry[itemRarity].min && dieRoll <= entry[itemRarity].max;

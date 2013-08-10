@@ -1,7 +1,7 @@
 define({"masterTable": {
   "min": 1,
   "max": 100,
-  "items": [
+  "entries": [
     {
       "minor": {
         "min": 1,
@@ -16,7 +16,7 @@ define({"masterTable": {
         "max": 10
       },
       "description": "Armor and shields",
-      "nextTable": "armorAndShields",
+      "nextTableId": "armorAndShields",
       "url": "magicItems/armor.html#_armor"
     },
     {
@@ -33,7 +33,7 @@ define({"masterTable": {
         "max": 20
       },
       "description": "Weapons",
-      "nextTable": "weapons",
+      "nextTableId": "weapons",
       "url": "magicItems/weapons.html#_weapons"
     },
     {
@@ -50,7 +50,7 @@ define({"masterTable": {
         "max": 25
       },
       "description": "Potions",
-      "nextTable": "potions",
+      "nextTableId": "potions",
       "url": "magicItems/potions.html#_potions"
     },
     {
@@ -67,7 +67,7 @@ define({"masterTable": {
         "max": 35
       },
       "description": "Rings",
-      "nextTable": "rings",
+      "nextTableId": "rings",
       "url": "magicItems/rings.html#_rings"
     },
     {
@@ -81,7 +81,7 @@ define({"masterTable": {
         "max": 45
       },
       "description": "Rods",
-      "nextTable": "rods",
+      "nextTableId": "rods",
       "url": "magicItems/rods.html#_rods"
     },
     {
@@ -98,7 +98,7 @@ define({"masterTable": {
         "max": 55
       },
       "description": "Scrolls",
-      "nextTable": "scrolls",
+      "nextTableId": "scrolls",
       "url": "magicItems/scrolls.html#_scrolls"
     },
     {
@@ -112,7 +112,7 @@ define({"masterTable": {
         "max": 75
       },
       "description": "Staves",
-      "nextTable": "staves",
+      "nextTableId": "staves",
       "url": "magicItems/staves.html#_staves"
     },
     {
@@ -129,7 +129,7 @@ define({"masterTable": {
         "max": 80
       },
       "description": "Wands",
-      "nextTable": "wands",
+      "nextTableId": "wands",
       "url": "magicItems/wands.html#_wands"
     },
     {
@@ -146,14 +146,14 @@ define({"masterTable": {
         "max": 100
       },
       "description": "Wondrous items",
-      "nextTable": "wondrousitems",
+      "nextTableId": "wondrousitems",
       "url": "magicItems/wondrousItems.html#_wondrous-items"
     }
   ]
 }, "armorAndShields": {
   "min": 1,
   "max": 100,
-  "items": [
+  "entries": [
     {
       "minor": {
         "min": 1,
@@ -165,7 +165,7 @@ define({"masterTable": {
       },
       "major": {},
       "description": "+1 shield",
-      "nextTable": "+1shield"
+      "nextTableId": "+1shield"
     },
     {
       "minor": {
@@ -178,7 +178,7 @@ define({"masterTable": {
       },
       "major": {},
       "description": " +1 armor ",
-      "nextTable": "+1 armor "
+      "nextTableId": "+1 armor "
     },
     {
       "minor": {
@@ -191,7 +191,7 @@ define({"masterTable": {
       },
       "major": {},
       "description": "+2 shield ",
-      "nextTable": "+2shield "
+      "nextTableId": "+2shield "
     },
     {
       "minor": {
@@ -204,7 +204,7 @@ define({"masterTable": {
       },
       "major": {},
       "description": "+2 armor ",
-      "nextTable": "+2armor "
+      "nextTableId": "+2armor "
     },
     {
       "minor": {},
@@ -217,7 +217,7 @@ define({"masterTable": {
         "max": 8
       },
       "description": "+3 shield ",
-      "nextTable": "+3shield "
+      "nextTableId": "+3shield "
     },
     {
       "minor": {},
@@ -230,7 +230,7 @@ define({"masterTable": {
         "max": 16
       },
       "description": "+3 armor ",
-      "nextTable": "+3armor "
+      "nextTableId": "+3armor "
     },
     {
       "minor": {},
@@ -243,7 +243,7 @@ define({"masterTable": {
         "max": 27
       },
       "description": "+4 shield ",
-      "nextTable": "+4shield "
+      "nextTableId": "+4shield "
     },
     {
       "minor": {},
@@ -256,7 +256,7 @@ define({"masterTable": {
         "max": 38
       },
       "description": "+4 armor ",
-      "nextTable": "+4armor "
+      "nextTableId": "+4armor "
     },
     {
       "minor": {},
@@ -266,7 +266,7 @@ define({"masterTable": {
         "max": 49
       },
       "description": "+5 shield ",
-      "nextTable": "+5shield "
+      "nextTableId": "+5shield "
     },
     {
       "minor": {},
@@ -276,42 +276,42 @@ define({"masterTable": {
         "max": 57
       },
       "description": "+5 armor ",
-      "nextTable": "+5armor "
+      "nextTableId": "+5armor "
     },
     {
       "minor": {},
       "medium": {},
       "major": {},
       "description": "+6 armor/shield1 ",
-      "nextTable": "+6armor/shield1 "
+      "nextTableId": "+6armor/shield1 "
     },
     {
       "minor": {},
       "medium": {},
       "major": {},
       "description": "+7 armor/shield1 ",
-      "nextTable": "+7armor/shield1 "
+      "nextTableId": "+7armor/shield1 "
     },
     {
       "minor": {},
       "medium": {},
       "major": {},
       "description": "+8 armor/shield1 ",
-      "nextTable": "+8armor/shield1 "
+      "nextTableId": "+8armor/shield1 "
     },
     {
       "minor": {},
       "medium": {},
       "major": {},
       "description": "+9 armor/shield1 ",
-      "nextTable": "+9armor/shield1 "
+      "nextTableId": "+9armor/shield1 "
     },
     {
       "minor": {},
       "medium": {},
       "major": {},
       "description": "+10 armor/shield1 ",
-      "nextTable": "+10armor/shield1 "
+      "nextTableId": "+10armor/shield1 "
     },
     {
       "minor": {
@@ -327,7 +327,7 @@ define({"masterTable": {
         "max": 60
       },
       "description": "Specific armor2 ",
-      "nextTable": "specificarmor2 "
+      "nextTableId": "specificarmor2 "
     },
     {
       "minor": {
@@ -343,7 +343,7 @@ define({"masterTable": {
         "max": 63
       },
       "description": "Specific shield3 ",
-      "nextTable": "specificshield3 "
+      "nextTableId": "specificshield3 "
     },
     {
       "minor": {
@@ -359,7 +359,7 @@ define({"masterTable": {
         "max": 100
       },
       "description": "Special ability and roll again2,3",
-      "nextTable": "specialability and roll again2,3"
+      "nextTableId": "specialability and roll again2,3"
     }
   ]
 }});
