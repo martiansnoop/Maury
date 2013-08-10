@@ -1,29 +1,41 @@
-define(["./tables", "./random", "./tableOverlord"], function(dataTables, rand, lookup) {
+define(["./tableManager"], function(tableManager) {
 
   const masterTableId = "masterTable";
 
-  function roll(table, itemRarity, resultSetSoFar) {
-    if(!table)
-      return;
-
-    var dieRoll = rand.getInt(table.min, table.max);
-
-    var intermediary = lookup(table.items, dieRoll, itemRarity);
-
-    resultSetSoFar.push(intermediary);
-
-    roll(dataTables[intermediary.nextTable], itemRarity, resultSetSoFar);
+  function getItem(itemRarity){
+    return getItemRecursive(masterTableId, itemRarity).filter(function(item) {
+      return item !== undefined;
+    });
   }
 
+  function getItemRecursive(tableId, itemRarity) {
+    if(!tableManager.tableExists(tableId))
+      return undefined;
+
+    var dieRoll = tableManager.roll(tableId);
+    var intermediary = tableManager.lookup(tableId, dieRoll, itemRarity);
+
+    return [intermediary].concat(getItemRecursive(intermediary.nextTable, itemRarity));
+  }
+
+//  Iterative solution
+//  function getItem(itemRarity) {
+//
+//    var tableId = masterTableId;
+//    var resultSetSoFar = [];
+//
+//    while (tableManager.tableExists(tableId)) {
+//      var dieRoll = tableManager.roll(tableId);
+//      var intermediary = tableManager.lookup(tableId, dieRoll, itemRarity);
+//      resultSetSoFar.push(intermediary);
+//      tableId = intermediary.nextTable;
+//    }
+//
+//    return resultSetSoFar;
+//  }
+
   return {
-    rollForItem: function (itemRarity) {
-      var resultSet = [];
-
-      var masterTable = dataTables[masterTableId];
-      roll(masterTable, itemRarity, resultSet);
-
-      return resultSet;
-    }
+    rollForItem: getItem
   };
 
 });
