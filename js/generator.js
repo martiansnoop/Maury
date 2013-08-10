@@ -1,4 +1,4 @@
-define(["./tables"], function(dataTables){
+define(["./tables", "./random"], function(dataTables, rand){
 
   const masterTableId = "masterTable";
 
@@ -6,7 +6,7 @@ define(["./tables"], function(dataTables){
     if(!table)
       return;
 
-    var dieRoll = getRandomInt(table.min, table.max);
+    var dieRoll = rand.getInt(table.min, table.max);
 
     var result = table.items.filter(function(item){
       return dieRoll >= item[itemRarity].min && dieRoll <= item[itemRarity].max;
@@ -15,10 +15,6 @@ define(["./tables"], function(dataTables){
     resultSet.push(result);
 
     roll(dataTables[result.nextTable], itemRarity, resultSet);
-  }
-
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   return function ItemGenerator() {
