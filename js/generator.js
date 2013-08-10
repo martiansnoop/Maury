@@ -1,20 +1,18 @@
-define(["./tables", "./random"], function(dataTables, rand){
+define(["./tables", "./random", "./tableOverlord"], function(dataTables, rand, lookup) {
 
   const masterTableId = "masterTable";
 
-  function roll(table, itemRarity, resultSet) {
+  function roll(table, itemRarity, resultSetSoFar) {
     if(!table)
       return;
 
     var dieRoll = rand.getInt(table.min, table.max);
 
-    var result = table.items.filter(function(item){
-      return dieRoll >= item[itemRarity].min && dieRoll <= item[itemRarity].max;
-    })[0];
+    var intermediary = lookup(table.items, dieRoll, itemRarity);
 
-    resultSet.push(result);
+    resultSetSoFar.push(intermediary);
 
-    roll(dataTables[result.nextTable], itemRarity, resultSet);
+    roll(dataTables[intermediary.nextTable], itemRarity, resultSetSoFar);
   }
 
   return {
