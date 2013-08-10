@@ -21,8 +21,8 @@ define(["./data/data"], function(TABLES){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  return function ItemGenerator(itemRarity) {
-    this.rollForItem = function () {
+  return function ItemGenerator() {
+    this.rollForItem = function (itemRarity) {
       var resultSet = [];
 
       var masterTable = TABLES[masterTableId];

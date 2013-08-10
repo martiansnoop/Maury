@@ -13,13 +13,13 @@ require.config({
 define(["./ItemGenerator", "jquery", "ractive", "text!./template.html"], function (ItemGenerator, $, Ractive, template) {
 
   var itemRarity = "minor";
-  var minorGenerator = new ItemGenerator(itemRarity);
-  var itemList = minorGenerator.rollForItem();
+  var generator = new ItemGenerator();
+  var itemList = generator.rollForItem(itemRarity);
 
   var ractive = new Ractive({
     el: 'testDiv',
     template: template,
-    data: { test: "blah", items: itemList }
+    data: { test: "blah", items: itemList, numItems: 2 }
   });
 
 });
