@@ -17,8 +17,8 @@ define(["./tables", "./random"], function(dataTables, rand){
     roll(dataTables[result.nextTable], itemRarity, resultSet);
   }
 
-  return function ItemGenerator() {
-    this.rollForItem = function (itemRarity) {
+  return {
+    rollForItem: function (itemRarity) {
       var resultSet = [];
 
       var masterTable = dataTables[masterTableId];
@@ -26,6 +26,6 @@ define(["./tables", "./random"], function(dataTables, rand){
 
       return resultSet;
     }
-  }
+  };
 
 });
