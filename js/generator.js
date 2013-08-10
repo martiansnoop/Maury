@@ -1,13 +1,13 @@
-define(["./tableManager"], function(tableManager) {
+define(["./tableWrapper"], function(table) {
 
   const masterTableId = "masterTable";
 
   function getItem(tableId, itemRarity) {
-    if(!tableManager.tableExists(tableId))
+    if(!table.exists(tableId))
       return undefined;
 
-    var dieRoll = tableManager.roll(tableId);
-    var intermediaryResult = tableManager.lookup(tableId, dieRoll, itemRarity);
+    var dieRoll = table.roll(tableId);
+    var intermediaryResult = table.lookup(tableId, dieRoll, itemRarity);
     var nextResults = getItem(intermediaryResult.nextTable, itemRarity);
 
     return [intermediaryResult].concat(nextResults || []);

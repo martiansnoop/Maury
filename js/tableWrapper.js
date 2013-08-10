@@ -1,4 +1,4 @@
-define(["./tables", "./random"], function(dataTables, rand) {
+define(["./data", "./random"], function(dataTables, rand) {
 
   function lookup(tableId, dieRoll, itemRarity) {
     var entries = dataTables[tableId].items;
@@ -13,14 +13,14 @@ define(["./tables", "./random"], function(dataTables, rand) {
     return rand.getInt(table.min, table.max);
   }
 
-  function tableExists(tableId) {
+  function exists(tableId) {
     return !!dataTables[tableId];
   }
 
   return {
     lookup: lookup,
     roll: roll,
-    tableExists: tableExists
+    exists: exists
   }
 
 });
