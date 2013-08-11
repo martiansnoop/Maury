@@ -10,15 +10,12 @@ require.config({
   shim: {
     jquery: {
       exports: "$"
-    },
-    bootstrap: {
-      exports: "bootstrap",
-      deps: ["jquery"]
     }
   }
 });
 
-define(["./js/generator", "jquery", "ractive", "text!./template.html"], function (itemGenerator, $, Ractive, template) {
+define(["./js/generator", "jquery", "ractive", "text!./template.html"],
+function (itemGenerator, $, Ractive, template) {
 
   var itemRarity = "minor";
   var generatedItem = itemGenerator.rollForItem(itemRarity);
@@ -27,7 +24,7 @@ define(["./js/generator", "jquery", "ractive", "text!./template.html"], function
     el: 'magicItemGenerator',
     template: template,
     append: true,
-    data: { test: "blah", itemComponents: generatedItem, numItems: 2 }
+    data: { itemComponents: generatedItem, numItems: undefined }
   });
 
 });

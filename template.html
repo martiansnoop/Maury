@@ -1,25 +1,43 @@
+
 <div class="row">
-  <div class="col-lg-2">
-    <div class="form-group">
-      <label for="num_items">Number of Items:</label>
-      <input id="num_items" class="form-control" type="text" value="{{numItems}}">
-    </div>
 
-    <div class="form-group">
-      <label for="item_awesomeness">Item Awesomeness:</label>
-      <select id="item_awesomeness" class="form-control">
-        <option value="minor">Minor</option>
-        <option value="medium">Medium</option>
-        <option value="major">Major</option>
-      </select>
-    </div>
+  <div class="col-lg-12">
+    <form class="form-inline">
 
-    <button id="generateItem" class="btn btn-default">Go!</button>
-  </div> <!-- col-lg-2 -->
+      <div class="col-lg-2">
+        <input
+          id="num_items"
+          class="form-control"
+          placeholder="Number of Items"
+          type="text"
+          value="{{numItems}}">
+      </div>
+
+
+      <div class="col-lg-2">
+        <select id="item_awesomeness" class="form-control">
+          <option value="minor">Minor</option>
+          <option value="medium">Medium</option>
+          <option value="major">Major</option>
+        </select>
+      </div>
+
+      <div class="col-lg-2">
+        <button
+          id="generateItem"
+          class="btn btn-default col-lg-12"
+          href="#">Create Item
+        </button>
+      </div>
+    </form>
+
+  </div>
 
 
   <div class="col-lg-4">
+
     <ul class="list-group">
+      <li class="list-header list-group-item">Generated Item</li>
       {{#itemComponents}}
       <li class="list-group-item">
         <a href="{{url}}">{{description}}</a>
@@ -29,8 +47,14 @@
 
   </div>
 
-
 </div>
+
+
+
+
+
+
+
 
 
 
