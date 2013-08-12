@@ -27,4 +27,10 @@ function (itemGenerator, $, Ractive, template) {
     data: { itemComponents: generatedItem, numItems: undefined }
   });
 
+  ractive.on({
+    generateItem: function(event) {
+      ractive.set("itemComponents",  itemGenerator.rollForItem(itemRarity))
+    }
+  })
+
 });
