@@ -17,8 +17,8 @@ require.config({
 define(["./js/generator", "jquery", "ractive", "text!./template.html"],
 function (itemGenerator, $, Ractive, template) {
 
-  var itemRarity = "minor";
-  var generatedItem = itemGenerator.rollForItem(itemRarity);
+  var itemAwesomemess = "minor";
+  var generatedItem = itemGenerator.rollForItem(itemAwesomemess);
 
   var ractive = new Ractive({
     el: 'magicItemGenerator',
@@ -29,7 +29,7 @@ function (itemGenerator, $, Ractive, template) {
 
   ractive.on({
     generateItem: function(event) {
-      ractive.set("itemComponents",  itemGenerator.rollForItem(itemRarity))
+      ractive.set("itemComponents",  itemGenerator.rollForItem(itemAwesomemess))
     }
   })
 
