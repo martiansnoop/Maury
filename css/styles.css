@@ -1,9 +1,6 @@
-input { width: 300px }
-
 /* This is to force the navbar to not cover up content.
    If we ever do any responsive design on this player test form,
    then there will be a 65 px gap at the top of the screen that will
    not resize. There's a better fix on stackoverflow; look there. */
 body { padding-top: 65px; }
 
-.form-horizontal {padding-bottom: 10px}
