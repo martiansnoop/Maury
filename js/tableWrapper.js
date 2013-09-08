@@ -1,11 +1,13 @@
-define(["./data", "./random"], function(dataTables, rand) {
+define(["./data", "./random", "jquery"], function(dataTables, rand, $) {
 
-  function lookup(tableId, dieRoll, itemRarity) {
+  function lookup(tableId, dieRoll, itemAwesomeness) {
     var entries = dataTables[tableId].entries;
 
-    return entries.filter(function(entry) {
-      return dieRoll >= entry[itemRarity].min && dieRoll <= entry[itemRarity].max;
+    var entry = entries.filter(function(entry) {
+      return dieRoll >= entry[itemAwesomeness].min && dieRoll <= entry[itemAwesomeness].max;
     })[0];
+
+    return $.extend(true, {}, entry); //clone the table row to keep modifications from affecting the base data
   }
 
   function roll(tableId) {
