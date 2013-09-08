@@ -2,88 +2,6 @@
 <html>
 <head>
   <title></title>
-  <script type="text/javascript" src="../bower_components/jquery/jquery.js"> </script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-
-      function parseRangeCell(cellToParse) {
-        var mediumRange = $(cellToParse).text();
-        var stuff = mediumRange.split("-");
-        var range = {};
-        if (stuff.length > 1) {
-          range.min = Number(stuff[0]);
-          range.max = Number(stuff[1]);
-        }
-        return range;
-      }
-
-      function parseTable(tableElementId){
-        var table = {};
-        table.min = 1;
-        table.max = 100;
-        table.entries = [];
-
-        var tableElement = $(tableElementId);
-
-        $("tbody > tr", tableElement).each(function(){
-          var row = $(this);
-
-          var entry = {};
-          var cells = $("td", row);
-
-          //It would be nice to just call each on props
-          entry.minor = parseRangeCell(cells[0]);
-          entry.medium = parseRangeCell(cells[1]);
-          entry.major = parseRangeCell(cells[2]);
-
-          var descCell = $(cells[3]);
-          entry.description = descCell.text();
-          entry.nextTableId = entry.description.toLowerCase().replace(" ", "");
-          entry.url = $("a", descCell).attr("href");
-//
-//          if(item.url)
-//          {
-//            item.url = item.url.toArray();
-//            item.url.splice(0,0, 'http://paizo.com/prd/');
-//          }
-
-          table.entries.push(entry);
-        });
-
-        return table;
-      }
-
-      function parseAllTheTables(info) {
-        var tables = {};
-
-        info.forEach(function(item){
-          var tbl = parseTable(item.elementId);
-          tables[item.name] = tbl;
-        });
-
-        return tables;
-      }
-
-
-      var tablesToParse = [ {
-                     name: "masterTable",
-                     elementId: "#table-15-2-random-magic-item-generation"
-                   },
-                   {
-                     name:"armorAndShields",
-                     elementId: "#table-15-3-armor-and-shields"
-                   }];
-
-      var tables = parseAllTheTables(tablesToParse);
-
-
-      var testDiv = $("#newCrap");
-      testDiv.append(JSON.stringify(tables));
-
-    });
-
-  </script>
 </head>
 <body>
 
@@ -232,6 +150,163 @@
   <tr class="even"><td>&mdash;</td><td>91-95</td><td>41-60</td><td><i><a href="#lion-s-shield" >Lion's shield</a> </i></td><td>9,170 gp</td></tr>
   <tr class="odd"><td>&mdash;</td><td>96-100</td><td>61-90</td><td><i><a href="#winged-shield" >Winged shield</a> </i></td><td>17,257 gp</td></tr>
   <tr class="even"><td>&mdash;</td><td>&mdash;</td><td>91-100</td><td><i><a href="#absorbing-shield" >Absorbing shield</a> </i></td><td>50,170 gp</td></tr></table>
+
+
+
+<table id="table-15-12-potions"><caption>Table: Potions</caption>
+  <thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Spell Level</th><th>Caster Level</th></tr></thead>
+  <tr class="odd"><td>01&ndash;20</td><td>&mdash;</td><td>&mdash;</td><td>0</td><td>1st</td></tr>
+  <tr class="even"><td>21&ndash;60</td><td>01&ndash;20</td><td>&mdash;</td><td>1st</td><td>1st</td></tr>
+  <tr class="odd"><td> 61&ndash;100</td><td>21&ndash;60</td><td>01&ndash;20</td><td>2nd</td><td>3rd</td></tr>
+  <tr class="even"><td> &mdash;</td><td>61&ndash;100</td><td>21&ndash;100</td><td>3rd</td><td>5th</td></tr>
+</table>
+
+
+<table id="type-of-potion-or-oil-table"><caption>Type of Potion or Oil</caption>
+  <thead><tr><th>d%</th><th>Potion or oil Type*</th></tr></thead>
+  <tr class="odd"><td>01&ndash;75</td><td>Common</td></tr>
+  <tr class="even"><td>76&ndash;100</td><td>Uncommon</td></tr>
+  <tfoot><tr><td colspan="2">* Except 0-level potions and oils, all of which are common.</td></tr></tfoot></table>
+
+
+<table id="0-level-potions-and-oils-table"><caption>0-Level Potions and Oils</caption>
+  <thead><tr><th>d%</th><th>Common Potion or Oil</th><th>Price</th></tr></thead>
+  <tr class="odd"><td>01&ndash;14</td><td><i><a href="/pathfinderRPG/prd/spells/arcaneMark.html#_arcane-mark" >Arcane mark</a></i></td><td>25 gp</td></tr>
+  <tr class="even"><td>15&ndash;28</td><td><i><a href="/pathfinderRPG/prd/spells/guidance.html#_guidance" >Guidance</a></i></td><td>25 gp</td></tr>
+  <tr class="odd"><td>29&ndash;44</td><td><i><a href="/pathfinderRPG/prd/spells/light.html#_light" >Light</a></i></td><td>25 gp</td></tr>
+  <tr class="even"><td>45&ndash;58</td><td><i><a href="/pathfinderRPG/prd/spells/purifyFoodAndDrink.html#_purify-food-and-drink" >Purify food and drink</a></i></td><td>25 gp</td></tr>
+  <tr class="odd"><td>59&ndash;72</td><td><i><a href="/pathfinderRPG/prd/spells/resistance.html#_resistance" >Resistance</a></i></td><td>25 gp</td></tr>
+  <tr class="even"><td>73&ndash;86</td><td><i><a href="/pathfinderRPG/prd/spells/stabilize.html#_stabilize" >Stabilize</a></i></td><td>25 gp</td></tr>
+  <tr class="odd"><td>87&ndash;100</td><td><i><a href="/pathfinderRPG/prd/spells/virtue.html#_virtue" >Virtue</a></i></td><td>25 gp</td></tr></table>
+
+
+<table id="1st-level-potions-and-oils-table"><caption>1st-Level Potions and Oils</caption>
+  <thead><tr><th>d%</th><th>Common Potion or Oil</th><th>Price</th></tr></thead>
+  <tr class="odd"><td>01&ndash;04</td><td><i><a href="/pathfinderRPG/prd/spells/blessWeapon.html#_bless-weapon" >Bless weapon</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>05&ndash;14</td><td><i><a href="/pathfinderRPG/prd/spells/cureLightWounds.html#_cure-light-wounds" >Cure light wounds</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>15&ndash;19</td><td><i><a href="/pathfinderRPG/prd/spells/endureElements.html#_endure-elements" >Endure elements</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>20&ndash;27</td><td><i><a href="/pathfinderRPG/prd/spells/enlargePerson.html#_enlarge-person" >Enlarge person</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>28&ndash;33</td><td><i><a href="/pathfinderRPG/prd/spells/jump.html#_jump" >Jump</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>34&ndash;41</td><td><i><a href="/pathfinderRPG/prd/spells/mageArmor.html#_mage-armor" >Mage armor</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>42&ndash;47</td><td><i><a href="/pathfinderRPG/prd/spells/magicFang.html#_magic-fang" >Magic fang</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>48&ndash;55</td><td><i><a href="/pathfinderRPG/prd/spells/magicWeapon.html#_magic-weapon" >Magic weapon</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>56&ndash;60</td><td><i><a href="/pathfinderRPG/prd/spells/passWithoutTrace.html#_pass-without-trace" >Pass without trace</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>61&ndash;64</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromChaos.html#_protection-from-chaos" >Protection from chaos</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>65&ndash;68</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromEvil.html#_protection-from-evil" >Protection from evil</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>69&ndash;72</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromGood.html#_protection-from-good" >Protection from good</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>73&ndash;76</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromLaw.html#_protection-from-law" >Protection from law</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>77&ndash;81</td><td><i><a href="/pathfinderRPG/prd/spells/reducePerson.html#_reduce-person" >Reduce person</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>82&ndash;87</td><td><i><a href="/pathfinderRPG/prd/spells/removeFear.html#_remove-fear" >Remove fear</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>88&ndash;92</td><td><i><a href="/pathfinderRPG/prd/spells/sanctuary.html#_sanctuary" >Sanctuary</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>93&ndash;100</td><td><i><a href="/pathfinderRPG/prd/spells/shieldOfFaith.html#_shield-of-faith" >Shield of faith</a></td><td></i>50 gp</td></tr>
+  <thead><tr><th>d%</th><th>Uncommon Potion or Oil</th><th>Price</th></tr></thead>
+  <tr class="odd"><td>01&ndash;04</td><td><i><a href="/pathfinderRPG/prd/spells/animateRope.html#_animate-rope" >Animate rope</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>05&ndash;11</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/antHaul.html#_ant-haul-" >Ant haul</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>12&ndash;16</td><td><i>Cloak of the shade</td><td></i>50 gp</td></tr>
+  <tr class="even"><td>17&ndash;20</td><td><i><a href="/pathfinderRPG/prd/spells/erase.html#_erase" >Erase</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>21&ndash;26</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/featherStep.html#_feather-step" >Feather step</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>27&ndash;30</td><td><i><a href="/pathfinderRPG/prd/spells/goodberry.html#_goodberry" >Goodberry</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>31&ndash;34</td><td><i><a href="/pathfinderRPG/prd/spells/grease.html#_grease" >Grease</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>35&ndash;41</td><td><i><a href="/pathfinderRPG/prd/spells/hideFromAnimals.html#_hide-from-animals" >Hide from animals</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>42&ndash;49</td><td><i><a href="/pathfinderRPG/prd/spells/hideFromUndead.html#_hide-from-undead" >Hide from undead</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>50&ndash;53</td><td><i><a href="/pathfinderRPG/prd/spells/holdPortal.html#_hold-portal" >Hold portal</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>54&ndash;58</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/invigorate.html#_invigorate" >Invigorate</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>59&ndash;64</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/keenSenses.html#_keen-senses" >Keen senses</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>65&ndash;68</td><td><i><a href="/pathfinderRPG/prd/spells/magicStone.html#_magic-stone" >Magic stone</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>69&ndash;75</td><td><i><a href="/pathfinderRPG/prd/ultimateMagic/spells/removeSickness.html#_remove-sickness" >Remove sickness</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>76&ndash;80</td><td><i><a href="/pathfinderRPG/prd/ultimateMagic/spells/sanctifyCorpse.html#_sanctify-corpse" >Sanctify corpse</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>81&ndash;84</td><td><i><a href="/pathfinderRPG/prd/spells/shillelagh.html#_shillelagh" >Shillelagh</a></td><td></i>50 gp</td></tr>
+  <tr class="odd"><td>85&ndash;92</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/touchOfTheSea.html#_touch-of-the-sea" >Touch of the sea</a></td><td></i>50 gp</td></tr>
+  <tr class="even"><td>93&ndash;100</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/vanish.html#_vanish" >Vanish</a></td><td></i>50 gp</td></tr></table>
+
+
+
+<table id="2nd-level-potions-and-oils-table"><caption>2nd-Level Potions and Oils</caption>
+  <thead><tr><th>d%</th><th>Common Potion or Oil</th><th>Price</th></tr></thead>
+  <tr class="odd"><td>01&ndash;04</td><td><i><a href="/pathfinderRPG/prd/spells/aid.html#_aid" >Aid</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>05&ndash;07</td><td><i><a href="/pathfinderRPG/prd/spells/alignWeapon.html#_align-weapon" >Align weapon</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>08&ndash;11</td><td><i><a href="/pathfinderRPG/prd/spells/barkskin.html#_barkskin" >Barkskin</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>12&ndash;16</td><td><i><a href="/pathfinderRPG/prd/spells/bearSEndurance.html#_bear-s-endurance" >Bear's endurance</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>17&ndash;20</td><td><i><a href="/pathfinderRPG/prd/spells/blur.html#_blur" >Blur</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>21&ndash;25</td><td><i><a href="/pathfinderRPG/prd/spells/bullSStrength.html#_bull-s-strength" >Bull's strength</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>26&ndash;30</td><td><i><a href="/pathfinderRPG/prd/spells/catSGrace.html#_cat-s-grace" >Cat's grace</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>31&ndash;37</td><td><i><a href="/pathfinderRPG/prd/spells/cureModerateWounds.html#_cure-moderate-wounds" >Cure moderate wounds</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>38&ndash;41</td><td><i><a href="/pathfinderRPG/prd/spells/darkvision.html#_darkvision" >Darkvision</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>42&ndash;44</td><td><i><a href="/pathfinderRPG/prd/spells/delayPoison.html#_delay-poison" >Delay poison</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>45&ndash;49</td><td><i><a href="/pathfinderRPG/prd/spells/eagleSSplendor.html#_eagle-s-splendor" >Eagle's splendor</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>50&ndash;54</td><td><i><a href="/pathfinderRPG/prd/spells/foxSCunning.html#_fox-s-cunning" >Fox's cunning</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>55&ndash;61</td><td><i><a href="/pathfinderRPG/prd/spells/invisibility.html#_invisibility" >Invisibility</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>62&ndash;66</td><td><i><a href="/pathfinderRPG/prd/spells/levitate.html#_levitate" >Levitate</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>67&ndash;71</td><td><i><a href="/pathfinderRPG/prd/spells/owlSWisdom.html#_owl-s-wisdom" >Owl's wisdom</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>72&ndash;73</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromArrows.html#_protection-from-arrows" >Protection from arrows</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>74&ndash;76</td><td><i><a href="/pathfinderRPG/prd/spells/removeParalysis.html#_remove-paralysis" >Remove paralysis</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>77&ndash;80</td><td><i><a href="/pathfinderRPG/prd/spells/resistEnergy.html#_resist-energy" >Resist energy</a>, acid</td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>81&ndash;84</td><td><i><a href="/pathfinderRPG/prd/spells/resistEnergy.html#_resist-energy" >Resist energy</a>, cold</td><td></i>300 gp</td></tr>
+  <tr class="even"><td>85&ndash;88</td><td><i><a href="/pathfinderRPG/prd/spells/resistEnergy.html#_resist-energy" >Resist energy</a>, electricity</td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>89&ndash;92</td><td><i><a href="/pathfinderRPG/prd/spells/resistEnergy.html#_resist-energy" >Resist energy</a>, fire</td><td></i>300 gp</td></tr>
+  <tr class="even"><td>93&ndash;94</td><td><i><a href="/pathfinderRPG/prd/spells/resistEnergy.html#_resist-energy" >Resist energy</a>, sonic</td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>95&ndash;98</td><td><i><a href="/pathfinderRPG/prd/spells/spiderClimb.html#_spider-climb" >Spider climb</a></i></td><td>300 gp</td></tr>
+  <tr class="even"><td>99&ndash;100</td><td><i><a href="/pathfinderRPG/prd/spells/undetectableAlignment.html#_undetectable-alignment" >Undetectable alignment</a></td><td></i>300 gp</td></tr>
+  <thead><tr><th>d%</th><th>Uncommon Potion or Oil</th><th>Price</th></tr></thead>
+  <tr class="odd"><td>01&ndash;06</td><td><i><a href="/pathfinderRPG/prd/ultimateCombat/spells/ablativeBarrier.html#_ablative-barrier" >Ablative barrier</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>07&ndash;14</td><td><i><a href="/pathfinderRPG/prd/ultimateMagic/spells/acuteSenses.html#_acute-senses" >Acute senses</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>15&ndash;19</td><td><i><a href="/pathfinderRPG/prd/spells/arcaneLock.html#_arcane-lock" >Arcane lock</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>20&ndash;24</td><td><i><a href="/pathfinderRPG/prd/ultimateCombat/spells/bulletShield.html#_bullet-shield" >Bullet shield</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>25&ndash;30</td><td><i><a href="/pathfinderRPG/prd/ultimateCombat/spells/certainGrip.html#_certain-grip-" >Certain grip</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>31&ndash;35</td><td><i><a href="/pathfinderRPG/prd/spells/continualFlame.html#_continual-flame" >Continual flame</a></td><td></i>350 gp</td></tr>
+  <tr class="odd"><td>36&ndash;40</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/corruptionResistance.html#_corruption-resistance" >Corruption resistance</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>41&ndash;48</td><td><i><a href="/pathfinderRPG/prd/skills/disguise.html#_disguise" >Disguise</a> other</td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>49&ndash;56</td><td><i><a href="/pathfinderRPG/prd/spells/gentleRepose.html#_gentle-repose" >Gentle repose</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>57&ndash;61</td><td><i><a href="/pathfinderRPG/prd/spells/makeWhole.html#_make-whole" >Make whole</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>62&ndash;67</td><td><i><a href="/pathfinderRPG/prd/spells/obscureObject.html#_obscure-object" >Obscure object</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>68&ndash;72</td><td><i><a href="/pathfinderRPG/prd/spells/reduceAnimal.html#_reduce-animal" >Reduce animal</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>73&ndash;76</td><td><i><a href="/pathfinderRPG/prd/spells/ropeTrick.html#_rope-trick" >Rope trick</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>77&ndash;82</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/slipstream.html#_slipstream" >Slipstream</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>83&ndash;90</td><td><i><a href="/pathfinderRPG/prd/spells/status.html#_status" >Status</a></td><td></i>300 gp</td></tr>
+  <tr class="even"><td>91&ndash;95</td><td><i><a href="/pathfinderRPG/prd/spells/warpWood.html#_warp-wood" >Warp wood</a></td><td></i>300 gp</td></tr>
+  <tr class="odd"><td>96&ndash;100</td><td><i><a href="/pathfinderRPG/prd/spells/woodShape.html#_wood-shape" >Wood shape</a></td><td></i>300 gp</td></tr></table>
+
+
+<table id="3rd-level-potions-and-oils-table"><caption>3rd-Level Potions and Oils</caption>
+  <thead><tr><th>d%</th><th>Common Potion or Oil</th><th>Price</th></tr></thead>
+  <tr class="odd"><td>01&ndash;06</td><td><i><a href="/pathfinderRPG/prd/spells/cureSeriousWounds.html#_cure-serious-wounds" >Cure serious wounds</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>07&ndash;10</td><td><i><a href="/pathfinderRPG/prd/spells/dispelMagic.html#_dispel-magic" >Dispel magic</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>11&ndash;14</td><td><i><a href="/pathfinderRPG/prd/spells/displacement.html#_displacement" >Displacement</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>15&ndash;20</td><td><i><a href="/pathfinderRPG/prd/skills/fly.html#_fly" >Fly</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>21&ndash;25</td><td><i><a href="/pathfinderRPG/prd/spells/gaseousForm.html#_gaseous-form" >Gaseous form</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>26&ndash;29</td><td><i><a href="/pathfinderRPG/prd/spells/goodHope.html#_good-hope" >Good hope</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>30&ndash;35</td><td><i><a href="/pathfinderRPG/prd/spells/haste.html#_haste" >Haste</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>36&ndash;40</td><td><i><a href="/pathfinderRPG/prd/spells/heroism.html#_heroism" >Heroism</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>41&ndash;44</td><td><i><a href="/pathfinderRPG/prd/spells/keenEdge.html#_keen-edge" >Keen edge</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>45&ndash;48</td><td><i><a href="/pathfinderRPG/prd/spells/magicFang.html#_magic-fang-greater" >Magic fang, greater</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>49&ndash;52</td><td><i><a href="/pathfinderRPG/prd/spells/magicVestment.html#_magic-vestment" >Magic vestment</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>53&ndash;57</td><td><i><a href="/pathfinderRPG/prd/spells/neutralizePoison.html#_neutralize-poison" >Neutralize poison</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>58&ndash;60</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromEnergy.html#_protection-from-energy" >Protection from energy</a>, acid</td><td></i>750 gp</td></tr>
+  <tr class="even"><td>61&ndash;63</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromEnergy.html#_protection-from-energy" >Protection from energy</a>, cold</td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>64&ndash;66</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromEnergy.html#_protection-from-energy" >Protection from energy</a>, electricity</i></td><td>750 gp</td></tr>
+  <tr class="even"><td>67&ndash;69</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromEnergy.html#_protection-from-energy" >Protection from energy</a>, fire</td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>70&ndash;71</td><td><i><a href="/pathfinderRPG/prd/spells/protectionFromEnergy.html#_protection-from-energy" >Protection from energy</a>, sonic</td><td></i>750 gp</td></tr>
+  <tr class="even"><td>72&ndash;74</td><td><i><a href="/pathfinderRPG/prd/spells/rage.html#_rage" >Rage</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>75&ndash;77</td><td><i><a href="/pathfinderRPG/prd/spells/removeBlindnessDeafness.html#_remove-blindness-deafness" >Remove blindness/deafness</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>78&ndash;81</td><td><i><a href="/pathfinderRPG/prd/spells/removeCurse.html#_remove-curse" >Remove curse</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>82&ndash;86</td><td><i><a href="/pathfinderRPG/prd/spells/removeDisease.html#_remove-disease" >Remove disease</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>87&ndash;91</td><td><i><a href="/pathfinderRPG/prd/spells/tongues.html#_tongues" >Tongues</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>92&ndash;96</td><td><i><a href="/pathfinderRPG/prd/spells/waterBreathing.html#_water-breathing" >Water breathing</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>97&ndash;100</td><td><i><a href="/pathfinderRPG/prd/spells/waterWalk.html#_water-walk" >Water walk</a></td><td></i>750 gp</td></tr>
+  <thead><tr><th>d%</th><th>Uncommon Potion or Oil</th><th>Price</th></tr></thead>
+  <tr class="odd"><td>01&ndash;12</td><td><i><a href="/pathfinderRPG/prd/ultimateMagic/spells/burrow.html#_burrow" >Burrow</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>11&ndash;22</td><td><i><a href="/pathfinderRPG/prd/ultimateMagic/spells/countlessEyes.html#_countless-eyes" >Countless eyes</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>23&ndash;34</td><td><i><a href="/pathfinderRPG/prd/spells/daylight.html#_daylight" >Daylight</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>35&ndash;49</td><td><i><a href="/pathfinderRPG/prd/advanced/spells/draconicReservoir.html#_draconic-reservoir-" >Draconic reservoir</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>50&ndash;58</td><td><i><a href="/pathfinderRPG/prd/spells/flameArrow.html#_flame-arrow" >Flame arrow</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>59&ndash;67</td><td><i><a href="/pathfinderRPG/prd/spells/shrinkItem.html#_shrink-item" >Shrink item</a></td><td></i>750 gp</td></tr>
+  <tr class="odd"><td>68&ndash;77</td><td><i><a href="/pathfinderRPG/prd/spells/stoneShape.html#_stone-shape" >Stone shape</a></td><td></i>750 gp</td></tr>
+  <tr class="even"><td>78&ndash;87</td><td><i><a href="/pathfinderRPG/prd/spells/fireTrap.html#_fire-trap" >Fire trap</a></td><td></i>775 gp</td></tr>
+  <tr class="odd"><td>88&ndash;100</td><td><i><a href="/pathfinderRPG/prd/spells/nondetection.html#_nondetection" >Nondetection</a></td><td></i>800 gp</td></tr></table>
+
+
+<script src="../bower_components/requirejs/require.js" data-main="./main.js"></script>
+
 
 </body>
 </html>
