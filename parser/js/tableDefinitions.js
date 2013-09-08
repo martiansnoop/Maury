@@ -35,13 +35,13 @@ define([], function() {
         oneAwesomeness: true
       },
         {
-          elementId: "#0-level-potions-and-oils-table-common",
+          elementId: "#0-level-potions-and-oils-table-uncommon",
           descCellIndex: 1,
           nextTableIdChooser: function(){ return undefined },
           oneAwesomeness: true
         },
         {
-          elementId: "#0-level-potions-and-oils-table-common",
+          elementId: "#1st-level-potions-and-oils-table-common",
           descCellIndex: 1,
           nextTableIdChooser: function(){ return undefined },
           oneAwesomeness: true
