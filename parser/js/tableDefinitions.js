@@ -21,7 +21,9 @@ define([], function() {
         name: "potions",
         elementId: "#table-15-12-potions",
         nextTableIdChooser: function(i) { return "NOPE" },
-        descCellIndex: 3
+        descCellIndex: 3,
+        demuxId: "potions_demux",
+        descriptionAppendix: " level spell"
       }];
 
 });

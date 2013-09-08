@@ -1,4 +1,4 @@
-define(["jquery", "./tableDefinitions"], function($, definitions){
+define(["jquery", "./tableDefinitions", "./demultiplexors"], function($, definitions, demuxers){
   function parseRangeCell(cellToParse) {
     var mediumRange = $(cellToParse).text();
     var stuff = mediumRange.split("-");
@@ -20,13 +20,15 @@ define(["jquery", "./tableDefinitions"], function($, definitions){
     entry.major = parseRangeCell(cells[2]);
 
     var descCell = $(cells[3]);
-    entry.description = descCell.text();
+    entry.description = (descCell.text()).concat(def.descriptionAppendix || "");
     entry.nextTableId = def.nextTableIdChooser(rowIndex);
     entry.url = $("a", descCell).attr("href");
 
     if (entry.url) {
       entry.url = "http://paizo.com/prd/".concat(entry.url);
     }
+
+    entry.demuxId = def.demuxId;
     return entry;
   }
 
@@ -49,13 +51,14 @@ define(["jquery", "./tableDefinitions"], function($, definitions){
     return table;
   }
 
-
   return function parseAllTheTables() {
     var tables = {};
 
     definitions.forEach(function(definition){
       tables[definition.elementId] = parseTable(definition);
     });
+
+    $.extend(true, tables, demuxers);
 
     return tables;
   }
