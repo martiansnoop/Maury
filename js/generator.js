@@ -1,13 +1,13 @@
-define(["./tableWrapper"], function(table) {
+define(["./tableWrapper"], function(database) {
 
   const masterTableId = "masterTable";
 
   function buildItemRecursively(tableId, itemAwesomeness) {
-    if(!table.exists(tableId)) //check table.exists, not !tableId, because not all tables are parsed yet
+    if(!database.tableExists(tableId)) //check tableExists, not !tableId, because not all tables are parsed yet
       return []; //return empty array to not add undefined value to recursive array concat
 
-    var dieRoll = table.roll(tableId);
-    var intermediaryResult = table.lookup(tableId, dieRoll, itemAwesomeness);
+    var dieRoll = database.rollOnTable(tableId);
+    var intermediaryResult = database.lookupEntry(tableId, dieRoll, itemAwesomeness);
 
     return [intermediaryResult].concat(buildItemRecursively(intermediaryResult.nextTableId, itemAwesomeness));
   }
