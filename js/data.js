@@ -137,10 +137,13 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
       {"minor": {"min": 68, "max": 77}, "medium": {"min": 68, "max": 77}, "major": {"min": 68, "max": 77}, "description": "Stone shape", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/stoneShape.html#_stone-shape"},
       {"minor": {"min": 78, "max": 87}, "medium": {"min": 78, "max": 87}, "major": {"min": 78, "max": 87}, "description": "Fire trap", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/fireTrap.html#_fire-trap"},
       {"minor": {"min": 88, "max": 100}, "medium": {"min": 88, "max": 100}, "major": {"min": 88, "max": 100}, "description": "Nondetection", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/nondetection.html#_nondetection"}
-    ]}, "potions-demux": [
-      {"min": 1, "max": 75, "appendMe": "common"},
-      {"min": 76, "max": 100, "appendMe": "uncommon"}
-    ], "scrolls-demux": [
+    ]}, "potions_demux":
+        { min: 1, max: 100,  entries:
+        [
+
+      {"min": 1, "max": 75, "appendMe": "-common"},
+      {"min": 76, "max": 100, "appendMe": "-uncommon"}
+    ]}, "scrolls-demux": [
       {}
     ]}
 );
