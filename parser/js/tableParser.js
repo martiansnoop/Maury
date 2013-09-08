@@ -26,7 +26,6 @@ define(["jquery", "./tableDefinitions", "./demultiplexors"], function($, definit
       entry.major = parseRangeCell(cells[2]);
     }
 
-
     var descCell = $(cells[def.descCellIndex]);
     entry.description = (descCell.text()).concat(def.descriptionAppendix || "");
     entry.nextTableId = def.nextTableIdChooser(rowIndex);
