@@ -40,6 +40,14 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"minor": {"min": 59, "max": 72}, "medium": {"min": 59, "max": 72}, "major": {"min": 59, "max": 72}, "description": "Resistance", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/resistance.html#_resistance"},
   {"minor": {"min": 73, "max": 86}, "medium": {"min": 73, "max": 86}, "major": {"min": 73, "max": 86}, "description": "Stabilize", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/stabilize.html#_stabilize"},
   {"minor": {"min": 87, "max": 100}, "medium": {"min": 87, "max": 100}, "major": {"min": 87, "max": 100}, "description": "Virtue", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/virtue.html#_virtue"}
+]}, "#0-level-potions-and-oils-table-uncommon": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 14}, "medium": {"min": 1, "max": 14}, "major": {"min": 1, "max": 14}, "description": "Arcane mark", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/arcaneMark.html#_arcane-mark"},
+  {"minor": {"min": 15, "max": 28}, "medium": {"min": 15, "max": 28}, "major": {"min": 15, "max": 28}, "description": "Guidance", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/guidance.html#_guidance"},
+  {"minor": {"min": 29, "max": 44}, "medium": {"min": 29, "max": 44}, "major": {"min": 29, "max": 44}, "description": "Light", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/light.html#_light"},
+  {"minor": {"min": 45, "max": 58}, "medium": {"min": 45, "max": 58}, "major": {"min": 45, "max": 58}, "description": "Purify food and drink", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/purifyFoodAndDrink.html#_purify-food-and-drink"},
+  {"minor": {"min": 59, "max": 72}, "medium": {"min": 59, "max": 72}, "major": {"min": 59, "max": 72}, "description": "Resistance", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/resistance.html#_resistance"},
+  {"minor": {"min": 73, "max": 86}, "medium": {"min": 73, "max": 86}, "major": {"min": 73, "max": 86}, "description": "Stabilize", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/stabilize.html#_stabilize"},
+  {"minor": {"min": 87, "max": 100}, "medium": {"min": 87, "max": 100}, "major": {"min": 87, "max": 100}, "description": "Virtue", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/virtue.html#_virtue"}
 ]}, "#1st-level-potions-and-oils-table-common": {"min": 1, "max": 100, "entries": [
   {"minor": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "major": {"min": 1, "max": 4}, "description": "Bless weapon", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/blessWeapon.html#_bless-weapon"},
   {"minor": {"min": 5, "max": 14}, "medium": {"min": 5, "max": 14}, "major": {"min": 5, "max": 14}, "description": "Cure light wounds", "url": "http://paizo.com/prd//pathfinderRPG/prd/spells/cureLightWounds.html#_cure-light-wounds"},

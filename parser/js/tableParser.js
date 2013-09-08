@@ -1,4 +1,4 @@
-define(["jquery", "./tableDefinitions", "./demultiplexors"], function($, definitions, demuxers){
+define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTemplates"], function($, definitions, demuxers, templates){
   function parseRangeCell(cellToParse) {
     var mediumRange = $(cellToParse).text();
     var stuff = mediumRange.split("-");
@@ -63,6 +63,14 @@ define(["jquery", "./tableDefinitions", "./demultiplexors"], function($, definit
 
     definitions.forEach(function(definition){
       tables[definition.elementId] = parseTable(definition);
+
+      //Currently child tables only go one deep. Update if it becomes necessary
+      if(definition.childTableTemplateId) {
+        definition.childTableIds.forEach(function(id){
+          var childDef = $.extend(true, {elementId : id}, templates[definition.childTableTemplateId]);
+          tables[childDef.elementId] = parseTable(childDef);
+        });
+      }
     });
 
     $.extend(true, tables, demuxers);
