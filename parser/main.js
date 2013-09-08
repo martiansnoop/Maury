@@ -10,7 +10,7 @@ require.config({
 });
 
 
-define(["./tableParser", "jquery"], function (parser, $) {
+define(["./js/tableParser", "jquery"], function (parser, $) {
 
   var tables = parser();
 

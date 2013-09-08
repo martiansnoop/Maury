@@ -1,4 +1,4 @@
-define(["jquery", "./tablesToParse"], function($, definitions){
+define(["jquery", "./tableDefinitions"], function($, definitions){
   function parseRangeCell(cellToParse) {
     var mediumRange = $(cellToParse).text();
     var stuff = mediumRange.split("-");
@@ -8,6 +8,26 @@ define(["jquery", "./tablesToParse"], function($, definitions){
       range.max = Number(stuff[1]);
     }
     return range;
+  }
+
+  function parseRow(row, def, rowIndex) {
+    var entry = {};
+    var cells = $("td", row);
+
+    //It would be nice to just call each on entry
+    entry.minor = parseRangeCell(cells[0]);
+    entry.medium = parseRangeCell(cells[1]);
+    entry.major = parseRangeCell(cells[2]);
+
+    var descCell = $(cells[3]);
+    entry.description = descCell.text();
+    entry.nextTableId = def.nextTableIdChooser(rowIndex);
+    entry.url = $("a", descCell).attr("href");
+
+    if (entry.url) {
+      entry.url = "http://paizo.com/prd/".concat(entry.url);
+    }
+    return entry;
   }
 
   function parseTable(def){
@@ -21,24 +41,7 @@ define(["jquery", "./tablesToParse"], function($, definitions){
 
     $("tbody > tr", tableElement).each(function(){
       var row = $(this);
-
-      var entry = {};
-      var cells = $("td", row);
-
-      //It would be nice to just call each on entry
-      entry.minor = parseRangeCell(cells[0]);
-      entry.medium = parseRangeCell(cells[1]);
-      entry.major = parseRangeCell(cells[2]);
-
-      var descCell = $(cells[3]);
-      entry.description = descCell.text();
-      entry.nextTableId = def.nextTableIdChooser(rowIndex);
-      entry.url = $("a", descCell).attr("href");
-
-      if(entry.url) {
-        entry.url = "http://paizo.com/prd/".concat(entry.url);
-      }
-
+      var entry = parseRow(row, def, rowIndex);
       table.entries.push(entry);
       rowIndex++;
     });
