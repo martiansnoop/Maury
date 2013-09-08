@@ -20,10 +20,61 @@ define([], function() {
       {
         name: "potions",
         elementId: "#table-15-12-potions",
-        nextTableIdChooser: function(i) { return "NOPE" },
+        nextTableIdChooser: function(i) {
+                                  var enders = ["0", "1st", "2nd", "3rd"];
+                                  return "#{TOKEN}-level-potions-and-oils-table".replace("{TOKEN}", enders[i]);
+                            },
         descCellIndex: 3,
         demuxId: "potions_demux",
         descriptionAppendix: " level spell"
-      }];
+      },
+      {
+        elementId: "#0-level-potions-and-oils-table-common",
+        descCellIndex: 1,
+        nextTableIdChooser: function(){ return undefined },
+        oneAwesomeness: true
+      },
+        {
+          elementId: "#0-level-potions-and-oils-table-common",
+          descCellIndex: 1,
+          nextTableIdChooser: function(){ return undefined },
+          oneAwesomeness: true
+        },
+        {
+          elementId: "#0-level-potions-and-oils-table-common",
+          descCellIndex: 1,
+          nextTableIdChooser: function(){ return undefined },
+          oneAwesomeness: true
+        },
+        {
+          elementId: "#1st-level-potions-and-oils-table-uncommon",
+          descCellIndex: 1,
+          nextTableIdChooser: function(){ return undefined },
+          oneAwesomeness: true
+        },
+        {
+          elementId: "#2nd-level-potions-and-oils-table-common",
+          descCellIndex: 1,
+          nextTableIdChooser: function(){ return undefined },
+          oneAwesomeness: true
+        },
+        {
+          elementId: "#2nd-level-potions-and-oils-table-uncommon",
+          descCellIndex: 1,
+          nextTableIdChooser: function(){ return undefined },
+          oneAwesomeness: true
+        },
+        {
+          elementId: "#3rd-level-potions-and-oils-table-common",
+          descCellIndex: 1,
+          nextTableIdChooser: function(){ return undefined },
+          oneAwesomeness: true
+        },
+        {
+          elementId: "#3rd-level-potions-and-oils-table-uncommon",
+          descCellIndex: 1,
+          nextTableIdChooser: function(){ return undefined },
+          oneAwesomeness: true
+        }];
 
 });

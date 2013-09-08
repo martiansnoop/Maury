@@ -14,12 +14,20 @@ define(["jquery", "./tableDefinitions", "./demultiplexors"], function($, definit
     var entry = {};
     var cells = $("td", row);
 
-    //It would be nice to just call each on entry
-    entry.minor = parseRangeCell(cells[0]);
-    entry.medium = parseRangeCell(cells[1]);
-    entry.major = parseRangeCell(cells[2]);
+    //TODO: see about making this less terrible. It's just parsing code, though,
+    //      so all told I'd rather see the ugliness here.
+    if(def.oneAwesomeness){
+      entry.minor = parseRangeCell(cells[0]);
+      entry.medium = parseRangeCell(cells[0]);
+      entry.major = parseRangeCell(cells[0]);
+    } else {
+      entry.minor = parseRangeCell(cells[0]);
+      entry.medium = parseRangeCell(cells[1]);
+      entry.major = parseRangeCell(cells[2]);
+    }
 
-    var descCell = $(cells[3]);
+
+    var descCell = $(cells[def.descCellIndex]);
     entry.description = (descCell.text()).concat(def.descriptionAppendix || "");
     entry.nextTableId = def.nextTableIdChooser(rowIndex);
     entry.url = $("a", descCell).attr("href");
