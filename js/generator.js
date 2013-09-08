@@ -7,7 +7,7 @@ define(["./tableWrapper"], function(database) {
       return []; //return empty array to not add undefined value to recursive array concat
 
     var dieRoll = database.rollOnTable(tableId);
-    var intermediaryResult = database.lookupEntry(tableId, dieRoll, itemAwesomeness);
+    var intermediaryResult = database.lookupEntry(tableId, itemAwesomeness, dieRoll);
 
     return [intermediaryResult].concat(buildItemRecursively(intermediaryResult.nextTableId, itemAwesomeness));
   }

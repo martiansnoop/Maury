@@ -1,6 +1,6 @@
 define(["./data", "./random", "jquery"], function(dataTables, rand, $) {
 
-  function lookupEntry(tableId, dieRoll, itemAwesomeness) {
+  function lookupEntry(tableId, itemAwesomeness, dieRoll) {
     var entries = dataTables[tableId].entries;
 
     var entry = entries.filter(function(entry) {
