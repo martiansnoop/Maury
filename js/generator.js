@@ -1,6 +1,6 @@
 define(["./tableWrapper"], function(database) {
 
-  const masterTableId = "masterTable";
+  const masterTableId = "#table-15-2-random-magic-item-generation";
 
   function buildItemRecursively(tableId, itemAwesomeness) {
     if(!database.tableExists(tableId)) //check tableExists, not !tableId, because not all tables are parsed yet
