@@ -36,6 +36,11 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
     }
 
     entry.demuxId = def.demuxId;
+
+    if(def.costCellIndex) {
+      entry.cost = $(cells[def.costCellIndex]).text();
+    }
+
     return entry;
   }
 
