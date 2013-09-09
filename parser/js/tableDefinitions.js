@@ -86,6 +86,15 @@ define([], function () {
         "#3rd-level-wands-table-common", "#3rd-level-wands-table-uncommon",
         "#4th-level-wands-table-common", "#4th-level-wands-table-uncommon"],
       childTableTemplateId: "wands"
+    },
+    {
+      name: "rings",
+      elementId: "#table-15-13-rings",
+      nextTableIdChooser: function (i) {
+        return undefined
+      },
+      descCellIndex: 3,
+      costCellIndex: 4
     }
   ];
 
