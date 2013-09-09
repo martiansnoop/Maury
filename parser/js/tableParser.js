@@ -1,11 +1,19 @@
 define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTemplates"], function($, definitions, demuxers, templates){
   function parseRangeCell(cellToParse) {
-    var mediumRange = $(cellToParse).text();
-    var stuff = mediumRange.split("-");
+
+    function isNumeric(num){
+      return !isNaN(num)
+    }
+
+    var rangeText = $(cellToParse).text();
+    var upperAndLower = rangeText.split("-");
     var range = {};
-    if (stuff.length > 1) {
-      range.min = Number(stuff[0]);
-      range.max = Number(stuff[1]);
+    if (upperAndLower.length > 1) { //range of min-max
+      range.min = Number(upperAndLower[0]);
+      range.max = Number(upperAndLower[1]);
+    } else if(upperAndLower.length === 1 && isNumeric(upperAndLower[0])) { //only one number matches row
+      range.min = Number(upperAndLower[0]);
+      range.max = Number(upperAndLower[0]);
     }
     return range;
   }
