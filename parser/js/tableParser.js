@@ -25,9 +25,7 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
     //TODO: see about making this less terrible. It's just parsing code, though,
     //      so all told I'd rather see the ugliness here.
     if(def.oneAwesomeness){
-      entry.minor = parseRangeCell(cells[0]);
-      entry.medium = parseRangeCell(cells[0]);
-      entry.major = parseRangeCell(cells[0]);
+      entry.minor = entry.medium = entry.major = parseRangeCell(cells[0]);
     } else {
       entry.minor = parseRangeCell(cells[0]);
       entry.medium = parseRangeCell(cells[1]);
