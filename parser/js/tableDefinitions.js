@@ -7,7 +7,7 @@ define([], function () {
         var idsToChooseFrom = ["#table-15-3-armor-and-shields", "#table-15-8-weapons",
           "#table-15-12-potions", "#table-15-13-rings", "#table-15-14-rods",
           "#table-15-15-scrolls", "#table-15-16-staves", "#table-15-17-wands",
-          "WONDEROUS_PLACEHOLDER"];
+          "#table-15-18-minor-wondrous-items", "#table-15-19-medium-wondrous-items", "#table-15-20-major-wondrous-items"];
         return idsToChooseFrom[i];
       },
       descCellIndex: 3
@@ -113,6 +113,36 @@ define([], function () {
       },
       descCellIndex: 3,
       costCellIndex: 4
+    },
+    {
+      name: "wondrous minor",
+      elementId: "#table-15-18-minor-wondrous-items",
+      nextTableIdChooser: function (i) {
+        return undefined
+      },
+      descCellIndex: 1,
+      costCellIndex: 2,
+      oneAwesomeness: true
+    },
+    {
+      name: "wondrous medium",
+      elementId: "#table-15-19-medium-wondrous-items",
+      nextTableIdChooser: function (i) {
+        return undefined
+      },
+      descCellIndex: 1,
+      costCellIndex: 2,
+      oneAwesomeness: true
+    },
+    {
+      name: "wondrous major",
+      elementId: "#table-15-20-major-wondrous-items",
+      nextTableIdChooser: function (i) {
+        return undefined
+      },
+      descCellIndex: 1,
+      costCellIndex: 2,
+      oneAwesomeness: true
     }
 
   ];
