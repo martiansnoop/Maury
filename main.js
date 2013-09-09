@@ -14,23 +14,55 @@ require.config({
   }
 });
 
-define(["./js/generator", "jquery", "ractive", "text!./template.html"],
-function (itemGenerator, $, Ractive, template) {
+define(["./js/generator", "jquery", "ractive", "text!./template.html", "./js/prettyPrinter"],
+function (itemGenerator, $, Ractive, template, formatter) {
 
-  var itemAwesomemess = "minor";
-  var generatedItem = itemGenerator.rollForItem(itemAwesomemess);
+
+  //TODO: when all is said and done, move this into the generator and hide the raw items as an implementation detail
+  function generateSomeStuff(specs) {
+    var allRawItems = [];
+    var allFormattedItems = [];
+
+    specs.forEach(function(spec){
+      var rawItems = [];
+      var formattedItems = [];
+      for(var i = 0; i < spec.count; i++) {
+        var raw = itemGenerator.rollForItem(spec.awesomeness)
+        rawItems.push(raw);
+        var formatted = formatter.format(spec.awesomeness, raw);
+        formattedItems.push(formatted);
+      }
+
+      allRawItems = allRawItems.concat(rawItems);
+      allFormattedItems = allFormattedItems.concat(formattedItems);
+    });
+
+    return {
+      raw: allRawItems,
+      formatted: allFormattedItems
+    }
+  }
+
+  var initialSpecs = [{count:5, awesomeness: "minor"}, {count:4, awesomeness: "medium"}, {count:3, awesomeness: "major"} ];
+  var generatedStuff = generateSomeStuff(initialSpecs)
 
   var ractive = new Ractive({
     el: 'magicItemGenerator',
     template: template,
     append: true,
-    data: { itemComponents: generatedItem, numItems: undefined }
+    data: {
+      rawComponents: generatedStuff.raw,
+      formattedComponents: generatedStuff.formatted,
+      numItems: undefined
+    }
   });
 
-  ractive.on({
-    generateItem: function(event) {
-      ractive.set("itemComponents",  itemGenerator.rollForItem(itemAwesomemess))
-    }
-  })
+//  ractive.on({
+//    generateItem: function(event) {
+//      var newThing = itemGenerator.rollForItem(itemAwesomemess);
+//      ractive.set("itemComponents",  newThing);
+//      ractive.set("allItemsGenerated", [newThing]);
+//    }
+//  })
 
 });
