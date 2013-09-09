@@ -11,7 +11,7 @@ define({
       appendMe: "-uncommon"
     }
   ]},
-  "scrolls-demux": { min: 1, max: 100, entries: [
+  "scrolls_demux": { min: 1, max: 100, entries: [
     {
       min: 1,
       max: 45,
