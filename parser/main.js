@@ -16,4 +16,6 @@ define(["./js/tableParser", "jquery"], function (parser, $) {
 
   var testDiv = $("#newCrap");
   testDiv.append(JSON.stringify(tables));
+
+  $("table").remove();
 });
