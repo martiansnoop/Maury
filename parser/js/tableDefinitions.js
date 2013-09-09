@@ -95,7 +95,26 @@ define([], function () {
       },
       descCellIndex: 3,
       costCellIndex: 4
+    },
+    {
+      name: "rods",
+      elementId: "#table-15-14-rods",
+      nextTableIdChooser: function (i) {
+        return undefined
+      },
+      descCellIndex: 3,
+      costCellIndex: 4
+    },
+    {
+      name: "staves",
+      elementId: "#table-15-16-staves",
+      nextTableIdChooser: function (i) {
+        return undefined
+      },
+      descCellIndex: 3,
+      costCellIndex: 4
     }
+
   ];
 
 });

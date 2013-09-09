@@ -66,7 +66,7 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
       rowIndex++;
     });
 
-    return table;`
+    return table;
   }
 
   return function parseAllTheTables() {
