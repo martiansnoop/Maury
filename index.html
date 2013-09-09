@@ -2,19 +2,15 @@
 <html>
 <head>
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!--TODO: get bootstrap working with require, or figure out what bootstrap's javascript
+            actually does and decide if I want to use it-->
+  <script src="./bower_components/jquery/jquery.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
   <script src="./bower_components/requirejs/require.js" data-main="main.js"></script>
 </head>
 <body>
-
-<div id="header" class="navbar navbar-inverse navbar-fixed-top">
-  <!--<div class="navbar-inner">-->
-    <a class="navbar-brand" href="#">Maury</a>
-  <!--</div>-->
-</div>
-
-
 
 <div id="pageContent" class="container">
 

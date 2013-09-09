@@ -53,16 +53,18 @@ function (itemGenerator, $, Ractive, template, formatter) {
     data: {
       rawComponents: generatedStuff.raw,
       formattedComponents: generatedStuff.formatted,
+      specs: [{count:5, awesomeness: "minor"}, {count:4, awesomeness: "medium"}, {count:3, awesomeness: "major"} ],
       numItems: undefined
     }
   });
 
-//  ractive.on({
-//    generateItem: function(event) {
-//      var newThing = itemGenerator.rollForItem(itemAwesomemess);
-//      ractive.set("itemComponents",  newThing);
-//      ractive.set("allItemsGenerated", [newThing]);
-//    }
-//  })
+  ractive.on({
+    refreshItemList: function(event) {
+      var specs = ractive.get("specs");
+
+      var newStuff = generateSomeStuff(specs);
+      ractive.set("formattedComponents", newStuff.formatted);
+    }
+  })
 
 });
