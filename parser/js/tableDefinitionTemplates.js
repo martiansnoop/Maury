@@ -5,21 +5,24 @@ define([], function(){
       descCellIndex: 1,
       nextTableIdChooser: function(){ return undefined },
       oneAwesomeness: true,
-      costCellIndex: 2
+      costCellIndex: 2,
+      baseUrl: "http://paizo.com"
     },
     scrolls: {
       templateId: "scrolls",
       descCellIndex: 1,
       nextTableIdChooser: function(){ return undefined },
       oneAwesomeness: true,
-      costCellIndex: 2
+      costCellIndex: 2,
+      baseUrl: "http://paizo.com"
     },
     wands: {
       templateId: "wands",
       descCellIndex: 1,
       nextTableIdChooser: function(){ return undefined },
       oneAwesomeness: true,
-      costCellIndex: 2
+      costCellIndex: 2,
+      baseUrl: "http://paizo.com"
     }
   };
 

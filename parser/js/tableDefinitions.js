@@ -94,7 +94,8 @@ define([], function () {
         return undefined
       },
       descCellIndex: 3,
-      costCellIndex: 4
+      costCellIndex: 4,
+      baseUrl: "http://paizo.com/pathfinderRPG/prd/magicItems/rings.html"
     },
     {
       name: "rods",
@@ -103,7 +104,8 @@ define([], function () {
         return undefined
       },
       descCellIndex: 3,
-      costCellIndex: 4
+      costCellIndex: 4,
+      baseUrl: "http://paizo.com/pathfinderRPG/prd/magicItems/rods.html"
     },
     {
       name: "staves",
@@ -112,7 +114,8 @@ define([], function () {
         return undefined
       },
       descCellIndex: 3,
-      costCellIndex: 4
+      costCellIndex: 4,
+      baseUrl: "http://paizo.com/pathfinderRPG/prd/magicItems/staves.html"
     },
     {
       name: "wondrous minor",
@@ -122,7 +125,8 @@ define([], function () {
       },
       descCellIndex: 1,
       costCellIndex: 2,
-      oneAwesomeness: true
+      oneAwesomeness: true,
+      baseUrl: "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html"
     },
     {
       name: "wondrous medium",
@@ -132,7 +136,8 @@ define([], function () {
       },
       descCellIndex: 1,
       costCellIndex: 2,
-      oneAwesomeness: true
+      oneAwesomeness: true,
+      baseUrl: "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html"
     },
     {
       name: "wondrous major",
@@ -142,7 +147,8 @@ define([], function () {
       },
       descCellIndex: 1,
       costCellIndex: 2,
-      oneAwesomeness: true
+      oneAwesomeness: true,
+      baseUrl: "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html"
     }
 
   ];

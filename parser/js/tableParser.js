@@ -38,7 +38,8 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
     entry.url = $("a", descCell).attr("href");
 
     if (entry.url) {
-      entry.url = "http://paizo.com/prd/".concat(entry.url);
+      var prefix = def.baseUrl || "http://paizo.com/prd/";
+      entry.url = prefix.concat(entry.url);
     }
 
     entry.demuxId = def.demuxId;
