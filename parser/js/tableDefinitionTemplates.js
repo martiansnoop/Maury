@@ -23,6 +23,14 @@ define([], function(){
       oneAwesomeness: true,
       costCellIndex: 2,
       baseUrl: "http://paizo.com"
+    },
+    armor_shields: {
+      nextTableIdChooser: function (i) {
+        return "#random-armor-or-shield-table"
+      },
+      descCellIndex: 1,
+      oneAwesomeness: true,
+      demuxId: "armor_shields_demux"
     }
   };
 

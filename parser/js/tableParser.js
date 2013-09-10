@@ -74,7 +74,8 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
     var tables = {};
 
     definitions.forEach(function(definition){
-      tables[definition.elementId] = parseTable(definition);
+      if(definition.elementId)
+        tables[definition.elementId] = parseTable(definition);
 
       //Currently child tables only go one deep. Update if it becomes necessary
       if(definition.childTableTemplateId) {

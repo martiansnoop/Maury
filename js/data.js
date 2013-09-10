@@ -1,5 +1,7 @@
 define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entries": [
-  {"minor": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 10}, "major": {"min": 1, "max": 10}, "description": "Armor and shields", "nextTableId": "#table-15-3-armor-and-shields", "url": "http://paizo.com/prd/magicItems/armor.html#_armor"},
+  {"minor": {"min": 1, "max": 4}, "medium": {}, "major": {}, "description": "Armor and shields", "nextTableId": "#magic-armor-and-shields-table-minor", "url": "http://paizo.com/prd/magicItems/armor.html#_armor"},
+  {"minor": {}, "medium": {"min": 1, "max": 10}, "major": {}, "description": "Armor and shields", "nextTableId": "#magic-armor-and-shields-table-medium", "url": "http://paizo.com/prd/magicItems/armor.html#_armor"},
+  {"minor": {}, "medium": {}, "major": {"min": 1, "max": 10}, "description": "Armor and shields", "nextTableId": "#magic-armor-and-shields-table-major", "url": "http://paizo.com/prd/magicItems/armor.html#_armor"},
   {"minor": {"min": 5, "max": 9}, "medium": {"min": 11, "max": 20}, "major": {"min": 11, "max": 20}, "description": "Weapons", "nextTableId": "#table-15-8-weapons", "url": "http://paizo.com/prd/magicItems/weapons.html#_weapons"},
   {"minor": {"min": 10, "max": 44}, "medium": {"min": 21, "max": 30}, "major": {"min": 21, "max": 25}, "description": "Potions", "nextTableId": "#table-15-12-potions", "url": "http://paizo.com/prd/magicItems/potions.html#_potions"},
   {"minor": {"min": 45, "max": 46}, "medium": {"min": 31, "max": 40}, "major": {"min": 26, "max": 35}, "description": "Rings", "nextTableId": "#table-15-13-rings", "url": "http://paizo.com/prd/magicItems/rings.html#_rings"},
@@ -10,25 +12,78 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"minor": {"min": 92, "max": 100}, "medium": {}, "major": {}, "description": "Wondrous items", "nextTableId": "#table-15-18-minor-wondrous-items", "url": "http://paizo.com/prd/magicItems/wondrousItems.html#_wondrous-items"},
   {"minor": {}, "medium": {"min": 84, "max": 100}, "major": {}, "description": "Wondrous items", "nextTableId": "#table-15-19-medium-wondrous-items", "url": "http://paizo.com/prd/magicItems/wondrousItems.html#_wondrous-items"},
   {"minor": {}, "medium": {}, "major": {"min": 81, "max": 100}, "description": "Wondrous items", "nextTableId": "#table-15-20-major-wondrous-items", "url": "http://paizo.com/prd/magicItems/wondrousItems.html#_wondrous-items"}
-]}, "#table-15-3-armor-and-shields": {"min": 1, "max": 100, "entries": [
-  {"minor": {"min": 1, "max": 60}, "medium": {"min": 1, "max": 5}, "major": {}, "description": "+1 shield", "nextTableId": "NOPE"},
-  {"minor": {"min": 61, "max": 80}, "medium": {"min": 6, "max": 10}, "major": {}, "description": " +1 armor ", "nextTableId": "NOPE"},
-  {"minor": {"min": 81, "max": 85}, "medium": {"min": 11, "max": 20}, "major": {}, "description": "+2 shield ", "nextTableId": "NOPE"},
-  {"minor": {"min": 86, "max": 87}, "medium": {"min": 21, "max": 30}, "major": {}, "description": "+2 armor ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {"min": 31, "max": 40}, "major": {"min": 1, "max": 8}, "description": "+3 shield ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {"min": 41, "max": 50}, "major": {"min": 9, "max": 16}, "description": "+3 armor ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {"min": 51, "max": 55}, "major": {"min": 17, "max": 27}, "description": "+4 shield ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {"min": 56, "max": 57}, "major": {"min": 28, "max": 38}, "description": "+4 armor ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {}, "major": {"min": 39, "max": 49}, "description": "+5 shield ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {}, "major": {"min": 50, "max": 57}, "description": "+5 armor ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {}, "major": {}, "description": "+6 armor/shield1 ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {}, "major": {}, "description": "+7 armor/shield1 ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {}, "major": {}, "description": "+8 armor/shield1 ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {}, "major": {}, "description": "+9 armor/shield1 ", "nextTableId": "NOPE"},
-  {"minor": {}, "medium": {}, "major": {}, "description": "+10 armor/shield1 ", "nextTableId": "NOPE"},
-  {"minor": {"min": 88, "max": 89}, "medium": {"min": 58, "max": 60}, "major": {"min": 58, "max": 60}, "description": "Specific armor2 ", "nextTableId": "NOPE"},
-  {"minor": {"min": 90, "max": 91}, "medium": {"min": 61, "max": 63}, "major": {"min": 61, "max": 63}, "description": "Specific shield3 ", "nextTableId": "NOPE"},
-  {"minor": {"min": 92, "max": 100}, "medium": {"min": 64, "max": 100}, "major": {"min": 64, "max": 100}, "description": "Special ability and roll again2,3", "nextTableId": "NOPE"}
+]}, "#magic-armor-and-shields-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 80}, "medium": {"min": 1, "max": 80}, "minor": {"min": 1, "max": 80}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser minor specific armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"}
+]}, "#magic-armor-and-shields-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 26}, "medium": {"min": 1, "max": 26}, "minor": {"min": 1, "max": 26}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 27, "max": 53}, "medium": {"min": 27, "max": 53}, "minor": {"min": 27, "max": 53}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 54, "max": 80}, "medium": {"min": 54, "max": 80}, "minor": {"min": 54, "max": 80}, "description": "+1 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater minor specific armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"}
+]}, "#magic-armor-and-shields-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 21, "max": 32}, "medium": {"min": 21, "max": 32}, "minor": {"min": 21, "max": 32}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 33, "max": 44}, "medium": {"min": 33, "max": 44}, "minor": {"min": 33, "max": 44}, "description": "+1 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+1 armor or shield with two +1 special abilities*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+1 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+2 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser medium specific armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"}
+]}, "#magic-armor-and-shields-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 23, "max": 32}, "medium": {"min": 23, "max": 32}, "minor": {"min": 23, "max": 32}, "description": "+1 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 33, "max": 44}, "medium": {"min": 33, "max": 44}, "minor": {"min": 33, "max": 44}, "description": "+1 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+2 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+2 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+3 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater medium specific armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"}
+]}, "#magic-armor-and-shields-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+4 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 23, "max": 32}, "medium": {"min": 23, "max": 32}, "minor": {"min": 23, "max": 32}, "description": "+1 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 33, "max": 44}, "medium": {"min": 33, "max": 44}, "minor": {"min": 33, "max": 44}, "description": "+1 armor or shield with one +3 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+2 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+3 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+4 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser major specific armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"}
+]}, "#magic-armor-and-shields-table-major-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+4 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+5 armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 21, "max": 30}, "medium": {"min": 21, "max": 30}, "minor": {"min": 21, "max": 30}, "description": "+4 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 31, "max": 38}, "medium": {"min": 31, "max": 38}, "minor": {"min": 31, "max": 38}, "description": "+4 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 39, "max": 46}, "medium": {"min": 39, "max": 46}, "minor": {"min": 39, "max": 46}, "description": "+4 armor or shield with one +3 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 47, "max": 51}, "medium": {"min": 47, "max": 51}, "minor": {"min": 47, "max": 51}, "description": "+4 armor or shield with one +4 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 52, "max": 59}, "medium": {"min": 52, "max": 59}, "minor": {"min": 52, "max": 59}, "description": "+5 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 60, "max": 67}, "medium": {"min": 60, "max": 67}, "minor": {"min": 60, "max": 67}, "description": "+5 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 68, "max": 71}, "medium": {"min": 68, "max": 71}, "minor": {"min": 68, "max": 71}, "description": "+5 armor or shield with one +3 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 72, "max": 74}, "medium": {"min": 72, "max": 74}, "minor": {"min": 72, "max": 74}, "description": "+5 armor or shield with two +2 special abilities*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 75, "max": 77}, "medium": {"min": 75, "max": 77}, "minor": {"min": 75, "max": 77}, "description": "+5 armor or shield with one +4 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 78, "max": 80}, "medium": {"min": 78, "max": 80}, "minor": {"min": 78, "max": 80}, "description": "+5 armor or shield with one +5 special ability*", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater major specific armor or shield", "nextTableId": "#random-armor-or-shield-table", "demuxId": "armor_shields_demux"}
+]}, "#random-armor-or-shield-table": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 4}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Banded mail"},
+  {"minor": {"min": 5, "max": 11}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Breastplate"},
+  {"minor": {"min": 12, "max": 14}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Buckler"},
+  {"minor": {"min": 15, "max": 21}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Chain shirt"},
+  {"minor": {"min": 22, "max": 27}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Chainmail"},
+  {"minor": {"min": 28, "max": 34}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Full plate"},
+  {"minor": {"min": 35, "max": 39}, "medium": {"min": null, "max": null}, "major": {"min": 0, "max": 0}, "description": "Half-plate"},
+  {"minor": {"min": 40, "max": 45}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Heavy steel shield"},
+  {"minor": {"min": 46, "max": 51}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Heavy wooden shield"},
+  {"minor": {"min": 52, "max": 55}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Hide"},
+  {"minor": {"min": 56, "max": 61}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Leather armor"},
+  {"minor": {"min": 62, "max": 65}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Light steel shield"},
+  {"minor": {"min": 66, "max": 69}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Light wooden shield"},
+  {"minor": {"min": 70, "max": 72}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Padded armor"},
+  {"minor": {"min": 73, "max": 77}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Scale mail"},
+  {"minor": {"min": 78, "max": 81}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Splint mail"},
+  {"minor": {"min": 82, "max": 87}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Studded leather armor"},
+  {"minor": {"min": 88, "max": 90}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Tower shield"},
+  {"minor": {"min": 91, "max": 93}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Other light armor*"},
+  {"minor": {"min": 94, "max": 95}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Other medium armor*"},
+  {"minor": {"min": 96, "max": 98}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Other heavy armor*"},
+  {"minor": {"min": 99, "max": 100}, "medium": {}, "major": {"min": 0, "max": 0}, "description": "Other shield*"}
 ]}, "#table-15-12-potions": {"min": 1, "max": 100, "entries": [
   {"minor": {"min": 1, "max": 20}, "medium": {}, "major": {}, "description": "0 level spell", "nextTableId": "#0-level-potions-and-oils-table", "demuxId": "potions_demux"},
   {"minor": {"min": 21, "max": 60}, "medium": {"min": 1, "max": 20}, "major": {}, "description": "1st level spell", "nextTableId": "#1st-level-potions-and-oils-table", "demuxId": "potions_demux"},
@@ -2016,4 +2071,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
 ]}, "wands_demux": {"min": 1, "max": 100, "entries": [
   {"min": 1, "max": 75, "appendMe": "-common"},
   {"min": 76, "max": 100, "appendMe": "-uncommon"}
+]}, "armor_shields_demux": {"min": 1, "max": 100, "entries": [
+  {"min": 1, "max": 75, "appendMe": "-lesser"},
+  {"min": 76, "max": 100, "appendMe": "-greater"}
 ]}});

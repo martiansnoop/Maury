@@ -4,7 +4,9 @@ define([], function () {
       name: "masterTable",
       elementId: "#table-15-2-random-magic-item-generation",
       nextTableIdChooser: function (i) {
-        var idsToChooseFrom = ["#table-15-3-armor-and-shields", "#table-15-8-weapons",
+        var idsToChooseFrom = ["#magic-armor-and-shields-table-minor",  "#magic-armor-and-shields-table-medium",
+          "#magic-armor-and-shields-table-major",
+          "#table-15-8-weapons",
           "#table-15-12-potions", "#table-15-13-rings", "#table-15-14-rods",
           "#table-15-15-scrolls", "#table-15-16-staves", "#table-15-17-wands",
           "#table-15-18-minor-wondrous-items", "#table-15-19-medium-wondrous-items", "#table-15-20-major-wondrous-items"];
@@ -13,13 +15,31 @@ define([], function () {
       descCellIndex: 3
     },
     {
-      name: "armorAndShields",
-      elementId: "#table-15-3-armor-and-shields",
-      nextTableIdChooser: function (i) {
-        return "NOPE"
-      },
-      descCellIndex: 3
+      childTableIds: ["#magic-armor-and-shields-table-minor-lesser", "#magic-armor-and-shields-table-minor-greater",
+        "#magic-armor-and-shields-table-medium-lesser", "#magic-armor-and-shields-table-medium-greater",
+        "#magic-armor-and-shields-table-major-lesser", "#magic-armor-and-shields-table-major-greater",
+      ],
+      childTableTemplateId: "armor_shields"
     },
+    {
+      name: "random armor or shield",
+      elementId: "#random-armor-or-shield-table",
+      nextTableIdChooser: function (i) {
+        return undefined
+      },
+      descCellIndex: 1
+//      costCellIndex: 4,
+    },
+//    {
+//      name: "armorAndShields",
+//      elementId: "#magic-armor-and-shields-table-minor-lesser",
+//      nextTableIdChooser: function (i) {
+//        return "NOPE"
+//      },
+//      descCellIndex: 1,
+//      oneAwesomeness: true,
+//      demuxId: "armor_shields_demux"
+//    },
     {
       name: "potions",
       elementId: "#table-15-12-potions",
