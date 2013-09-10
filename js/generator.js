@@ -1,4 +1,4 @@
-define(["./tableWrapper"], function(database) {
+define(["./tableWrapper", "./prettyPrinter"], function(database, formatter) {
 
   const masterTableId = "#table-15-2-random-magic-item-generation";
 
@@ -12,10 +12,30 @@ define(["./tableWrapper"], function(database) {
     return [intermediaryResult].concat(buildItemRecursively(intermediaryResult.nextTableId, itemAwesomeness));
   }
 
+  function rollForItem(itemAwesomeness) {
+    return buildItemRecursively(masterTableId, itemAwesomeness);
+  }
+
+  function generateSeveralItems(specs) {
+    var allFormattedItems = [];
+
+    specs.forEach(function(spec){
+      var formattedItems = [];
+      for(var i = 0; i < spec.count; i++) {
+        var raw = rollForItem(spec.awesomeness);
+        var formatted = formatter.format(spec.awesomeness, raw);
+        formattedItems.push(formatted);
+      }
+
+      allFormattedItems = allFormattedItems.concat(formattedItems);
+    });
+
+    return allFormattedItems;
+  }
+
   return {
-    rollForItem: function (itemAwesomemess) {
-      return buildItemRecursively(masterTableId, itemAwesomemess);
-    }
+    rollForItem: rollForItem,
+    generateSeveralItems: generateSeveralItems
   };
 
 });

@@ -14,37 +14,17 @@ require.config({
   }
 });
 
-define(["./js/generator", "jquery", "ractive", "text!./template.html", "./js/prettyPrinter"],
-function (itemGenerator, $, Ractive, template, formatter) {
-
-
-  //TODO: when all is said and done, move this into the generator and hide the raw items as an implementation detail
-  function generateSomeStuff(specs) {
-    var allFormattedItems = [];
-
-    specs.forEach(function(spec){
-      var formattedItems = [];
-      for(var i = 0; i < spec.count; i++) {
-        var raw = itemGenerator.rollForItem(spec.awesomeness)
-        var formatted = formatter.format(spec.awesomeness, raw);
-        formattedItems.push(formatted);
-      }
-
-      allFormattedItems = allFormattedItems.concat(formattedItems);
-    });
-
-    return allFormattedItems;
-  }
-
+define(["./js/generator", "jquery", "ractive", "text!./template.html"],
+function (itemGenerator, $, Ractive, template) {
   var initialSpecs = [{count:5, awesomeness: "minor"}, {count:4, awesomeness: "medium"}, {count:3, awesomeness: "major"} ];
-  var generatedStuff = generateSomeStuff(initialSpecs)
+  var initialLoot = itemGenerator.generateSeveralItems(initialSpecs)
 
   var ractive = new Ractive({
     el: 'magicItemGenerator',
     template: template,
     append: true,
     data: {
-      formattedComponents: generatedStuff,
+      formattedItems: initialLoot,
       specs: initialSpecs
     }
   });
@@ -53,8 +33,8 @@ function (itemGenerator, $, Ractive, template, formatter) {
     refreshItemList: function(event) {
       var specs = ractive.get("specs");
 
-      var newStuff = generateSomeStuff(specs);
-      ractive.set("formattedComponents", newStuff);
+      var newLoot = itemGenerator.generateSeveralItems(specs);
+      ractive.set("formattedItems", newLoot);
     }
   })
 
