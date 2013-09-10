@@ -42,7 +42,12 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
       entry.url = prefix.concat(entry.url);
     }
 
-    entry.demuxId = def.demuxId;
+    if(def.demuxAppliesTo && def.demuxAppliesTo.indexOf(rowIndex) >= 0) {
+      entry.demuxId = def.demuxId;
+    } else if (!def.demuxAppliesTo && def.demuxId) {
+      entry.demuxId = def.demuxId;
+    }
+
 
     if(def.costCellIndex) {
       entry.cost = $(cells[def.costCellIndex]).text();
@@ -82,6 +87,8 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
         definition.childTableIds.forEach(function(id){
           var childDef = $.extend(true, {elementId : id}, templates[definition.childTableTemplateId]);
           tables[childDef.elementId] = parseTable(childDef);
+
+
         });
       }
     });

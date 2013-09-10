@@ -12,14 +12,17 @@ define([], function () {
           "#table-15-18-minor-wondrous-items", "#table-15-19-medium-wondrous-items", "#table-15-20-major-wondrous-items"];
         return idsToChooseFrom[i];
       },
-      descCellIndex: 3
+      descCellIndex: 3,
+      demuxId: "armor_shields_demux",
+      demuxAppliesTo: [0,1,2]
     },
     {
       childTableIds: ["#magic-armor-and-shields-table-minor-lesser", "#magic-armor-and-shields-table-minor-greater",
         "#magic-armor-and-shields-table-medium-lesser", "#magic-armor-and-shields-table-medium-greater",
-        "#magic-armor-and-shields-table-major-lesser", "#magic-armor-and-shields-table-major-greater",
+        "#magic-armor-and-shields-table-major-lesser", "#magic-armor-and-shields-table-major-greater"
       ],
-      childTableTemplateId: "armor_shields"
+      childTableTemplateId: "armor_shields",
+
     },
     {
       name: "random armor or shield",
@@ -27,7 +30,8 @@ define([], function () {
       nextTableIdChooser: function (i) {
         return undefined
       },
-      descCellIndex: 1
+      descCellIndex: 1,
+      oneAwesomeness: true
 //      costCellIndex: 4,
     },
 //    {

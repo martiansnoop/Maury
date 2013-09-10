@@ -29,8 +29,7 @@ define([], function(){
         return "#random-armor-or-shield-table"
       },
       descCellIndex: 1,
-      oneAwesomeness: true,
-      demuxId: "armor_shields_demux"
+      oneAwesomeness: true
     }
   };
 

@@ -9,6 +9,10 @@ define(["./dataWrapper", "./formatter"], function(database, formatter) {
     var dieRoll = database.rollOnTable(tableId);
     var intermediaryResult = database.lookupEntry(tableId, [itemAwesomeness], dieRoll);
 
+    if(intermediaryResult.nextTableId == "#random-armor-or-shield-table") {
+      var breakpoint = true;
+    }
+
     return [intermediaryResult].concat(buildItemRecursively(intermediaryResult.nextTableId, itemAwesomeness));
   }
 
