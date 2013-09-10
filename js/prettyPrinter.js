@@ -68,7 +68,8 @@ define([], function() {
       label: makePrettyLabel(rawItemList),
       cost: getItemCost(rawItemList),
       awesomeness: getAwesomeness(awesomeness),
-      url: getUrl(rawItemList)
+      url: getUrl(rawItemList),
+      rawItems: rawItemList
     }
   }
 

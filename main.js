@@ -20,27 +20,20 @@ function (itemGenerator, $, Ractive, template, formatter) {
 
   //TODO: when all is said and done, move this into the generator and hide the raw items as an implementation detail
   function generateSomeStuff(specs) {
-    var allRawItems = [];
     var allFormattedItems = [];
 
     specs.forEach(function(spec){
-      var rawItems = [];
       var formattedItems = [];
       for(var i = 0; i < spec.count; i++) {
         var raw = itemGenerator.rollForItem(spec.awesomeness)
-        rawItems.push(raw);
         var formatted = formatter.format(spec.awesomeness, raw);
         formattedItems.push(formatted);
       }
 
-      allRawItems = allRawItems.concat(rawItems);
       allFormattedItems = allFormattedItems.concat(formattedItems);
     });
 
-    return {
-      raw: allRawItems,
-      formatted: allFormattedItems
-    }
+    return allFormattedItems;
   }
 
   var initialSpecs = [{count:5, awesomeness: "minor"}, {count:4, awesomeness: "medium"}, {count:3, awesomeness: "major"} ];
@@ -51,10 +44,8 @@ function (itemGenerator, $, Ractive, template, formatter) {
     template: template,
     append: true,
     data: {
-      rawComponents: generatedStuff.raw,
-      formattedComponents: generatedStuff.formatted,
-      specs: [{count:5, awesomeness: "minor"}, {count:4, awesomeness: "medium"}, {count:3, awesomeness: "major"} ],
-      numItems: undefined
+      formattedComponents: generatedStuff,
+      specs: initialSpecs
     }
   });
 
@@ -63,7 +54,7 @@ function (itemGenerator, $, Ractive, template, formatter) {
       var specs = ractive.get("specs");
 
       var newStuff = generateSomeStuff(specs);
-      ractive.set("formattedComponents", newStuff.formatted);
+      ractive.set("formattedComponents", newStuff);
     }
   })
 
