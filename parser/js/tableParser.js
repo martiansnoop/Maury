@@ -79,6 +79,11 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
     var tables = {};
 
     definitions.forEach(function(definition){
+
+      if(definition.elementId == "#magic-weapons-table-medium-lesser") {
+        var breakpoint = true;
+      }
+
       if(definition.elementId)
         tables[definition.elementId] = parseTable(definition);
 

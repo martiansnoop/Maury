@@ -30,6 +30,13 @@ define([], function(){
       },
       descCellIndex: 1,
       oneAwesomeness: true
+    },
+    weapons: {
+      nextTableIdChooser: function (i) {
+        return "#random-weapon-table"
+      },
+      descCellIndex: 1,
+      oneAwesomeness: true
     }
   };
 
