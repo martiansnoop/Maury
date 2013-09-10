@@ -28,6 +28,16 @@
             {{cost}}
           </td>
         </tr>
+        <tr>
+          <td colspan="3">
+            <ul>
+              {{#rawItems}}
+                <li>{{description}} -- {{nextTableId}}</li>
+              {{/rawItems}}
+            </ul>
+
+          </td>
+        </tr>
       {{/formattedItems}}
       </tbody>
     </table>
