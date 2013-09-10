@@ -1,4 +1,4 @@
-define(["./tableWrapper", "./prettyPrinter"], function(database, formatter) {
+define(["./dataWrapper", "./formatter"], function(database, formatter) {
 
   const masterTableId = "#table-15-2-random-magic-item-generation";
 
