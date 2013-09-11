@@ -31,12 +31,36 @@ define([], function(){
       descCellIndex: 1,
       oneAwesomeness: true
     },
+    specific_armor: {
+      nextTableIdChooser: function (i) {
+        return "undefined"
+      },
+      descCellIndex: 1,
+      oneAwesomeness: true,
+      costCellIndex: 2
+    },
+    specific_shield: {
+      nextTableIdChooser: function (i) {
+        return "undefined"
+      },
+      descCellIndex: 1,
+      oneAwesomeness: true,
+      costCellIndex: 2
+    },
     weapons: {
       nextTableIdChooser: function (i) {
         return "#random-weapon-table"
       },
       descCellIndex: 1,
       oneAwesomeness: true
+    },
+    specific_weapon: {
+      nextTableIdChooser: function (i) {
+        return "undefined"
+      },
+      descCellIndex: 1,
+      oneAwesomeness: true,
+      costCellIndex: 2
     }
   };
 

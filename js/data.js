@@ -4,7 +4,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"minor": {}, "medium": {}, "major": {"min": 1, "max": 10}, "description": "Armor and shields", "nextTableId": "#magic-armor-and-shields-table-major", "url": "http://paizo.com/prd/magicItems/armor.html#_armor", "demuxId": "armor_shields_demux"},
   {"minor": {"min": 5, "max": 9}, "medium": {}, "major": {}, "description": "Weapons", "nextTableId": "#magic-weapon-table-minor", "url": "http://paizo.com/prd/magicItems/weapons.html#_weapons", "demuxId": "armor_shields_demux"},
   {"minor": {}, "medium": {"min": 11, "max": 20}, "major": {}, "description": "Weapons", "nextTableId": "#magic-weapon-table-medium", "url": "http://paizo.com/prd/magicItems/weapons.html#_weapons", "demuxId": "armor_shields_demux"},
-  {"minor": {}, "medium": {}, "major": {"min": 11, "max": 20}, "description": "Weapons", "nextTableId": "#magic-weapon-table-minor", "url": "http://paizo.com/prd/magicItems/weapons.html#_weapons", "demuxId": "armor_shields_demux"},
+  {"minor": {}, "medium": {}, "major": {"min": 11, "max": 20}, "description": "Weapons", "nextTableId": "#magic-weapon-table-major", "url": "http://paizo.com/prd/magicItems/weapons.html#_weapons", "demuxId": "armor_shields_demux"},
   {"minor": {"min": 10, "max": 44}, "medium": {"min": 21, "max": 30}, "major": {"min": 21, "max": 25}, "description": "Potions", "nextTableId": "#table-15-12-potions", "url": "http://paizo.com/prd/magicItems/potions.html#_potions"},
   {"minor": {"min": 45, "max": 46}, "medium": {"min": 31, "max": 40}, "major": {"min": 26, "max": 35}, "description": "Rings", "nextTableId": "#table-15-13-rings", "url": "http://paizo.com/prd/magicItems/rings.html#_rings"},
   {"minor": {}, "medium": {"min": 41, "max": 50}, "major": {"min": 36, "max": 45}, "description": "Rods", "nextTableId": "#table-15-14-rods", "url": "http://paizo.com/prd/magicItems/rods.html#_rods"},
@@ -16,12 +16,12 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"minor": {}, "medium": {}, "major": {"min": 81, "max": 100}, "description": "Wondrous items", "nextTableId": "#table-15-20-major-wondrous-items", "url": "http://paizo.com/prd/magicItems/wondrousItems.html#_wondrous-items"}
 ]}, "#magic-armor-and-shields-table-minor-lesser": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 80}, "medium": {"min": 1, "max": 80}, "minor": {"min": 1, "max": 80}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser minor specific armor or shield", "nextTableId": "#random-armor-or-shield-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser minor specific armor or shield", "nextTableId": "#specific-placeholder-table-minor-lesser"}
 ]}, "#magic-armor-and-shields-table-minor-greater": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 26}, "medium": {"min": 1, "max": 26}, "minor": {"min": 1, "max": 26}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 27, "max": 53}, "medium": {"min": 27, "max": 53}, "minor": {"min": 27, "max": 53}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 54, "max": 80}, "medium": {"min": 54, "max": 80}, "minor": {"min": 54, "max": 80}, "description": "+1 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater minor specific armor or shield", "nextTableId": "#random-armor-or-shield-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater minor specific armor or shield", "nextTableId": "#specific-placeholder-table-minor-greater"}
 ]}, "#magic-armor-and-shields-table-medium-lesser": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
@@ -30,7 +30,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+1 armor or shield with two +1 special abilities*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+1 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+2 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser medium specific armor or shield", "nextTableId": "#random-armor-or-shield-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser medium specific armor or shield", "nextTableId": "#specific-placeholder-table-medium-lesser"}
 ]}, "#magic-armor-and-shields-table-medium-greater": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
@@ -39,7 +39,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+2 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+2 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+3 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater medium specific armor or shield", "nextTableId": "#random-armor-or-shield-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater medium specific armor or shield", "nextTableId": "#specific-placeholder-table-medium-greater"}
 ]}, "#magic-armor-and-shields-table-major-lesser": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+4 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
@@ -48,7 +48,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+2 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+3 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+4 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser major specific armor or shield", "nextTableId": "#random-armor-or-shield-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser major specific armor or shield", "nextTableId": "#specific-placeholder-table-major-lesser"}
 ]}, "#magic-armor-and-shields-table-major-greater": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+4 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+5 armor or shield", "nextTableId": "#random-armor-or-shield-table"},
@@ -62,15 +62,94 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 72, "max": 74}, "medium": {"min": 72, "max": 74}, "minor": {"min": 72, "max": 74}, "description": "+5 armor or shield with two +2 special abilities*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 75, "max": 77}, "medium": {"min": 75, "max": 77}, "minor": {"min": 75, "max": 77}, "description": "+5 armor or shield with one +4 special ability*", "nextTableId": "#random-armor-or-shield-table"},
   {"major": {"min": 78, "max": 80}, "medium": {"min": 78, "max": 80}, "minor": {"min": 78, "max": 80}, "description": "+5 armor or shield with one +5 special ability*", "nextTableId": "#random-armor-or-shield-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater major specific armor or shield", "nextTableId": "#random-armor-or-shield-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater major specific armor or shield", "nextTableId": "#specific-placeholder-table-major-greater"}
+]}, "#specific-armor-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "minor": {"min": 1, "max": 50}, "description": "Mithral shirt", "nextTableId": "undefined", "cost": "1,100 gp"},
+  {"major": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "minor": {"min": 51, "max": 100}, "description": "Masterwork armor or nonmagicalarmor made with special material", "nextTableId": "undefined", "cost": "varies"}
+]}, "#specific-armor-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 33}, "medium": {"min": 1, "max": 33}, "minor": {"min": 1, "max": 33}, "description": "Mistmail", "nextTableId": "undefined", "cost": "2,250 gp"},
+  {"major": {"min": 34, "max": 66}, "medium": {"min": 34, "max": 66}, "minor": {"min": 34, "max": 66}, "description": "Otyugh hide", "nextTableId": "undefined", "cost": "2,565 gp"},
+  {"major": {"min": 67, "max": 100}, "medium": {"min": 67, "max": 100}, "minor": {"min": 67, "max": 100}, "description": "Dragonhide plate", "nextTableId": "undefined", "cost": "3,300 gp"}
+]}, "#specific-armor-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 33}, "medium": {"min": 1, "max": 33}, "minor": {"min": 1, "max": 33}, "description": "Elven chain", "nextTableId": "undefined", "cost": "5,150 gp"},
+  {"major": {"min": 34, "max": 66}, "medium": {"min": 34, "max": 66}, "minor": {"min": 34, "max": 66}, "description": "Rhino hide", "nextTableId": "undefined", "cost": "5,165 gp"},
+  {"major": {"min": 67, "max": 100}, "medium": {"min": 67, "max": 100}, "minor": {"min": 67, "max": 100}, "description": "Morlock hide", "nextTableId": "undefined", "cost": "8,910 gp"}
+]}, "#specific-armor-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 15}, "medium": {"min": 1, "max": 15}, "minor": {"min": 1, "max": 15}, "description": "Adamantine breastplate", "nextTableId": "undefined", "cost": "10,200 gp"},
+  {"major": {"min": 16, "max": 25}, "medium": {"min": 16, "max": 25}, "minor": {"min": 16, "max": 25}, "description": "Soothsayer's raiment", "nextTableId": "undefined", "cost": "10,300 gp"},
+  {"major": {"min": 26, "max": 38}, "medium": {"min": 26, "max": 38}, "minor": {"min": 26, "max": 38}, "description": "Equestrian plate", "nextTableId": "undefined", "cost": "10,650 gp"},
+  {"major": {"min": 39, "max": 50}, "medium": {"min": 39, "max": 50}, "minor": {"min": 39, "max": 50}, "description": "Enchanted eelskin", "nextTableId": "undefined", "cost": "11,160 gp"},
+  {"major": {"min": 51, "max": 62}, "medium": {"min": 51, "max": 62}, "minor": {"min": 51, "max": 62}, "description": "Boneless leather", "nextTableId": "undefined", "cost": "12,160 gp"},
+  {"major": {"min": 63, "max": 72}, "medium": {"min": 63, "max": 72}, "minor": {"min": 63, "max": 72}, "description": "Murderer's blackcloth", "nextTableId": "undefined", "cost": "12,405 gp"},
+  {"major": {"min": 73, "max": 86}, "medium": {"min": 73, "max": 86}, "minor": {"min": 73, "max": 86}, "description": "Folding plate", "nextTableId": "undefined", "cost": "12,650 gp"},
+  {"major": {"min": 87, "max": 100}, "medium": {"min": 87, "max": 100}, "minor": {"min": 87, "max": 100}, "description": "Breastplate of vanishing", "nextTableId": "undefined", "cost": "15,200 gp"}
+]}, "#specific-armor-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 13}, "medium": {"min": 1, "max": 13}, "minor": {"min": 1, "max": 13}, "description": "Armor of insults", "nextTableId": "undefined", "cost": "16,175 gp"},
+  {"major": {"min": 14, "max": 29}, "medium": {"min": 14, "max": 29}, "minor": {"min": 14, "max": 29}, "description": "Dwarven plate", "nextTableId": "undefined", "cost": "16,500 gp"},
+  {"major": {"min": 30, "max": 45}, "medium": {"min": 30, "max": 45}, "minor": {"min": 30, "max": 45}, "description": "Banded mail of luck", "nextTableId": "undefined", "cost": "18,900 gp"},
+  {"major": {"min": 46, "max": 58}, "medium": {"min": 46, "max": 58}, "minor": {"min": 46, "max": 58}, "description": "Catskin leather", "nextTableId": "undefined", "cost": "18,910 gp"},
+  {"major": {"min": 59, "max": 71}, "medium": {"min": 59, "max": 71}, "minor": {"min": 59, "max": 71}, "description": "Celestial armor", "nextTableId": "undefined", "cost": "22,400 gp"},
+  {"major": {"min": 72, "max": 84}, "medium": {"min": 72, "max": 84}, "minor": {"min": 72, "max": 84}, "description": "Buccaneer's breastplate", "nextTableId": "undefined", "cost": "23,850 gp"},
+  {"major": {"min": 85, "max": 100}, "medium": {"min": 85, "max": 100}, "minor": {"min": 85, "max": 100}, "description": "Plate armor of the deep", "nextTableId": "undefined", "cost": "24,650 gp"}
+]}, "#specific-armor-table-major-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "Breastplate of command", "nextTableId": "undefined", "cost": "25,400 gp"},
+  {"major": {"min": 11, "max": 14}, "medium": {"min": 11, "max": 14}, "minor": {"min": 11, "max": 14}, "description": "Forsaken banded mail", "nextTableId": "undefined", "cost": "25,400 gp"},
+  {"major": {"min": 15, "max": 24}, "medium": {"min": 15, "max": 24}, "minor": {"min": 15, "max": 24}, "description": "Mithral full plate of speed", "nextTableId": "undefined", "cost": "26,500 gp"},
+  {"major": {"min": 25, "max": 28}, "medium": {"min": 25, "max": 28}, "minor": {"min": 25, "max": 28}, "description": "Warden of the woods", "nextTableId": "undefined", "cost": "29,350 gp"},
+  {"major": {"min": 29, "max": 32}, "medium": {"min": 29, "max": 32}, "minor": {"min": 29, "max": 32}, "description": "Scarab breastplate", "nextTableId": "undefined", "cost": "32,350 gp"},
+  {"major": {"min": 33, "max": 38}, "medium": {"min": 33, "max": 38}, "minor": {"min": 33, "max": 38}, "description": "Giant-hide armor (ogre)", "nextTableId": "undefined", "cost": "39,165 gp"},
+  {"major": {"min": 39, "max": 42}, "medium": {"min": 39, "max": 42}, "minor": {"min": 39, "max": 42}, "description": "Hamatula hide", "nextTableId": "undefined", "cost": "44,215 gp"},
+  {"major": {"min": 43, "max": 48}, "medium": {"min": 43, "max": 48}, "minor": {"min": 43, "max": 48}, "description": "Giant-hide armor (hill giant)", "nextTableId": "undefined", "cost": "46,665 gp"},
+  {"major": {"min": 49, "max": 52}, "medium": {"min": 49, "max": 52}, "minor": {"min": 49, "max": 52}, "description": "Demon armor", "nextTableId": "undefined", "cost": "52,260 gp"},
+  {"major": {"min": 53, "max": 58}, "medium": {"min": 53, "max": 58}, "minor": {"min": 53, "max": 58}, "description": "Giant-hide armor (stone, fire, or frost giant)", "nextTableId": "undefined", "cost": "54,165 gp"},
+  {"major": {"min": 59, "max": 64}, "medium": {"min": 59, "max": 64}, "minor": {"min": 59, "max": 64}, "description": "Giant-hide armor (troll)", "nextTableId": "undefined", "cost": "59,165 gp"},
+  {"major": {"min": 65, "max": 70}, "medium": {"min": 65, "max": 70}, "minor": {"min": 65, "max": 70}, "description": "Mail of malevolence", "nextTableId": "undefined", "cost": "61,300 gp"},
+  {"major": {"min": 71, "max": 76}, "medium": {"min": 71, "max": 76}, "minor": {"min": 71, "max": 76}, "description": "Giant-hide armor (cloud giant)", "nextTableId": "undefined", "cost": "69,165 gp"},
+  {"major": {"min": 77, "max": 82}, "medium": {"min": 77, "max": 82}, "minor": {"min": 77, "max": 82}, "description": "Giant-hide armor (storm giant)", "nextTableId": "undefined", "cost": "76,665 gp"},
+  {"major": {"min": 83, "max": 88}, "medium": {"min": 83, "max": 88}, "minor": {"min": 83, "max": 88}, "description": "Daystar half-plate", "nextTableId": "undefined", "cost": "81,250 gp"},
+  {"major": {"min": 89, "max": 96}, "medium": {"min": 89, "max": 96}, "minor": {"min": 89, "max": 96}, "description": "Invincible armor", "nextTableId": "undefined", "cost": "137,650 gp"},
+  {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Prismatic plate", "nextTableId": "undefined", "cost": "160,650 gp"}
+]}, "#specific-shields-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Living steel heavy shield", "nextTableId": "undefined", "cost": "120 gp"},
+  {"major": {"min": 21, "max": 45}, "medium": {"min": 21, "max": 45}, "minor": {"min": 21, "max": 45}, "description": "Darkwood buckler", "nextTableId": "undefined", "cost": "203 gp"},
+  {"major": {"min": 46, "max": 70}, "medium": {"min": 46, "max": 70}, "minor": {"min": 46, "max": 70}, "description": "Darkwood shield", "nextTableId": "undefined", "cost": "257 gp"},
+  {"major": {"min": 71, "max": 100}, "medium": {"min": 71, "max": 100}, "minor": {"min": 71, "max": 100}, "description": "Mithral heavy shield", "nextTableId": "undefined", "cost": "1,020 gp"}
+]}, "#specific-shields-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 30}, "medium": {"min": 1, "max": 30}, "minor": {"min": 1, "max": 30}, "description": "Zombie skin shield", "nextTableId": "undefined", "cost": "2,159 gp"},
+  {"major": {"min": 31, "max": 75}, "medium": {"min": 31, "max": 75}, "minor": {"min": 31, "max": 75}, "description": "Caster's shield", "nextTableId": "undefined", "cost": "3,153 gp"},
+  {"major": {"min": 76, "max": 100}, "medium": {"min": 76, "max": 100}, "minor": {"min": 76, "max": 100}, "description": "Burglar's buckler", "nextTableId": "undefined", "cost": "4,655 gp"}
+]}, "#specific-shields-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 35}, "medium": {"min": 1, "max": 35}, "minor": {"min": 1, "max": 35}, "description": "Spined shield", "nextTableId": "undefined", "cost": "5,580 gp"},
+  {"major": {"min": 36, "max": 50}, "medium": {"min": 36, "max": 50}, "minor": {"min": 36, "max": 50}, "description": "Dragonslayer's shield", "nextTableId": "undefined", "cost": "7,170 gp"},
+  {"major": {"min": 51, "max": 65}, "medium": {"min": 51, "max": 65}, "minor": {"min": 51, "max": 65}, "description": "Collapsible tower", "nextTableId": "undefined", "cost": "8,170 gp"},
+  {"major": {"min": 66, "max": 100}, "medium": {"min": 66, "max": 100}, "minor": {"min": 66, "max": 100}, "description": "Lion's shield", "nextTableId": "undefined", "cost": "9,170 gp"}
+]}, "#specific-shields-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Caster shield, greater", "nextTableId": "undefined", "cost": "10,153 gp"},
+  {"major": {"min": 21, "max": 40}, "medium": {"min": 21, "max": 40}, "minor": {"min": 21, "max": 40}, "description": "Celestial shield", "nextTableId": "undefined", "cost": "13,170 gp"},
+  {"major": {"min": 41, "max": 60}, "medium": {"min": 41, "max": 60}, "minor": {"min": 41, "max": 60}, "description": "Maelstrom shield", "nextTableId": "undefined", "cost": "14,170 gp"},
+  {"major": {"min": 61, "max": 80}, "medium": {"min": 61, "max": 80}, "minor": {"min": 61, "max": 80}, "description": "Volcanic shield", "nextTableId": "undefined", "cost": "14,170 gp"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Tempest shield", "nextTableId": "undefined", "cost": "15,170 gp"}
+]}, "#specific-shields-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Battlement shield", "nextTableId": "undefined", "cost": "16,180 gp"},
+  {"major": {"min": 21, "max": 40}, "medium": {"min": 21, "max": 40}, "minor": {"min": 21, "max": 40}, "description": "Winged shield", "nextTableId": "undefined", "cost": "17,257 gp"},
+  {"major": {"min": 41, "max": 60}, "medium": {"min": 41, "max": 60}, "minor": {"min": 41, "max": 60}, "description": "Avalanche shield", "nextTableId": "undefined", "cost": "19,170 gp"},
+  {"major": {"min": 61, "max": 80}, "medium": {"min": 61, "max": 80}, "minor": {"min": 61, "max": 80}, "description": "Fortress shield", "nextTableId": "undefined", "cost": "19,180 gp"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Wyrmslayer's shield", "nextTableId": "undefined", "cost": "20,170 gp"}
+]}, "#specific-shields-table-major-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Spell ward tower shield", "nextTableId": "undefined", "cost": "25,180 gp"},
+  {"major": {"min": 21, "max": 35}, "medium": {"min": 21, "max": 35}, "minor": {"min": 21, "max": 35}, "description": "Quick block buckler", "nextTableId": "undefined", "cost": "36,155 gp"},
+  {"major": {"min": 36, "max": 50}, "medium": {"min": 36, "max": 50}, "minor": {"min": 36, "max": 50}, "description": "Belligerent shield", "nextTableId": "undefined", "cost": "36,170 gp"},
+  {"major": {"min": 51, "max": 65}, "medium": {"min": 51, "max": 65}, "minor": {"min": 51, "max": 65}, "description": "Force tower", "nextTableId": "undefined", "cost": "46,030 gp"},
+  {"major": {"min": 66, "max": 85}, "medium": {"min": 66, "max": 85}, "minor": {"min": 66, "max": 85}, "description": "Absorbing shield", "nextTableId": "undefined", "cost": "50,170 gp"},
+  {"major": {"min": 86, "max": 100}, "medium": {"min": 86, "max": 100}, "minor": {"min": 86, "max": 100}, "description": "Elysian shield", "nextTableId": "undefined", "cost": "52,620 gp"}
 ]}, "#magic-weapon-table-minor-lesser": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 80}, "medium": {"min": 1, "max": 80}, "minor": {"min": 1, "max": 80}, "description": "+1 weapon", "nextTableId": "#random-weapon-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser minor specific weapon", "nextTableId": "#random-weapon-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser minor specific weapon", "nextTableId": "#specific-weapons-table-minor-lesser"}
 ]}, "#magic-weapon-table-minor-greater": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 26}, "medium": {"min": 1, "max": 26}, "minor": {"min": 1, "max": 26}, "description": "+1 weapon", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 27, "max": 53}, "medium": {"min": 27, "max": 53}, "minor": {"min": 27, "max": 53}, "description": "+2 weapon", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 54, "max": 80}, "medium": {"min": 54, "max": 80}, "minor": {"min": 54, "max": 80}, "description": "+1 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater minor specific weapon", "nextTableId": "#random-weapon-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater minor specific weapon", "nextTableId": "#specific-weapons-table-minor-greater"}
 ]}, "#magic-weapon-table-medium-lesser": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+1 weapon", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+2 weapon", "nextTableId": "#random-weapon-table"},
@@ -79,7 +158,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+1 weapon with two +1 special abilities*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+1 weapon with one +2 special ability*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+2 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser medium specific weapon", "nextTableId": "#random-weapon-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser medium specific weapon", "nextTableId": "#specific-weapons-table-medium-lesser"}
 ]}, "#magic-weapon-table-medium-greater": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+2 weapon", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+3 weapon", "nextTableId": "#random-weapon-table"},
@@ -88,7 +167,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+2 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+2 weapon with one +2 special ability*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+3 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater medium specific weapon", "nextTableId": "#random-weapon-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater medium specific weapon", "nextTableId": "#specific-weapons-table-medium-greater"}
 ]}, "#magic-weapon-table-major-lesser": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+3 weapon", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+4 weapon", "nextTableId": "#random-weapon-table"},
@@ -97,7 +176,7 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 45, "max": 56}, "medium": {"min": 45, "max": 56}, "minor": {"min": 45, "max": 56}, "description": "+2 weapon with one +2 special ability*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 57, "max": 68}, "medium": {"min": 57, "max": 68}, "minor": {"min": 57, "max": 68}, "description": "+3 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+4 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser major specific weapon", "nextTableId": "#random-weapon-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser major specific weapon", "nextTableId": "#specific-weapons-table-major-lesser"}
 ]}, "#magic-weapon-table-major-greater": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+4 weapon", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+5 weapon", "nextTableId": "#random-weapon-table"},
@@ -111,7 +190,106 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
   {"major": {"min": 72, "max": 74}, "medium": {"min": 72, "max": 74}, "minor": {"min": 72, "max": 74}, "description": "+5 weapon with one +4 special ability*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 75, "max": 77}, "medium": {"min": 75, "max": 77}, "minor": {"min": 75, "max": 77}, "description": "+5 weapon with one +4 special ability and one +1 special ability*", "nextTableId": "#random-weapon-table"},
   {"major": {"min": 78, "max": 80}, "medium": {"min": 78, "max": 80}, "minor": {"min": 78, "max": 80}, "description": "+5 weapon with one +3 special ability and one +2 special ability*", "nextTableId": "#random-weapon-table"},
-  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater major specific weapon", "nextTableId": "#random-weapon-table"}
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater major specific weapon", "nextTableId": "#specific-weapons-table-major-greater"}
+]}, "#specific-weapons-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Tracer bullet", "nextTableId": "undefined", "cost": "100 gp"},
+  {"major": {"min": 3, "max": 8}, "medium": {"min": 3, "max": 8}, "minor": {"min": 3, "max": 8}, "description": "Sleep arrow", "nextTableId": "undefined", "cost": "132 gp"},
+  {"major": {"min": 9, "max": 10}, "medium": {"min": 9, "max": 10}, "minor": {"min": 9, "max": 10}, "description": "Dustburst bullet", "nextTableId": "undefined", "cost": "196 gp"},
+  {"major": {"min": 11, "max": 16}, "medium": {"min": 11, "max": 16}, "minor": {"min": 11, "max": 16}, "description": "Tangle bolt", "nextTableId": "undefined", "cost": "226 gp"},
+  {"major": {"min": 17, "max": 22}, "medium": {"min": 17, "max": 22}, "minor": {"min": 17, "max": 22}, "description": "Screaming bolt", "nextTableId": "undefined", "cost": "267 gp"},
+  {"major": {"min": 23, "max": 32}, "medium": {"min": 23, "max": 32}, "minor": {"min": 23, "max": 32}, "description": "Masterwork silver dagger", "nextTableId": "undefined", "cost": "322 gp"},
+  {"major": {"min": 33, "max": 34}, "medium": {"min": 33, "max": 34}, "minor": {"min": 33, "max": 34}, "description": "Alchemist's bullet", "nextTableId": "undefined", "cost": "330 gp"},
+  {"major": {"min": 35, "max": 44}, "medium": {"min": 35, "max": 44}, "minor": {"min": 35, "max": 44}, "description": "Cold iron masterwork longsword", "nextTableId": "undefined", "cost": "330 gp"},
+  {"major": {"min": 45, "max": 50}, "medium": {"min": 45, "max": 50}, "minor": {"min": 45, "max": 50}, "description": "Hushing arrow", "nextTableId": "undefined", "cost": "547 gp"},
+  {"major": {"min": 51, "max": 56}, "medium": {"min": 51, "max": 56}, "minor": {"min": 51, "max": 56}, "description": "Hushing arrow, greater", "nextTableId": "undefined", "cost": "1,047 gp"},
+  {"major": {"min": 57, "max": 66}, "medium": {"min": 57, "max": 66}, "minor": {"min": 57, "max": 66}, "description": "Javelin of lightning", "nextTableId": "undefined", "cost": "1,500 gp"},
+  {"major": {"min": 67, "max": 74}, "medium": {"min": 67, "max": 74}, "minor": {"min": 67, "max": 74}, "description": "Searing arrow", "nextTableId": "undefined", "cost": "1,516 gp"},
+  {"major": {"min": 75, "max": 82}, "medium": {"min": 75, "max": 82}, "minor": {"min": 75, "max": 82}, "description": "Sizzling arrow", "nextTableId": "undefined", "cost": "1,516 gp"},
+  {"major": {"min": 83, "max": 84}, "medium": {"min": 83, "max": 84}, "minor": {"min": 83, "max": 84}, "description": "Burrowing bullet, lesser", "nextTableId": "undefined", "cost": "1,722 gp"},
+  {"major": {"min": 85, "max": 92}, "medium": {"min": 85, "max": 92}, "minor": {"min": 85, "max": 92}, "description": "Dust bolt", "nextTableId": "undefined", "cost": "1,730 gp"},
+  {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Slaying arrow", "nextTableId": "undefined", "cost": "2,282 gp"}
+]}, "#specific-weapons-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Adamantine dagger", "nextTableId": "undefined", "cost": "3,002 gp"},
+  {"major": {"min": 21, "max": 40}, "medium": {"min": 21, "max": 40}, "minor": {"min": 21, "max": 40}, "description": "Adamantine battleaxe", "nextTableId": "undefined", "cost": "3,010 gp"},
+  {"major": {"min": 41, "max": 50}, "medium": {"min": 41, "max": 50}, "minor": {"min": 41, "max": 50}, "description": "Burrowing bullet, greater", "nextTableId": "undefined", "cost": "3,447 gp"},
+  {"major": {"min": 51, "max": 70}, "medium": {"min": 51, "max": 70}, "minor": {"min": 51, "max": 70}, "description": "Slaying arrow, greater", "nextTableId": "undefined", "cost": "4,057 gp"},
+  {"major": {"min": 71, "max": 80}, "medium": {"min": 71, "max": 80}, "minor": {"min": 71, "max": 80}, "description": "Lance of jousting", "nextTableId": "undefined", "cost": "4,310 gp"},
+  {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Shatterspike", "nextTableId": "undefined", "cost": "4,315 gp"}
+]}, "#specific-weapons-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Bloodletting kukri", "nextTableId": "undefined", "cost": "6,308 gp"},
+  {"major": {"min": 4, "max": 9}, "medium": {"min": 4, "max": 9}, "minor": {"min": 4, "max": 9}, "description": "Boulderhead mace", "nextTableId": "undefined", "cost": "6,812 gp"},
+  {"major": {"min": 10, "max": 14}, "medium": {"min": 10, "max": 14}, "minor": {"min": 10, "max": 14}, "description": "Beaststrike club", "nextTableId": "undefined", "cost": "7,300 gp"},
+  {"major": {"min": 15, "max": 20}, "medium": {"min": 15, "max": 20}, "minor": {"min": 15, "max": 20}, "description": "Fighter's fork", "nextTableId": "undefined", "cost": "7,315 gp"},
+  {"major": {"min": 21, "max": 23}, "medium": {"min": 21, "max": 23}, "minor": {"min": 21, "max": 23}, "description": "Everflowing aspergillum", "nextTableId": "undefined", "cost": "7,805 gp"},
+  {"major": {"min": 24, "max": 28}, "medium": {"min": 24, "max": 28}, "minor": {"min": 24, "max": 28}, "description": "Hurricane quarterstaff", "nextTableId": "undefined", "cost": "7,840 gp"},
+  {"major": {"min": 29, "max": 34}, "medium": {"min": 29, "max": 34}, "minor": {"min": 29, "max": 34}, "description": "Dagger of venom", "nextTableId": "undefined", "cost": "8,302 gp"},
+  {"major": {"min": 35, "max": 39}, "medium": {"min": 35, "max": 39}, "minor": {"min": 35, "max": 39}, "description": "Gloom blade", "nextTableId": "undefined", "cost": "8,810 gp"},
+  {"major": {"min": 40, "max": 44}, "medium": {"min": 40, "max": 44}, "minor": {"min": 40, "max": 44}, "description": "Frostbite sling", "nextTableId": "undefined", "cost": "9,380 gp"},
+  {"major": {"min": 45, "max": 49}, "medium": {"min": 45, "max": 49}, "minor": {"min": 45, "max": 49}, "description": "Trident of stability", "nextTableId": "undefined", "cost": "9,815 gp"},
+  {"major": {"min": 50, "max": 54}, "medium": {"min": 50, "max": 54}, "minor": {"min": 50, "max": 54}, "description": "Trident of warning", "nextTableId": "undefined", "cost": "10,115 gp"},
+  {"major": {"min": 55, "max": 60}, "medium": {"min": 55, "max": 60}, "minor": {"min": 55, "max": 60}, "description": "Assassin's dagger", "nextTableId": "undefined", "cost": "10,302 gp"},
+  {"major": {"min": 61, "max": 66}, "medium": {"min": 61, "max": 66}, "minor": {"min": 61, "max": 66}, "description": "Dagger of doubling", "nextTableId": "undefined", "cost": "10,302 gp"},
+  {"major": {"min": 67, "max": 71}, "medium": {"min": 67, "max": 71}, "minor": {"min": 67, "max": 71}, "description": "Earthenflail", "nextTableId": "undefined", "cost": "11,315 gp"},
+  {"major": {"min": 72, "max": 79}, "medium": {"min": 72, "max": 79}, "minor": {"min": 72, "max": 79}, "description": "Swift obsidian greataxe ", "nextTableId": "undefined", "cost": "11,320 gp"},
+  {"major": {"min": 80, "max": 85}, "medium": {"min": 80, "max": 85}, "minor": {"min": 80, "max": 85}, "description": "Polarity hammer", "nextTableId": "undefined", "cost": "12,310 gp"},
+  {"major": {"min": 86, "max": 93}, "medium": {"min": 86, "max": 93}, "minor": {"min": 86, "max": 93}, "description": "Blade of binding", "nextTableId": "undefined", "cost": "12,350 gp"},
+  {"major": {"min": 94, "max": 100}, "medium": {"min": 94, "max": 100}, "minor": {"min": 94, "max": 100}, "description": "Shifter's sorrow", "nextTableId": "undefined", "cost": "12,780 gp"}
+]}, "#specific-weapons-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 7}, "medium": {"min": 1, "max": 7}, "minor": {"min": 1, "max": 7}, "description": "Dragoncatch guisarme", "nextTableId": "undefined", "cost": "13,308 gp"},
+  {"major": {"min": 8, "max": 15}, "medium": {"min": 8, "max": 15}, "minor": {"min": 8, "max": 15}, "description": "Ten-ring sword", "nextTableId": "undefined", "cost": "14,315 gp"},
+  {"major": {"min": 16, "max": 21}, "medium": {"min": 16, "max": 21}, "minor": {"min": 16, "max": 21}, "description": "Triton's trident", "nextTableId": "undefined", "cost": "15,065 gp"},
+  {"major": {"min": 22, "max": 29}, "medium": {"min": 22, "max": 29}, "minor": {"min": 22, "max": 29}, "description": "Mace of smiting, lesser", "nextTableId": "undefined", "cost": "16,012 gp"},
+  {"major": {"min": 30, "max": 37}, "medium": {"min": 30, "max": 37}, "minor": {"min": 30, "max": 37}, "description": "Disarming blade", "nextTableId": "undefined", "cost": "17,820 gp"},
+  {"major": {"min": 38, "max": 42}, "medium": {"min": 38, "max": 42}, "minor": {"min": 38, "max": 42}, "description": "Lash of the howler", "nextTableId": "undefined", "cost": "18,305 gp"},
+  {"major": {"min": 43, "max": 47}, "medium": {"min": 43, "max": 47}, "minor": {"min": 43, "max": 47}, "description": "Shieldsplitter lance", "nextTableId": "undefined", "cost": "18,310 gp"},
+  {"major": {"min": 48, "max": 53}, "medium": {"min": 48, "max": 53}, "minor": {"min": 48, "max": 53}, "description": "Trident of fish command", "nextTableId": "undefined", "cost": "18,650 gp"},
+  {"major": {"min": 54, "max": 59}, "medium": {"min": 54, "max": 59}, "minor": {"min": 54, "max": 59}, "description": "Quarterstaff of vaulting", "nextTableId": "undefined", "cost": "19,100 gp"},
+  {"major": {"min": 60, "max": 65}, "medium": {"min": 60, "max": 65}, "minor": {"min": 60, "max": 65}, "description": "Firedrake pistol", "nextTableId": "undefined", "cost": "20,300 gp"},
+  {"major": {"min": 66, "max": 71}, "medium": {"min": 66, "max": 71}, "minor": {"min": 66, "max": 71}, "description": "Ricochet hammer", "nextTableId": "undefined", "cost": "20,301 gp"},
+  {"major": {"min": 72, "max": 77}, "medium": {"min": 72, "max": 77}, "minor": {"min": 72, "max": 77}, "description": "Flame tongue", "nextTableId": "undefined", "cost": "20,715 gp"},
+  {"major": {"min": 78, "max": 85}, "medium": {"min": 78, "max": 85}, "minor": {"min": 78, "max": 85}, "description": "Sparkwake starknife", "nextTableId": "undefined", "cost": "21,324 gp"},
+  {"major": {"min": 86, "max": 90}, "medium": {"min": 86, "max": 90}, "minor": {"min": 86, "max": 90}, "description": "Luck blade (0 wishes)", "nextTableId": "undefined", "cost": "22,060 gp"},
+  {"major": {"min": 91, "max": 95}, "medium": {"min": 91, "max": 95}, "minor": {"min": 91, "max": 95}, "description": "Sword of subtlety", "nextTableId": "undefined", "cost": "22,310 gp"},
+  {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Sword of the planes", "nextTableId": "undefined", "cost": "22,315 gp"}
+]}, "#specific-weapons-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 12}, "medium": {"min": 1, "max": 12}, "minor": {"min": 1, "max": 12}, "description": "Nine lives stealer", "nextTableId": "undefined", "cost": "23,057 gp"},
+  {"major": {"min": 13, "max": 26}, "medium": {"min": 13, "max": 26}, "minor": {"min": 13, "max": 26}, "description": "Undercutting axe", "nextTableId": "undefined", "cost": "23,310 gp"},
+  {"major": {"min": 27, "max": 40}, "medium": {"min": 27, "max": 40}, "minor": {"min": 27, "max": 40}, "description": "Spirit caller", "nextTableId": "undefined", "cost": "25,302 gp"},
+  {"major": {"min": 41, "max": 55}, "medium": {"min": 41, "max": 55}, "minor": {"min": 41, "max": 55}, "description": "Dwarfbond hammer", "nextTableId": "undefined", "cost": "25,312 gp"},
+  {"major": {"min": 56, "max": 70}, "medium": {"min": 56, "max": 70}, "minor": {"min": 56, "max": 70}, "description": "Oathbow", "nextTableId": "undefined", "cost": "25,600 gp"},
+  {"major": {"min": 71, "max": 85}, "medium": {"min": 71, "max": 85}, "minor": {"min": 71, "max": 85}, "description": "Sword of life stealing", "nextTableId": "undefined", "cost": "25,715 gp"},
+  {"major": {"min": 86, "max": 100}, "medium": {"min": 86, "max": 100}, "minor": {"min": 86, "max": 100}, "description": "Cutthroat's apprentice", "nextTableId": "undefined", "cost": "33,910 gp"}
+]}, "#specific-weapons-table-major-greater": {"min": 1, "max": 100, "entries": [
+  {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Ghoul's lament", "nextTableId": "undefined", "cost": "35,312 gp"},
+  {"major": {"min": 3, "max": 5}, "medium": {"min": 3, "max": 5}, "minor": {"min": 3, "max": 5}, "description": "Mace of terror", "nextTableId": "undefined", "cost": "38,552 gp"},
+  {"major": {"min": 6, "max": 7}, "medium": {"min": 6, "max": 7}, "minor": {"min": 6, "max": 7}, "description": "Hellscourge", "nextTableId": "undefined", "cost": "39,305 gp"},
+  {"major": {"min": 8, "max": 9}, "medium": {"min": 8, "max": 9}, "minor": {"min": 8, "max": 9}, "description": "Dragon's doom", "nextTableId": "undefined", "cost": "40,310 gp"},
+  {"major": {"min": 10, "max": 13}, "medium": {"min": 10, "max": 13}, "minor": {"min": 10, "max": 13}, "description": "Life-drinker", "nextTableId": "undefined", "cost": "40,320 gp"},
+  {"major": {"min": 14, "max": 16}, "medium": {"min": 14, "max": 16}, "minor": {"min": 14, "max": 16}, "description": "Valor's minion", "nextTableId": "undefined", "cost": "41,335 gp"},
+  {"major": {"min": 17, "max": 18}, "medium": {"min": 17, "max": 18}, "minor": {"min": 17, "max": 18}, "description": "Summoner's sorrow", "nextTableId": "undefined", "cost": "42,816 gp"},
+  {"major": {"min": 19, "max": 21}, "medium": {"min": 19, "max": 21}, "minor": {"min": 19, "max": 21}, "description": "Sylvan scimitar", "nextTableId": "undefined", "cost": "47,315 gp"},
+  {"major": {"min": 22, "max": 23}, "medium": {"min": 22, "max": 23}, "minor": {"min": 22, "max": 23}, "description": "Spirit blade", "nextTableId": "undefined", "cost": "48,502 gp"},
+  {"major": {"min": 24, "max": 26}, "medium": {"min": 24, "max": 26}, "minor": {"min": 24, "max": 26}, "description": "Heartswood spear", "nextTableId": "undefined", "cost": "50,302 gp"},
+  {"major": {"min": 27, "max": 29}, "medium": {"min": 27, "max": 29}, "minor": {"min": 27, "max": 29}, "description": "Rapier of puncturing", "nextTableId": "undefined", "cost": "50,320 gp"},
+  {"major": {"min": 30, "max": 32}, "medium": {"min": 30, "max": 32}, "minor": {"min": 30, "max": 32}, "description": "Sun blade", "nextTableId": "undefined", "cost": "50,335 gp"},
+  {"major": {"min": 33, "max": 37}, "medium": {"min": 33, "max": 37}, "minor": {"min": 33, "max": 37}, "description": "Blade of the rising sun", "nextTableId": "undefined", "cost": "51,850 gp"},
+  {"major": {"min": 38, "max": 40}, "medium": {"min": 38, "max": 40}, "minor": {"min": 38, "max": 40}, "description": "Frost brand", "nextTableId": "undefined", "cost": "54,475 gp"},
+  {"major": {"min": 41, "max": 45}, "medium": {"min": 41, "max": 45}, "minor": {"min": 41, "max": 45}, "description": "Dwarven thrower", "nextTableId": "undefined", "cost": "60,312 gp"},
+  {"major": {"min": 46, "max": 50}, "medium": {"min": 46, "max": 50}, "minor": {"min": 46, "max": 50}, "description": "Bloodthirst dagger", "nextTableId": "undefined", "cost": "60,802 gp"},
+  {"major": {"min": 51, "max": 53}, "medium": {"min": 51, "max": 53}, "minor": {"min": 51, "max": 53}, "description": "Warbringer", "nextTableId": "undefined", "cost": "61,375 gp"},
+  {"major": {"min": 54, "max": 57}, "medium": {"min": 54, "max": 57}, "minor": {"min": 54, "max": 57}, "description": "Luck blade (1 wish)", "nextTableId": "undefined", "cost": "62,360 gp"},
+  {"major": {"min": 58, "max": 61}, "medium": {"min": 58, "max": 61}, "minor": {"min": 58, "max": 61}, "description": "Guarding blade", "nextTableId": "undefined", "cost": "65,310 gp"},
+  {"major": {"min": 62, "max": 64}, "medium": {"min": 62, "max": 64}, "minor": {"min": 62, "max": 64}, "description": "Pistol of the infinite sky", "nextTableId": "undefined", "cost": "73,300 gp"},
+  {"major": {"min": 65, "max": 69}, "medium": {"min": 65, "max": 69}, "minor": {"min": 65, "max": 69}, "description": "Mace of smiting", "nextTableId": "undefined", "cost": "75,312 gp"},
+  {"major": {"min": 70, "max": 73}, "medium": {"min": 70, "max": 73}, "minor": {"min": 70, "max": 73}, "description": "Blade of the sword-saint", "nextTableId": "undefined", "cost": "75,350 gp"},
+  {"major": {"min": 74, "max": 76}, "medium": {"min": 74, "max": 76}, "minor": {"min": 74, "max": 76}, "description": "Scimitar of the spellthief", "nextTableId": "undefined", "cost": "75,815 gp"},
+  {"major": {"min": 77, "max": 79}, "medium": {"min": 77, "max": 79}, "minor": {"min": 77, "max": 79}, "description": "Spider's fang", "nextTableId": "undefined", "cost": "79,102 gp"},
+  {"major": {"min": 80, "max": 82}, "medium": {"min": 80, "max": 82}, "minor": {"min": 80, "max": 82}, "description": "Demonsorrow curve blade", "nextTableId": "undefined", "cost": "90,469 gp"},
+  {"major": {"min": 83, "max": 85}, "medium": {"min": 83, "max": 85}, "minor": {"min": 83, "max": 85}, "description": "Void scythe", "nextTableId": "undefined", "cost": "95,318 gp"},
+  {"major": {"min": 86, "max": 89}, "medium": {"min": 86, "max": 89}, "minor": {"min": 86, "max": 89}, "description": "Luck blade (2 wishes)", "nextTableId": "undefined", "cost": "102,660 gp"},
+  {"major": {"min": 90, "max": 92}, "medium": {"min": 90, "max": 92}, "minor": {"min": 90, "max": 92}, "description": "Holy avenger", "nextTableId": "undefined", "cost": "120,630 gp"},
+  {"major": {"min": 93, "max": 96}, "medium": {"min": 93, "max": 96}, "minor": {"min": 93, "max": 96}, "description": "Bastard's sting", "nextTableId": "undefined", "cost": "123,035 gp"},
+  {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Luck blade (3 wishes)", "nextTableId": "undefined", "cost": "142,960 gp"}
 ]}, "#random-armor-or-shield-table": {"min": 1, "max": 100, "entries": [
   {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Banded mail"},
   {"major": {"min": 5, "max": 11}, "medium": {"min": 5, "max": 11}, "minor": {"min": 5, "max": 11}, "description": "Breastplate"},
@@ -2167,4 +2345,22 @@ define({"#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entr
 ]}, "armor_shields_demux": {"min": 1, "max": 100, "entries": [
   {"min": 1, "max": 75, "appendMe": "-lesser"},
   {"min": 76, "max": 100, "appendMe": "-greater"}
+]}, "#specific-placeholder-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-minor-lesser"},
+  {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-minor-lesser"}
+]}, "#specific-placeholder-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-minor-greater"},
+  {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-minor-greater"}
+]}, "#specific-placeholder-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-medium-lesser"},
+  {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-medium-lesser"}
+]}, "#specific-placeholder-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-medium-greater"},
+  {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-medium-greater"}
+]}, "#specific-placeholder-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-major-lesser"},
+  {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-major-lesser"}
+]}, "#specific-placeholder-table-major-greater": {"min": 1, "max": 100, "entries": [
+  {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-major-greater"},
+  {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-major-greater"}
 ]}});

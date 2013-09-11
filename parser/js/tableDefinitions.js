@@ -6,7 +6,7 @@ define([], function () {
       nextTableIdChooser: function (i) {
         var idsToChooseFrom = ["#magic-armor-and-shields-table-minor",  "#magic-armor-and-shields-table-medium",
           "#magic-armor-and-shields-table-major",
-          "#magic-weapon-table-minor", "#magic-weapon-table-medium", "#magic-weapon-table-minor",
+          "#magic-weapon-table-minor", "#magic-weapon-table-medium", "#magic-weapon-table-major",
           "#table-15-12-potions", "#table-15-13-rings", "#table-15-14-rods",
           "#table-15-15-scrolls", "#table-15-16-staves", "#table-15-17-wands",
           "#table-15-18-minor-wondrous-items", "#table-15-19-medium-wondrous-items", "#table-15-20-major-wondrous-items"];
@@ -21,15 +21,39 @@ define([], function () {
         "#magic-armor-and-shields-table-medium-lesser", "#magic-armor-and-shields-table-medium-greater",
         "#magic-armor-and-shields-table-major-lesser", "#magic-armor-and-shields-table-major-greater"
       ],
+      changeLastPointerTo: ["#specific-placeholder-table-minor-lesser", "#specific-placeholder-table-minor-greater",
+        "#specific-placeholder-table-medium-lesser", "#specific-placeholder-table-medium-greater",
+        "#specific-placeholder-table-major-lesser", "#specific-placeholder-table-major-greater"],
       childTableTemplateId: "armor_shields"
 
+    },
+    {
+      childTableIds: ["#specific-armor-table-minor-lesser", "#specific-armor-table-minor-greater",
+        "#specific-armor-table-medium-lesser", "#specific-armor-table-medium-greater",
+        "#specific-armor-table-major-lesser", "#specific-armor-table-major-greater"],
+      childTableTemplateId: "specific_armor"
+    },
+    {
+      childTableIds: ["#specific-shields-table-minor-lesser", "#specific-shields-table-minor-greater",
+        "#specific-shields-table-medium-lesser", "#specific-shields-table-medium-greater",
+        "#specific-shields-table-major-lesser", "#specific-shields-table-major-greater"],
+      childTableTemplateId: "specific_shield"
     },
     {
       childTableIds: ["#magic-weapon-table-minor-lesser", "#magic-weapon-table-minor-greater",
         "#magic-weapon-table-medium-lesser", "#magic-weapon-table-medium-greater",
         "#magic-weapon-table-major-lesser", "#magic-weapon-table-major-greater"
       ],
+      changeLastPointerTo: ["#specific-weapons-table-minor-lesser", "#specific-weapons-table-minor-greater",
+        "#specific-weapons-table-medium-lesser", "#specific-weapons-table-medium-greater",
+        "#specific-weapons-table-major-lesser", "#specific-weapons-table-major-greater"],
       childTableTemplateId: "weapons"
+    },
+    {
+      childTableIds: ["#specific-weapons-table-minor-lesser", "#specific-weapons-table-minor-greater",
+      "#specific-weapons-table-medium-lesser", "#specific-weapons-table-medium-greater",
+      "#specific-weapons-table-major-lesser", "#specific-weapons-table-major-greater"],
+      childTableTemplateId: "specific_weapon"
     },
     {
       name: "random armor or shield",

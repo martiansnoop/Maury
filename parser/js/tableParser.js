@@ -75,31 +75,64 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
     return table;
   }
 
+  var annoyingCrap = {
+    "#specific-placeholder-table-minor-lesser" : { "min": 1, "max":100, "entries": [
+      {minor: {"min": 1, "max": 50},medium: {"min": 1, "max": 50},major: {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-minor-lesser"},
+      {minor: {"min": 51, "max": 100},medium: {"min": 51, "max": 100},major: {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-minor-lesser"}
+    ]}, "#specific-placeholder-table-minor-greater" : { "min": 1, "max":100, "entries": [
+      {minor: {"min": 1, "max": 50},medium: {"min": 1, "max": 50},major: {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-minor-greater"},
+      {minor: {"min": 51, "max": 100},medium: {"min": 51, "max": 100},major: {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-minor-greater"}
+    ]}
+    , "#specific-placeholder-table-medium-lesser" : { "min": 1, "max":100, "entries": [
+      {minor: {"min": 1, "max": 50},medium: {"min": 1, "max": 50},major: {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-medium-lesser"},
+      {minor: {"min": 51, "max": 100},medium: {"min": 51, "max": 100},major: {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-medium-lesser"}
+    ]}, "#specific-placeholder-table-medium-greater" : { "min": 1, "max":100, "entries": [
+      {minor: {"min": 1, "max": 50},medium: {"min": 1, "max": 50},major: {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-medium-greater"},
+      {minor: {"min": 51, "max": 100},medium: {"min": 51, "max": 100},major: {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-medium-greater"}
+    ]}
+    , "#specific-placeholder-table-major-lesser" : { "min": 1, "max":100, "entries": [
+      {minor: {"min": 1, "max": 50},medium: {"min": 1, "max": 50},major: {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-major-lesser"},
+      {minor: {"min": 51, "max": 100},medium: {"min": 51, "max": 100},major: {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-major-lesser"}
+    ]}, "#specific-placeholder-table-major-greater" : { "min": 1, "max":100, "entries": [
+      {minor: {"min": 1, "max": 50},medium: {"min": 1, "max": 50},major: {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-major-greater"},
+      {minor: {"min": 51, "max": 100},medium: {"min": 51, "max": 100},major: {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-major-greater"}
+    ]}
+  };
+
   return function parseAllTheTables() {
     var tables = {};
 
     definitions.forEach(function(definition){
 
-      if(definition.elementId == "#magic-weapons-table-medium-lesser") {
-        var breakpoint = true;
-      }
-
       if(definition.elementId)
         tables[definition.elementId] = parseTable(definition);
 
-      //Currently child tables only go one deep. Update if it becomes necessary
+      //Currently child taplaceholderbles only go one deep. Update if it becomes necessary
       if(definition.childTableTemplateId) {
         definition.childTableIds.forEach(function(id){
           var childDef = $.extend(true, {elementId : id}, templates[definition.childTableTemplateId]);
           tables[childDef.elementId] = parseTable(childDef);
-
-
         });
+
+        if(definition.changeLastPointerTo) {
+          for(var i = 0; i < definition.changeLastPointerTo.length; i++) {
+
+            var tableInQuestion = tables[definition.childTableIds[i]];
+
+            var lastEntryInTable = tableInQuestion.entries[tableInQuestion.entries.length - 1];
+
+            lastEntryInTable.nextTableId = definition.changeLastPointerTo[i];
+          }
+        }
       }
     });
 
-    $.extend(true, tables, demuxers);
+    $.extend(true, tables, demuxers, annoyingCrap);
 
     return tables;
   }
+
+
+
+
 });
