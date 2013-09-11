@@ -29,7 +29,8 @@ define([], function(){
         return "#random-armor-or-shield-table"
       },
       descCellIndex: 1,
-      oneAwesomeness: true
+      oneAwesomeness: true,
+      specialSnowflake: true
     },
     specific_armor: {
       nextTableIdChooser: function (i) {
@@ -52,9 +53,18 @@ define([], function(){
         return "#random-weapon-table"
       },
       descCellIndex: 1,
-      oneAwesomeness: true
+      oneAwesomeness: true,
+      specialSnowflake: true
     },
     specific_weapon: {
+      nextTableIdChooser: function (i) {
+        return "undefined"
+      },
+      descCellIndex: 1,
+      oneAwesomeness: true,
+      costCellIndex: 2
+    },
+    special_abilities: {
       nextTableIdChooser: function (i) {
         return "undefined"
       },

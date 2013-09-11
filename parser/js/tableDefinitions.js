@@ -21,9 +21,9 @@ define([], function () {
         "#magic-armor-and-shields-table-medium-lesser", "#magic-armor-and-shields-table-medium-greater",
         "#magic-armor-and-shields-table-major-lesser", "#magic-armor-and-shields-table-major-greater"
       ],
-      changeLastPointerTo: ["#specific-placeholder-table-minor-lesser", "#specific-placeholder-table-minor-greater",
-        "#specific-placeholder-table-medium-lesser", "#specific-placeholder-table-medium-greater",
-        "#specific-placeholder-table-major-lesser", "#specific-placeholder-table-major-greater"],
+                      changeLastPointerTo: ["#specific-placeholder-table-minor-lesser", "#specific-placeholder-table-minor-greater",
+                        "#specific-placeholder-table-medium-lesser", "#specific-placeholder-table-medium-greater",
+                        "#specific-placeholder-table-major-lesser", "#specific-placeholder-table-major-greater"],
       childTableTemplateId: "armor_shields"
 
     },
@@ -44,9 +44,9 @@ define([], function () {
         "#magic-weapon-table-medium-lesser", "#magic-weapon-table-medium-greater",
         "#magic-weapon-table-major-lesser", "#magic-weapon-table-major-greater"
       ],
-      changeLastPointerTo: ["#specific-weapons-table-minor-lesser", "#specific-weapons-table-minor-greater",
-        "#specific-weapons-table-medium-lesser", "#specific-weapons-table-medium-greater",
-        "#specific-weapons-table-major-lesser", "#specific-weapons-table-major-greater"],
+                    changeLastPointerTo: ["#specific-weapons-table-minor-lesser", "#specific-weapons-table-minor-greater",
+                      "#specific-weapons-table-medium-lesser", "#specific-weapons-table-medium-greater",
+                      "#specific-weapons-table-major-lesser", "#specific-weapons-table-major-greater"],
       childTableTemplateId: "weapons"
     },
     {
@@ -66,7 +66,7 @@ define([], function () {
       specialAbilityTableChooser: function(description) {
         var isShield = description.indexOf("shield") > -1;
 
-        return isShield ? "shield-special-abilities-table" : "armor-special-abilities-table";
+        return isShield ? "#shield-special-abilities-table" : "#armor-special-abilities-table";
       }
     },
     {
@@ -82,8 +82,29 @@ define([], function () {
                     || description.toLowerCase() == "bolas"
                     || description.toLowerCase() == "dart";
 
-        return isRanged ? "ranged-weapon-special-abilities-table" : "melee-weapon-special-abilities-table";
+        return isRanged ? "#ranged-weapon-special-abilities-table" : "#melee-weapon-special-abilities-table";
       }
+    },
+    {
+      childTableIds : ["#shield-special-abilities-table1",
+                        "#shield-special-abilities-table2",
+                        "#shield-special-abilities-table3",
+                        "#shield-special-abilities-table4",
+                        "#melee-weapon-special-abilities-table1",
+                        "#melee-weapon-special-abilities-table2",
+                        "#melee-weapon-special-abilities-table3",
+                        "#melee-weapon-special-abilities-table4",
+                        "#ranged-weapon-special-abilities-table1",
+                        "#ranged-weapon-special-abilities-table2",
+                        "#ranged-weapon-special-abilities-table3",
+                        "#ranged-weapon-special-abilities-table4",
+                        "#armor-special-abilities-table1",
+                        "#armor-special-abilities-table2",
+                        "#armor-special-abilities-table3",
+                        "#armor-special-abilities-table4",
+                        "#armor-special-abilities-table5"
+      ],
+      childTableTemplateId: "special_abilities"
     },
     {
       name: "potions",

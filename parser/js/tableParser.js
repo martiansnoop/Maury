@@ -52,6 +52,25 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
       entry.demuxId = def.demuxId;
     }
 
+    if(def.specialSnowflake) {
+      var desc = entry.description;
+      var isNotSpecific = desc.indexOf("specific") == -1;
+
+      if(isNotSpecific) {
+        var enhancementBonuses = desc.match(/\d+/g);
+        var specialAbilitySpec = {};
+
+        specialAbilitySpec.baseEnhancementBonus = parseInt(enhancementBonuses.shift());
+
+        specialAbilitySpec.abilities = [];
+        for(var i = 0; i < enhancementBonuses.length; i++) {
+          specialAbilitySpec.abilities.push(enhancementBonuses[i]);
+        }
+
+        entry.specialAbilitySpec = specialAbilitySpec;
+      }
+    }
+
 
     if(def.costCellIndex) {
       entry.cost = $(cells[def.costCellIndex]).text();
@@ -68,6 +87,10 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
 
     var tableElement = $(def.elementId);
     var rowIndex = 0;
+
+    if(def.elementId == "#armor-special-abilities-table1") {
+
+    }
 
     $("tbody > tr", tableElement).each(function(){
       var row = $(this);
