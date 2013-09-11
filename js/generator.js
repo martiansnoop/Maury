@@ -20,14 +20,44 @@ define(["./dataWrapper", "./formatter"], function(database, formatter) {
     return buildItemRecursively(masterTableId, itemAwesomeness);
   }
 
+  function getSpecialAbilities(rawComponents) {
+    var spec = {};
+    rawComponents.forEach(function(comp) {
+      $.extend(true, spec, comp.specialAbilitySpec);
+    });
+
+    var baseTableId;
+    rawComponents.forEach(function(comp){
+      baseTableId = baseTableId || comp.specialAbilityTableId;
+    });
+
+    if(spec === {} || !baseTableId)
+      return [];
+
+    var specialAbilities = [];
+
+    for(var i = 0; i < spec.abilities.length; i++) {
+      var tableToRollOn = baseTableId.concat(spec.abilities[i]);
+
+      var dieRoll = database.rollOnTable(tableToRollOn);
+      var specialAbility = database.lookupEntry(tableToRollOn,  ["minor"], dieRoll);
+
+      specialAbilities.push(specialAbility);
+    }
+
+    return specialAbilities;
+  }
+
   function generateSeveralItems(specs) {
     var allFormattedItems = [];
 
     specs.forEach(function(spec){
       var formattedItems = [];
       for(var i = 0; i < spec.count; i++) {
-        var raw = rollForItem(spec.awesomeness);
-        var formatted = formatter.format(spec.awesomeness, raw);
+        var rawComponents = rollForItem(spec.awesomeness);
+        var specialAbilities = getSpecialAbilities(rawComponents);
+
+        var formatted = formatter.format(spec.awesomeness, rawComponents, specialAbilities);
         formattedItems.push(formatted);
       }
 

@@ -1,6 +1,6 @@
 define([], function() {
 
-  function makePrettyLabel(itemList) {
+  function makePrettyLabel(itemList, specialAbilities) {
     var category = itemList[0].description;
 
     function parseWeaponOrArmorBonus(itemList) {
@@ -12,6 +12,12 @@ define([], function() {
       }
 
       return "";
+    }
+
+    function parseSpecials(specialAbilities) {
+      var descriptions = specialAbilities.map(function(ability){ return ability.description;});
+
+      return descriptions.join(", ").concat(" ");
     }
 
     var firstPart;
@@ -47,18 +53,18 @@ define([], function() {
         lastPartIndex = 1;
         break;
       case "Weapons" :
-          firstPart = "Weapon: ".concat(parseWeaponOrArmorBonus(itemList));
+          firstPart = "Weapon: ".concat(parseWeaponOrArmorBonus(itemList)).concat(parseSpecials(specialAbilities));
           lastPartIndex = itemList.length - 1;
         break;
       case "Armor and shields" :
-        firstPart = "Armor/Shield: ".concat(parseWeaponOrArmorBonus(itemList));
+        firstPart = "Armor/Shield: ".concat(parseWeaponOrArmorBonus(itemList)).concat(parseSpecials(specialAbilities));
         lastPartIndex = itemList.length - 1;
         break;
       default:
         return "pretty print hasn't been implemented yet for this thing";
     }
 
-    var nameOfItem = itemList[lastPartIndex].description;
+    var nameOfItem = itemList[itemList.length - 1].description;
     return firstPart + nameOfItem;
   }
 
@@ -82,13 +88,14 @@ define([], function() {
     return lastItem.url;
   }
 
-  function format(awesomeness, rawItemList) {
+  function format(awesomeness, rawItemList, rawSpecialAbilities) {
     return {
-      label: makePrettyLabel(rawItemList),
+      label: makePrettyLabel(rawItemList, rawSpecialAbilities),
       cost: getItemCost(rawItemList),
       awesomeness: getAwesomeness(awesomeness),
       url: getUrl(rawItemList),
-      rawItems: rawItemList
+      rawItems: rawItemList,
+      rawSpecialAbilities: rawSpecialAbilities
     }
   }
 
