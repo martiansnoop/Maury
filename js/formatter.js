@@ -3,6 +3,17 @@ define([], function() {
   function makePrettyLabel(itemList) {
     var category = itemList[0].description;
 
+    function parseWeaponOrArmorBonus(itemList) {
+      var thing = itemList[1];
+
+      if(thing.description.indexOf("specific") === -1) {
+        var magicSpecifier = thing.description.slice(0, 2);
+        return magicSpecifier.concat(" ");
+      }
+
+      return "";
+    }
+
     var firstPart;
     var lastPartIndex;
 
@@ -34,6 +45,14 @@ define([], function() {
       case "Wondrous items":
         firstPart = "Wondrous item: ";
         lastPartIndex = 1;
+        break;
+      case "Weapons" :
+          firstPart = "Weapon: ".concat(parseWeaponOrArmorBonus(itemList));
+          lastPartIndex = itemList.length - 1;
+        break;
+      case "Armor and shields" :
+        firstPart = "Armor/Shield: ".concat(parseWeaponOrArmorBonus(itemList));
+        lastPartIndex = itemList.length - 1;
         break;
       default:
         return "pretty print hasn't been implemented yet for this thing";
