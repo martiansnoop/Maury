@@ -42,6 +42,10 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
       entry.url = prefix.concat(entry.url);
     }
 
+    if(def.specialAbilityTableChooser) {
+      entry.specialAbilityTableId = def.specialAbilityTableChooser(entry.description);
+    }
+
     if(def.demuxAppliesTo && def.demuxAppliesTo.indexOf(rowIndex) >= 0) {
       entry.demuxId = def.demuxId;
     } else if (!def.demuxAppliesTo && def.demuxId) {
@@ -116,11 +120,8 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
 
         if(definition.changeLastPointerTo) {
           for(var i = 0; i < definition.changeLastPointerTo.length; i++) {
-
             var tableInQuestion = tables[definition.childTableIds[i]];
-
             var lastEntryInTable = tableInQuestion.entries[tableInQuestion.entries.length - 1];
-
             lastEntryInTable.nextTableId = definition.changeLastPointerTo[i];
           }
         }

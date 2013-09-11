@@ -62,8 +62,12 @@ define([], function () {
         return undefined
       },
       descCellIndex: 1,
-      oneAwesomeness: true
-//      costCellIndex: 4,
+      oneAwesomeness: true,
+      specialAbilityTableChooser: function(description) {
+        var isShield = description.indexOf("shield") > -1;
+
+        return isShield ? "shield-special-abilities-table" : "armor-special-abilities-table";
+      }
     },
     {
       name: "random weapon",
@@ -72,19 +76,15 @@ define([], function () {
         return undefined
       },
       descCellIndex: 1,
-      oneAwesomeness: true
-//      costCellIndex: 4,
+      oneAwesomeness: true,
+      specialAbilityTableChooser: function(description) {
+        var isRanged = description.indexOf("bow") > -1
+                    || description.toLowerCase() == "bolas"
+                    || description.toLowerCase() == "dart";
+
+        return isRanged ? "ranged-weapon-special-abilities-table" : "melee-weapon-special-abilities-table";
+      }
     },
-//    {
-//      name: "armorAndShields",
-//      elementId: "#magic-armor-and-shields-table-minor-lesser",
-//      nextTableIdChooser: function (i) {
-//        return "NOPE"
-//      },
-//      descCellIndex: 1,
-//      oneAwesomeness: true,
-//      demuxId: "armor_shields_demux"
-//    },
     {
       name: "potions",
       elementId: "#table-15-12-potions",
