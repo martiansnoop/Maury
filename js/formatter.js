@@ -15,6 +15,8 @@ define([], function() {
     }
 
     function parseSpecials(specialAbilities) {
+      if(!specialAbilities || specialAbilities.length ==0) return "";
+
       var descriptions = specialAbilities.map(function(ability){ return ability.description;});
 
       return descriptions.join(", ").concat(" ");
@@ -68,10 +70,14 @@ define([], function() {
     return firstPart + nameOfItem;
   }
 
-  function getItemCost(itemList) {
+  function getItemCost(itemList, specialAbilitiesCost) {
     var lastItem = itemList[itemList.length -1];
 
-    return lastItem.cost;
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    return specialAbilitiesCost ? numberWithCommas(specialAbilitiesCost).concat(" gp") : lastItem.cost;
   }
 
   function getAwesomeness(awesomeness) {
@@ -90,12 +96,12 @@ define([], function() {
 
   function format(awesomeness, rawItemList, rawSpecialAbilities) {
     return {
-      label: makePrettyLabel(rawItemList, rawSpecialAbilities),
-      cost: getItemCost(rawItemList),
+      label: makePrettyLabel(rawItemList, rawSpecialAbilities.specialAbilities),
+      cost: getItemCost(rawItemList, rawSpecialAbilities.cost),
       awesomeness: getAwesomeness(awesomeness),
       url: getUrl(rawItemList),
       rawItems: rawItemList,
-      rawSpecialAbilities: rawSpecialAbilities
+      rawSpecialAbilities: rawSpecialAbilities.specialAbilities
     }
   }
 

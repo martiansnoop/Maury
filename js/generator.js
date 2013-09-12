@@ -27,7 +27,7 @@ define(["./dataWrapper", "./formatter", "./specialAbilities"], function(database
       var formattedItems = [];
       for(var i = 0; i < spec.count; i++) {
         var rawComponents = rollForItem(spec.awesomeness);
-        var specialAbilities = specialPicker(rawComponents);
+        var specialAbilities = specialPicker(rawComponents, pickEntry);
 
         var formatted = formatter.format(spec.awesomeness, rawComponents, specialAbilities);
         formattedItems.push(formatted);
