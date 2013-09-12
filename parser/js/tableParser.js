@@ -67,6 +67,11 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
           specialAbilitySpec.abilities.push(enhancementBonuses[i]);
         }
 
+        //special case: desc === "two +1 special abilities"
+        if(desc.indexOf("abilities") > -1) {
+          specialAbilitySpec.abilities.push(enhancementBonuses[0]);
+        }
+
         entry.specialAbilitySpec = specialAbilitySpec;
       }
     }
