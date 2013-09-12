@@ -35,10 +35,13 @@ define(["./data", "./random", "jquery"], function(dataTables, rand, $) {
       entry.nextTableId = entry.nextTableId.concat(lookupDemux(entry.demuxId, roll(entry.demuxId)).appendMe);
     }
 
-    //HACK/WTF: There have been some instances of empty items generated,
-    //mostly with #random-weapon-table. This is a temporary hack because
-    //I am too lazy to go hunting down the precise error.
-    return entry || lookup(tableId, propChain, dieRoll);
+    entry.dieRoll = dieRoll; //for debugging purposes
+
+    //WTF: There have been some instances of empty items generated,
+    //mostly with #random-weapon-table. This is because the numbers 65-85
+    //missing from the table. I will fix this either by forcing a reroll
+    //or adding things to the table myself.
+    return entry;
   }
 
   function roll(tableId) {
