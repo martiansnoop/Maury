@@ -38,7 +38,7 @@ define([], function(){
         var enh = specialAbility.cost.match(/\d+/g)[0];
         totalEnhancementBonus += parseInt(enh);
       } else if (specialAbility.cost.indexOf("gp") > -1) {
-        var goldValue = specialAbility.cost.match(/\d+/g)[0];
+        var goldValue = specialAbility.cost.replace(",", "").match(/\d+/g)[0];
         totalAddedGold += parseInt(goldValue);
       }
 
