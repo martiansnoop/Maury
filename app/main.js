@@ -2,10 +2,10 @@
 
 require.config({
   paths : {
-    jquery: "./bower_components/jquery/jquery",
-    underscore: "./bower_components/underscore/underscore",
-    ractive: "./bower_components/ractive/Ractive",
-    text: "./bower_components/requirejs-text/text"
+    jquery: "../bower_components/jquery/jquery",
+    underscore: "../bower_components/underscore/underscore",
+    ractive: "../bower_components/ractive/Ractive",
+    text: "../bower_components/requirejs-text/text"
   },
   shim: {
     jquery: {

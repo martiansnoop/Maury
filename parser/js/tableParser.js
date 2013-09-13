@@ -86,8 +86,8 @@ define(["jquery", "./tableDefinitions", "./demultiplexors", "./tableDefinitionTe
 
   function parseTable(def){
     var table = {};
-    table.min = 1;
-    table.max = 100;
+//    table.min = 1;
+//    table.max = 100;
     table.entries = [];
 
     var tableElement = $(def.elementId);
