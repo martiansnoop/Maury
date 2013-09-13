@@ -2,5 +2,5 @@
    If we ever do any responsive design on this player test form,
    then there will be a 65 px gap at the top of the screen that will
    not resize. There's a better fix on stackoverflow; look there. */
-body { padding-top: 65px; }
+body { padding-top: 10px; }
 
