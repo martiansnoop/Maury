@@ -26,7 +26,7 @@ function (itemGenerator, $, Ractive, template) {
     data: {
       formattedItems: initialLoot,
       specs: initialSpecs,
-      debug: true
+      debug: false
     }
   });
 
