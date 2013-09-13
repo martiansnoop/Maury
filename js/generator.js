@@ -1,9 +1,10 @@
-define(["./dataWrapper", "./formatter", "./specialAbilities"], function(database, formatter, specialPicker) {
+define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], function(database, formatter, specialPicker, d) {
 
   const masterTableId = "#table-15-2-random-magic-item-generation";
+  const d100 = d(100);
 
   function pickEntry(tableId, itemAwesomeness) {
-    var dieRoll = database.rollOnTable(tableId);
+    var dieRoll = d100.roll();
     return database.lookupEntry(tableId, [itemAwesomeness], dieRoll);
   }
 
@@ -24,16 +25,13 @@ define(["./dataWrapper", "./formatter", "./specialAbilities"], function(database
     var allFormattedItems = [];
 
     specs.forEach(function(spec){
-      var formattedItems = [];
       for(var i = 0; i < spec.count; i++) {
         var rawComponents = rollForItem(spec.awesomeness);
         var specialAbilities = specialPicker(rawComponents, pickEntry);
 
         var formatted = formatter.format(spec.awesomeness, rawComponents, specialAbilities);
-        formattedItems.push(formatted);
+        allFormattedItems.push(formatted);
       }
-
-      allFormattedItems = allFormattedItems.concat(formattedItems);
     });
 
     return allFormattedItems;

@@ -1,6 +1,7 @@
-define(["./data", "./random", "jquery"], function(dataTables, rand, $) {
+define(["./data", "./dice", "jquery"], function(dataTables, d, $) {
 
   //Private
+  const d100 = new d(100);
 
   function lookupDemux(tableId, dieRoll) {
     return getEntry(dataTables[tableId].entries, [], dieRoll);
@@ -32,7 +33,7 @@ define(["./data", "./random", "jquery"], function(dataTables, rand, $) {
     var entry = getEntry(dataTables[tableId].entries, propChain, dieRoll);
 
     if(exists(entry.demuxId)) {
-      entry.nextTableId = entry.nextTableId.concat(lookupDemux(entry.demuxId, roll(entry.demuxId)).appendMe);
+      entry.nextTableId = entry.nextTableId.concat(lookupDemux(entry.demuxId, d100.roll()).appendMe);
     }
 
     entry.dieRoll = dieRoll; //for debugging purposes
@@ -44,18 +45,12 @@ define(["./data", "./random", "jquery"], function(dataTables, rand, $) {
     return entry;
   }
 
-  function roll(tableId) {
-    var table = dataTables[tableId];
-    return rand.getInt(table.min, table.max);
-  }
-
   function exists(tableId) {
     return !!dataTables[tableId];
   }
 
   return {
     lookupEntry: lookup,
-    rollOnTable: roll,
     tableExists: exists
   }
 
