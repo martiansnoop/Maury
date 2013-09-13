@@ -24,7 +24,9 @@
             {{awesomeness}}
           </td>
           <td>
-            <a href="{{url}}" target="_blank">{{label}}</a>
+            {{^(!!url)}} {{label}} {{/url}}
+
+            {{#url}}<a href="{{url}}" target="_blank">{{label}}</a> {{/url}}
           </td>
           <td>
             {{cost}}
