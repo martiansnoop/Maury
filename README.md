@@ -18,13 +18,14 @@ This is a basic magic item generator for the Pathfinder role playing system. It'
 12. Build/minification step
 
 ## Running a dev copy
-(on Mac/Linux. You're on your own for Windows)
+This is for Mac/Linux. I've never set this up on Windows, though it should be somewhat straightforward. 
+
 1. Install Node and npm, if not already installed. Google for directions.
 2. Install Bower: `npm install -g bower` You may need to use `sudo npm install -g bower` or equivalent
 3. Clone this project
 4. Run `bower install` inside cloned project
 5. run the "copy_dependencies" script (in its current directory)
-5. Open index.html in a browser
+6. Open index.html in a browser
 
 
 
