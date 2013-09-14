@@ -62,10 +62,73 @@ define(["jquery", "../app/js/data"], function($, crapData){
     }
   ];
 
+  var crapNotBeingImprovedRightNow = ["#table-15-2-random-magic-item-generation",
+    "#specific-armor-table-minor-lesser",
+    "#specific-armor-table-minor-greater",
+    "#specific-armor-table-medium-lesser",
+    "#specific-armor-table-medium-greater",
+    "#specific-armor-table-major-lesser",
+    "#specific-armor-table-major-greater",
+    "#specific-shields-table-minor-lesser",
+    "#specific-shields-table-minor-greater",
+    "#specific-shields-table-medium-lesser",
+    "#specific-shields-table-medium-greater",
+    "#specific-shields-table-major-lesser",
+    "#specific-shields-table-major-greater",
+    "#specific-weapons-table-minor-lesser",
+    "#specific-weapons-table-minor-greater",
+    "#specific-weapons-table-medium-lesser",
+    "#specific-weapons-table-medium-greater",
+    "#specific-weapons-table-major-lesser",
+    "#specific-weapons-table-major-greater",
+    "#random-armor-or-shield-table",
+    "#random-weapon-table",
+    "#shield-special-abilities-table1",
+    "#shield-special-abilities-table2",
+    "#shield-special-abilities-table3",
+    "#shield-special-abilities-table4",
+    "#melee-weapon-special-abilities-table1",
+    "#melee-weapon-special-abilities-table2",
+    "#melee-weapon-special-abilities-table3",
+    "#melee-weapon-special-abilities-table4",
+    "#ranged-weapon-special-abilities-table1",
+    "#ranged-weapon-special-abilities-table2",
+    "#ranged-weapon-special-abilities-table3",
+    "#ranged-weapon-special-abilities-table4",
+    "#armor-special-abilities-table1",
+    "#armor-special-abilities-table2",
+    "#armor-special-abilities-table3",
+    "#armor-special-abilities-table4",
+    "#armor-special-abilities-table5",
+    "#table-15-12-potions",
+    "#table-15-15-scrolls",
+    "#table-15-17-wands",
+    "#table-15-13-rings",
+    "#table-15-14-rods",
+    "#table-15-16-staves",
+    "#table-15-18-minor-wondrous-items",
+    "#table-15-19-medium-wondrous-items",
+    "#table-15-20-major-wondrous-items",
+    "#specific-placeholder-table-minor-lesser",
+    "#specific-placeholder-table-minor-greater",
+    "#specific-placeholder-table-medium-lesser",
+    "#specific-placeholder-table-medium-greater",
+    "#specific-placeholder-table-major-lesser",
+    "#specific-placeholder-table-major-greater"
+  ];
 
-  var newTable = {};
-  doAllTheSpecs(specs, newTable);
+
+
+
+  var newData = {};
+  doAllTheSpecs(specs, newData);
+
+
+  crapNotBeingImprovedRightNow.forEach(function(tableId) {
+    newData[tableId] = crapData[tableId];
+  });
+
   var testDiv = $("#crapDiv");
-  testDiv.append(JSON.stringify(newTable));
+  testDiv.append(JSON.stringify(newData));
 
 });
