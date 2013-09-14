@@ -9,7 +9,7 @@ require.config({
   }
 });
 
-define(["jquery", "../app/js/data"], function($, crapData){
+define(["jquery", "./crapData"], function($, crapData){
 
   function combineTables(spec, newTable) {
     var demux = crapData[spec.demuxId];
@@ -21,8 +21,9 @@ define(["jquery", "../app/js/data"], function($, crapData){
 
       demux.entries.forEach(function (d) {
         var obj = {};
-        obj.min = d.min;
-        obj.max = d.max;
+        obj.range = {};
+        obj.range.min = d.min;
+        obj.range.max = d.max;
         var id = finalId + d.appendMe;
         obj.entries = crapData[id].entries;
         newEntries.push(obj);
@@ -114,18 +115,28 @@ define(["jquery", "../app/js/data"], function($, crapData){
     "#specific-placeholder-table-medium-lesser",
     "#specific-placeholder-table-medium-greater",
     "#specific-placeholder-table-major-lesser",
-    "#specific-placeholder-table-major-greater"
+    "#specific-placeholder-table-major-greater",
+    "#0-level-potions-and-oils-table-common"
   ];
-
-
-
 
   var newData = {};
   doAllTheSpecs(specs, newData);
 
-
   crapNotBeingImprovedRightNow.forEach(function(tableId) {
-    newData[tableId] = crapData[tableId];
+    var oldTable = crapData[tableId];
+    oldTable.range = {};
+    oldTable.range.min = oldTable.min;
+    oldTable.range.max = oldTable.max;
+
+    delete oldTable.min;
+    delete oldTable.max;
+    if(tableId == "#0-level-potions-and-oils-table-common") {
+      newData["#0-level-potions-and-oils-table"] = crapData[tableId];
+    }
+    else {
+      newData[tableId] = crapData[tableId];
+    }
+
   });
 
   var testDiv = $("#crapDiv");
