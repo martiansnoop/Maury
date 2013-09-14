@@ -1,5 +1,7 @@
 define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], function(database, formatter, specialPicker, d) {
 
+  //Private
+
   const masterTableId = "#table-15-2-random-magic-item-generation";
 
   function pickEntry(tableId, itemAwesomeness) {
@@ -10,7 +12,7 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
     if(!database.tableExists(tableId)) //check tableExists, not !tableId, because not all tables are parsed yet
       return []; //return empty array to not add undefined value to recursive array concat
 
-    var intermediaryResult = pickEntry(tableId, itemAwesomeness);
+    const intermediaryResult = pickEntry(tableId, itemAwesomeness);
 
     return [intermediaryResult].concat(buildItemRecursively(intermediaryResult.nextTableId, itemAwesomeness));
   }
@@ -19,16 +21,22 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
     return buildItemRecursively(masterTableId, itemAwesomeness);
   }
 
+  //Public
+
+  function generateItem(awesomeness) {
+    const rawComponents = rollForItem(awesomeness);
+    const specialAbilities = specialPicker(rawComponents, pickEntry);
+
+    return formatter.format(awesomeness, rawComponents, specialAbilities);
+  }
+
   function generateSeveralItems(specs) {
     var allFormattedItems = [];
 
     specs.forEach(function(spec){
       for(var i = 0; i < spec.count; i++) {
-        var rawComponents = rollForItem(spec.awesomeness);
-        var specialAbilities = specialPicker(rawComponents, pickEntry);
-
-        var formatted = formatter.format(spec.awesomeness, rawComponents, specialAbilities);
-        allFormattedItems.push(formatted);
+        var item = generateItem(spec.awesomeness);
+        allFormattedItems.push(item);
       }
     });
 
@@ -36,6 +44,7 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
   }
 
   return {
+    generateItem: generateItem,
     generateSeveralItems: generateSeveralItems
   };
 
