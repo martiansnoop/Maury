@@ -1,3 +1,6 @@
 node_modules
 bower_components
 todo
+app-build*
+app/js/vendor/*
+app/css/vendor/*
