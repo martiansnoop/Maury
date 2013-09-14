@@ -1,11 +1,9 @@
 define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], function(database, formatter, specialPicker, d) {
 
   const masterTableId = "#table-15-2-random-magic-item-generation";
-  const d100 = d(100);
 
   function pickEntry(tableId, itemAwesomeness) {
-    var dieRoll = d100.roll();
-    return database.lookupEntry(tableId, itemAwesomeness, dieRoll);
+    return database.lookupEntry(tableId, itemAwesomeness);
   }
 
   function buildItemRecursively(tableId, itemAwesomeness) {
@@ -38,7 +36,6 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
   }
 
   return {
-    rollForItem: rollForItem,
     generateSeveralItems: generateSeveralItems
   };
 
