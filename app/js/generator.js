@@ -2,10 +2,8 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
 
   //Private
 
-  const masterTableId = "#table-15-2-random-magic-item-generation";
-
   function pickEntry(tableId, itemAwesomeness) {
-    return database.lookupEntry(tableId, itemAwesomeness);
+    return database.lookupRandomEntry(tableId, itemAwesomeness);
   }
 
   function buildItemRecursively(tableId, itemAwesomeness) {
@@ -13,11 +11,11 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
       return []; //return empty array to not add undefined value to recursive array concat
 
     const intermediaryResult = pickEntry(tableId, itemAwesomeness);
-
     return [intermediaryResult].concat(buildItemRecursively(intermediaryResult.nextTableId, itemAwesomeness));
   }
 
   function rollForItem(itemAwesomeness) {
+    const masterTableId = "#table-15-2-random-magic-item-generation";
     return buildItemRecursively(masterTableId, itemAwesomeness);
   }
 

@@ -14,7 +14,7 @@ define(["./data", "./dice", "jquery", "underscore"], function(dataTables, d, $, 
 
     const entry = _.find(entries, isWithinRange);
     const cloned = $.extend(true, {}, entry);
-    cloned.dieRoll = dieRoll;
+    cloned.dieRoll = dieRoll; //for debugging purposes
 
     return cloned; //clone the table row to keep modifications from affecting the base data
   }
@@ -30,14 +30,14 @@ define(["./data", "./dice", "jquery", "underscore"], function(dataTables, d, $, 
 
   //Public
 
-  function lookup(tableId, rangeProp) {
+  function lookup(tableId, awesomeness) {
     const table =  dataTables[tableId];
 
     //WTF: There have been some instances of empty items generated,
     //mostly with #random-weapon-table. This is because the numbers 65-85
     //missing from the table. I will fix this either by forcing a reroll
     //or adding things to the table myself.
-    return recurseUntilEntry(table, rangeProp);
+    return recurseUntilEntry(table, awesomeness);
   }
 
   function exists(tableId) {
@@ -45,7 +45,7 @@ define(["./data", "./dice", "jquery", "underscore"], function(dataTables, d, $, 
   }
 
   return {
-    lookupEntry: lookup,
+    lookupRandomEntry: lookup,
     tableExists: exists
   }
 
