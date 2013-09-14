@@ -5,7 +5,7 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
 
   function pickEntry(tableId, itemAwesomeness) {
     var dieRoll = d100.roll();
-    return database.lookupEntry(tableId, [itemAwesomeness], dieRoll);
+    return database.lookupEntry(tableId, itemAwesomeness, dieRoll);
   }
 
   function buildItemRecursively(tableId, itemAwesomeness) {

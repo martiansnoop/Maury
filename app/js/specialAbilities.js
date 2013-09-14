@@ -31,7 +31,8 @@ define([], function(){
     for(var i = 0; i < spec.abilities.length; i++) {
       var tableToRollOn = baseTableId.concat(spec.abilities[i]);
 
-      var specialAbility = pickEntry(tableToRollOn,  ["minor"]);
+      //minor/med/major are all the same given how the specials are currently organized
+      var specialAbility = pickEntry(tableToRollOn,  "minor");
 
       //TODO: make this less of an eyesore
       if(specialAbility.cost && specialAbility.cost.indexOf("bonus") > -1) {

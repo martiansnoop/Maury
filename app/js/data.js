@@ -1,6 +1,6 @@
 define({"#1st-level-potions-and-oils-table": [
-    {"min": 1, "max": 75, "entries": [
-      {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max":   4}, "description": "Bless weapon", "url": "http://paizo.com/pathfinderRPG/prd/spells/blessWeapon.html#_bless-weapon", "cost": "50 gp"},
+    {"range": {"min": 1, "max": 75}, "entries": [
+      {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Bless weapon", "url": "http://paizo.com/pathfinderRPG/prd/spells/blessWeapon.html#_bless-weapon", "cost": "50 gp"},
       {"major": {"min": 5, "max": 14}, "medium": {"min": 5, "max": 14}, "minor": {"min": 5, "max": 14}, "description": "Cure light wounds", "url": "http://paizo.com/pathfinderRPG/prd/spells/cureLightWounds.html#_cure-light-wounds", "cost": "50 gp"},
       {"major": {"min": 15, "max": 19}, "medium": {"min": 15, "max": 19}, "minor": {"min": 15, "max": 19}, "description": "Endure elements", "url": "http://paizo.com/pathfinderRPG/prd/spells/endureElements.html#_endure-elements", "cost": "50 gp"},
       {"major": {"min": 20, "max": 27}, "medium": {"min": 20, "max": 27}, "minor": {"min": 20, "max": 27}, "description": "Enlarge person", "url": "http://paizo.com/pathfinderRPG/prd/spells/enlargePerson.html#_enlarge-person", "cost": "50 gp"},
@@ -18,7 +18,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 88, "max": 92}, "medium": {"min": 88, "max": 92}, "minor": {"min": 88, "max": 92}, "description": "Sanctuary", "url": "http://paizo.com/pathfinderRPG/prd/spells/sanctuary.html#_sanctuary", "cost": "50 gp"},
       {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Shield of faith", "url": "http://paizo.com/pathfinderRPG/prd/spells/shieldOfFaith.html#_shield-of-faith", "cost": "50 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Animate rope", "url": "http://paizo.com/pathfinderRPG/prd/spells/animateRope.html#_animate-rope", "cost": "50 gp"},
       {"major": {"min": 5, "max": 11}, "medium": {"min": 5, "max": 11}, "minor": {"min": 5, "max": 11}, "description": "Ant haul", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/antHaul.html#_ant-haul-", "cost": "50 gp"},
       {"major": {"min": 12, "max": 16}, "medium": {"min": 12, "max": 16}, "minor": {"min": 12, "max": 16}, "description": "Cloak of the shade", "cost": "50 gp"},
@@ -39,7 +39,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Vanish", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/vanish.html#_vanish", "cost": "50 gp"}
     ]}
   ], "#2nd-level-potions-and-oils-table": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Aid", "url": "http://paizo.com/pathfinderRPG/prd/spells/aid.html#_aid", "cost": "300 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Align weapon", "url": "http://paizo.com/pathfinderRPG/prd/spells/alignWeapon.html#_align-weapon", "cost": "300 gp"},
       {"major": {"min": 8, "max": 11}, "medium": {"min": 8, "max": 11}, "minor": {"min": 8, "max": 11}, "description": "Barkskin", "url": "http://paizo.com/pathfinderRPG/prd/spells/barkskin.html#_barkskin", "cost": "300 gp"},
@@ -65,7 +65,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 95, "max": 98}, "medium": {"min": 95, "max": 98}, "minor": {"min": 95, "max": 98}, "description": "Spider climb", "url": "http://paizo.com/pathfinderRPG/prd/spells/spiderClimb.html#_spider-climb", "cost": "300 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Undetectable alignment", "url": "http://paizo.com/pathfinderRPG/prd/spells/undetectableAlignment.html#_undetectable-alignment", "cost": "300 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 6}, "medium": {"min": 1, "max": 6}, "minor": {"min": 1, "max": 6}, "description": "Ablative barrier", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/ablativeBarrier.html#_ablative-barrier", "cost": "300 gp"},
       {"major": {"min": 7, "max": 14}, "medium": {"min": 7, "max": 14}, "minor": {"min": 7, "max": 14}, "description": "Acute senses", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/acuteSenses.html#_acute-senses", "cost": "300 gp"},
       {"major": {"min": 15, "max": 19}, "medium": {"min": 15, "max": 19}, "minor": {"min": 15, "max": 19}, "description": "Arcane lock", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneLock.html#_arcane-lock", "cost": "300 gp"},
@@ -85,7 +85,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Wood shape", "url": "http://paizo.com/pathfinderRPG/prd/spells/woodShape.html#_wood-shape", "cost": "300 gp"}
     ]}
   ], "#3rd-level-potions-and-oils-table": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 6}, "medium": {"min": 1, "max": 6}, "minor": {"min": 1, "max": 6}, "description": "Cure serious wounds", "url": "http://paizo.com/pathfinderRPG/prd/spells/cureSeriousWounds.html#_cure-serious-wounds", "cost": "750 gp"},
       {"major": {"min": 7, "max": 10}, "medium": {"min": 7, "max": 10}, "minor": {"min": 7, "max": 10}, "description": "Dispel magic", "url": "http://paizo.com/pathfinderRPG/prd/spells/dispelMagic.html#_dispel-magic", "cost": "750 gp"},
       {"major": {"min": 11, "max": 14}, "medium": {"min": 11, "max": 14}, "minor": {"min": 11, "max": 14}, "description": "Displacement", "url": "http://paizo.com/pathfinderRPG/prd/spells/displacement.html#_displacement", "cost": "750 gp"},
@@ -111,7 +111,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 92, "max": 96}, "medium": {"min": 92, "max": 96}, "minor": {"min": 92, "max": 96}, "description": "Water breathing", "url": "http://paizo.com/pathfinderRPG/prd/spells/waterBreathing.html#_water-breathing", "cost": "750 gp"},
       {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Water walk", "url": "http://paizo.com/pathfinderRPG/prd/spells/waterWalk.html#_water-walk", "cost": "750 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 12}, "medium": {"min": 1, "max": 12}, "minor": {"min": 1, "max": 12}, "description": "Burrow", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/burrow.html#_burrow", "cost": "750 gp"},
       {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "Countless eyes", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/countlessEyes.html#_countless-eyes", "cost": "750 gp"},
       {"major": {"min": 23, "max": 34}, "medium": {"min": 23, "max": 34}, "minor": {"min": 23, "max": 34}, "description": "Daylight", "url": "http://paizo.com/pathfinderRPG/prd/spells/daylight.html#_daylight", "cost": "750 gp"},
@@ -123,7 +123,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 88, "max": 100}, "medium": {"min": 88, "max": 100}, "minor": {"min": 88, "max": 100}, "description": "Nondetection", "url": "http://paizo.com/pathfinderRPG/prd/spells/nondetection.html#_nondetection", "cost": "800 gp"}
     ]}
   ], "#0-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 9}, "medium": {"min": 1, "max": 9}, "minor": {"min": 1, "max": 9}, "description": "Acid splash", "url": "http://paizo.com/pathfinderRPG/prd/spells/acidSplash.html#_acid-splash", "cost": "12 gp, 5 sp"},
       {"major": {"min": 10, "max": 17}, "medium": {"min": 10, "max": 17}, "minor": {"min": 10, "max": 17}, "description": "Daze", "url": "http://paizo.com/pathfinderRPG/prd/spells/daze.html#_daze", "cost": "12 gp, 5 sp"},
       {"major": {"min": 18, "max": 27}, "medium": {"min": 18, "max": 27}, "minor": {"min": 18, "max": 27}, "description": "Detect magic", "url": "http://paizo.com/pathfinderRPG/prd/spells/detectMagic.html#_detect-magic", "cost": "12 gp, 5 sp"},
@@ -136,7 +136,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 82, "max": 91}, "medium": {"min": 82, "max": 91}, "minor": {"min": 82, "max": 91}, "description": "Read magic", "url": "http://paizo.com/pathfinderRPG/prd/spells/readMagic.html#_read-magic", "cost": "12 gp, 5 sp"},
       {"major": {"min": 92, "max": 100}, "medium": {"min": 92, "max": 100}, "minor": {"min": 92, "max": 100}, "description": "Touch of fatigue", "url": "http://paizo.com/pathfinderRPG/prd/spells/touchOfFatigue.html#_touch-of-fatigue", "cost": "12 gp, 5 sp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 7}, "medium": {"min": 1, "max": 7}, "minor": {"min": 1, "max": 7}, "description": "Arcane mark", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneMark.html#_arcane-mark", "cost": "12 gp, 5 sp"},
       {"major": {"min": 8, "max": 17}, "medium": {"min": 8, "max": 17}, "minor": {"min": 8, "max": 17}, "description": "Bleed", "url": "http://paizo.com/pathfinderRPG/prd/spells/bleed.html#_bleed", "cost": "12 gp, 5 sp"},
       {"major": {"min": 18, "max": 25}, "medium": {"min": 18, "max": 25}, "minor": {"min": 18, "max": 25}, "description": "Dancing lights", "url": "http://paizo.com/pathfinderRPG/prd/spells/dancingLights.html#_dancing-lights", "cost": "12 gp, 5 sp"},
@@ -150,7 +150,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 84, "max": 92}, "medium": {"min": 84, "max": 92}, "minor": {"min": 84, "max": 92}, "description": "Spark", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/spark.html#_spark-", "cost": "12 gp, 5 sp"},
       {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Unwitting ally", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/unwittingAlly.html#_unwitting-ally", "cost": "12 gp, 5 sp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 11}, "medium": {"min": 1, "max": 11}, "minor": {"min": 1, "max": 11}, "description": "Bleed", "url": "http://paizo.com/pathfinderRPG/prd/spells/bleed.html#_bleed", "cost": "12 gp, 5 sp"},
       {"major": {"min": 12, "max": 21}, "medium": {"min": 12, "max": 21}, "minor": {"min": 12, "max": 21}, "description": "Create water", "url": "http://paizo.com/pathfinderRPG/prd/spells/createWater.html#_create-water", "cost": "12 gp, 5 sp"},
       {"major": {"min": 22, "max": 34}, "medium": {"min": 22, "max": 34}, "minor": {"min": 22, "max": 34}, "description": "Detect magic", "url": "http://paizo.com/pathfinderRPG/prd/spells/detectMagic.html#_detect-magic", "cost": "12 gp, 5 sp"},
@@ -161,7 +161,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 76, "max": 88}, "medium": {"min": 76, "max": 88}, "minor": {"min": 76, "max": 88}, "description": "Read magic", "url": "http://paizo.com/pathfinderRPG/prd/spells/readMagic.html#_read-magic", "cost": "12 gp, 5 sp"},
       {"major": {"min": 89, "max": 100}, "medium": {"min": 89, "max": 100}, "minor": {"min": 89, "max": 100}, "description": "Stabilize", "url": "http://paizo.com/pathfinderRPG/prd/spells/stabilize.html#_stabilize", "cost": "12 gp, 5 sp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 15}, "medium": {"min": 1, "max": 15}, "minor": {"min": 1, "max": 15}, "description": "Detect poison", "url": "http://paizo.com/pathfinderRPG/prd/spells/detectPoison.html#_detect-poison", "cost": "12 gp, 5 sp"},
       {"major": {"min": 16, "max": 33}, "medium": {"min": 16, "max": 33}, "minor": {"min": 16, "max": 33}, "description": "Flare", "url": "http://paizo.com/pathfinderRPG/prd/spells/flare.html#_flare", "cost": "12 gp, 5 sp"},
       {"major": {"min": 34, "max": 50}, "medium": {"min": 34, "max": 50}, "minor": {"min": 34, "max": 50}, "description": "Guidance", "url": "http://paizo.com/pathfinderRPG/prd/spells/guidance.html#_guidance", "cost": "12 gp, 5 sp"},
@@ -170,7 +170,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 86, "max": 100}, "medium": {"min": 86, "max": 100}, "minor": {"min": 86, "max": 100}, "description": "Virtue", "url": "http://paizo.com/pathfinderRPG/prd/spells/virtue.html#_virtue", "cost": "12 gp, 5 sp"}
     ]}
   ], "#1st-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 5}, "medium": {"min": 1, "max": 5}, "minor": {"min": 1, "max": 5}, "description": "Burning hands", "url": "http://paizo.com/pathfinderRPG/prd/spells/burningHands.html#_burning-hands", "cost": "25 gp"},
       {"major": {"min": 6, "max": 9}, "medium": {"min": 6, "max": 9}, "minor": {"min": 6, "max": 9}, "description": "Cause fear", "url": "http://paizo.com/pathfinderRPG/prd/spells/causeFear.html#_cause-fear", "cost": "25 gp"},
       {"major": {"min": 10, "max": 14}, "medium": {"min": 10, "max": 14}, "minor": {"min": 10, "max": 14}, "description": "Charm person", "url": "http://paizo.com/pathfinderRPG/prd/spells/charmPerson.html#_charm-person", "cost": "25 gp"},
@@ -198,7 +198,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 94, "max": 96}, "medium": {"min": 94, "max": 96}, "minor": {"min": 94, "max": 96}, "description": "Summon monster I", "url": "http://paizo.com/pathfinderRPG/prd/spells/summonMonster.html#_summon-monster-i", "cost": "25 gp"},
       {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "True strike", "url": "http://paizo.com/pathfinderRPG/prd/spells/trueStrike.html#_true-strike", "cost": "25 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Air bubble", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/airBubble.html#_air-bubble", "cost": "25 gp"},
       {"major": {"min": 3, "max": 6}, "medium": {"min": 3, "max": 6}, "minor": {"min": 3, "max": 6}, "description": "Alarm", "url": "http://paizo.com/pathfinderRPG/prd/spells/alarm.html#_alarm", "cost": "25 gp"},
       {"major": {"min": 7, "max": 8}, "medium": {"min": 7, "max": 8}, "minor": {"min": 7, "max": 8}, "description": "Animate rope", "url": "http://paizo.com/pathfinderRPG/prd/spells/animateRope.html#_animate-rope", "cost": "25 gp"},
@@ -233,7 +233,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 97, "max": 98}, "medium": {"min": 97, "max": 98}, "minor": {"min": 97, "max": 98}, "description": "Ventriloquism", "url": "http://paizo.com/pathfinderRPG/prd/spells/ventriloquism.html#_ventriloquism", "cost": "25 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Voice alteration", "cost": "25 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Bane", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/weapons.html#_weapons-bane", "cost": "25 gp"},
       {"major": {"min": 5, "max": 10}, "medium": {"min": 5, "max": 10}, "minor": {"min": 5, "max": 10}, "description": "Bless", "url": "http://paizo.com/pathfinderRPG/prd/spells/bless.html#_bless", "cost": "25 gp"},
       {"major": {"min": 11, "max": 15}, "medium": {"min": 11, "max": 15}, "minor": {"min": 11, "max": 15}, "description": "Cause fear", "url": "http://paizo.com/pathfinderRPG/prd/spells/causeFear.html#_cause-fear", "cost": "25 gp"},
@@ -262,7 +262,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 95, "max": 97}, "medium": {"min": 95, "max": 97}, "minor": {"min": 95, "max": 97}, "description": "Summon monster I", "url": "http://paizo.com/pathfinderRPG/prd/spells/summonMonster.html#_summon-monster-i", "cost": "25 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Summon nature's ally I", "url": "http://paizo.com/pathfinderRPG/prd/spells/summonNatureSAlly.html#_summon-nature-s-ally-i", "cost": "25 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Ant haul", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/antHaul.html#_ant-haul-", "cost": "25 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Aspect of the falcon", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aspectOfTheFalcon.html#_aspect-of-the-falcon", "cost": "25 gp"},
       {"major": {"min": 8, "max": 9}, "medium": {"min": 8, "max": 9}, "minor": {"min": 8, "max": 9}, "description": "Calm animals", "url": "http://paizo.com/pathfinderRPG/prd/spells/calmAnimals.html#_calm-animals", "cost": "25 gp"},
@@ -300,7 +300,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Curse water", "url": "http://paizo.com/pathfinderRPG/prd/spells/curseWater.html#_curse-water", "cost": "50 gp"}
     ]}
   ], "#2nd-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Acid arrow", "url": "http://paizo.com/pathfinderRPG/prd/spells/acidArrow.html#_acid-arrow", "cost": "150 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Alter self", "url": "http://paizo.com/pathfinderRPG/prd/spells/alterSelf.html#_alter-self", "cost": "150 gp"},
       {"major": {"min": 8, "max": 12}, "medium": {"min": 8, "max": 12}, "minor": {"min": 8, "max": 12}, "description": "Bear's endurance", "url": "http://paizo.com/pathfinderRPG/prd/spells/bearSEndurance.html#_bear-s-endurance", "cost": "150 gp"},
@@ -331,7 +331,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 94, "max": 98}, "medium": {"min": 94, "max": 98}, "minor": {"min": 94, "max": 98}, "description": "Web", "url": "http://paizo.com/pathfinderRPG/prd/spells/web.html#_web", "cost": "150 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Whispering wind", "url": "http://paizo.com/pathfinderRPG/prd/spells/whisperingWind.html#_whispering-wind", "cost": "150 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Bestow weapon proficiency", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/bestowWeaponProficiency.html#_bestow-weapon-proficiency", "cost": "150 gp"},
       {"major": {"min": 4, "max": 6}, "medium": {"min": 4, "max": 6}, "minor": {"min": 4, "max": 6}, "description": "Blindness/deafness", "url": "http://paizo.com/pathfinderRPG/prd/spells/blindnessDeafness.html#_blindness-deafness", "cost": "150 gp"},
       {"major": {"min": 7, "max": 9}, "medium": {"min": 7, "max": 9}, "minor": {"min": 7, "max": 9}, "description": "Burning gaze", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/burningGaze.html#_burning-gaze", "cost": "150 gp"},
@@ -371,7 +371,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 98, "max": 99}, "medium": {"min": 98, "max": 99}, "minor": {"min": 98, "max": 99}, "description": "Continual flame", "url": "http://paizo.com/pathfinderRPG/prd/spells/continualFlame.html#_continual-flame", "cost": "200 gp"},
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Phantom trap", "url": "http://paizo.com/pathfinderRPG/prd/spells/phantomTrap.html#_phantom-trap", "cost": "200 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Aid", "url": "http://paizo.com/pathfinderRPG/prd/spells/aid.html#_aid", "cost": "150 gp"},
       {"major": {"min": 5, "max": 6}, "medium": {"min": 5, "max": 6}, "minor": {"min": 5, "max": 6}, "description": "Align weapon", "url": "http://paizo.com/pathfinderRPG/prd/spells/alignWeapon.html#_align-weapon", "cost": "150 gp"},
       {"major": {"min": 7, "max": 8}, "medium": {"min": 7, "max": 8}, "minor": {"min": 7, "max": 8}, "description": "Animal messenger", "url": "http://paizo.com/pathfinderRPG/prd/spells/animalMessenger.html#_animal-messenger", "cost": "150 gp"},
@@ -405,7 +405,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 97}, "medium": {"min": 96, "max": 97}, "minor": {"min": 96, "max": 97}, "description": "Zone of truth", "url": "http://paizo.com/pathfinderRPG/prd/spells/zoneOfTruth.html#_zone-of-truth", "cost": "150 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Augury", "url": "http://paizo.com/pathfinderRPG/prd/spells/augury.html#_augury", "cost": "175 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Animal aspect", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/animalAspect.html#_animal-aspect", "cost": "150 gp"},
       {"major": {"min": 5, "max": 6}, "medium": {"min": 5, "max": 6}, "minor": {"min": 5, "max": 6}, "description": "Animal trance", "url": "http://paizo.com/pathfinderRPG/prd/spells/animalTrance.html#_animal-trance", "cost": "150 gp"},
       {"major": {"min": 7, "max": 10}, "medium": {"min": 7, "max": 10}, "minor": {"min": 7, "max": 10}, "description": "Animate dead, lesser", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/animateDead.html#_animate-dead,-lesser", "cost": "150 gp"},
@@ -445,7 +445,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {}, "medium": {}, "minor": {}, "description": "Masterwork transformation", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/masterworkTransformation.html#_masterwork-transformation", "cost": "450 gp"}
     ]}
   ], "#3rd-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Beast shape I", "url": "http://paizo.com/pathfinderRPG/prd/spells/beastShape.html#_beast-shape-i", "cost": "375 gp"},
       {"major": {"min": 4, "max": 7}, "medium": {"min": 4, "max": 7}, "minor": {"min": 4, "max": 7}, "description": "Blink", "url": "http://paizo.com/pathfinderRPG/prd/spells/blink.html#_blink", "cost": "375 gp"},
       {"major": {"min": 8, "max": 12}, "medium": {"min": 8, "max": 12}, "minor": {"min": 8, "max": 12}, "description": "Dispel magic", "url": "http://paizo.com/pathfinderRPG/prd/spells/dispelMagic.html#_dispel-magic", "cost": "375 gp"},
@@ -475,7 +475,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 95, "max": 97}, "medium": {"min": 95, "max": 97}, "minor": {"min": 95, "max": 97}, "description": "Vampiric touch", "url": "http://paizo.com/pathfinderRPG/prd/spells/vampiricTouch.html#_vampiric-touch", "cost": "375 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Water breathing", "url": "http://paizo.com/pathfinderRPG/prd/spells/waterBreathing.html#_water-breathing", "cost": "375 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Animate dead, lesser", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/animateDead.html#_animate-dead,-lesser", "cost": "375 gp"},
       {"major": {"min": 4, "max": 6}, "medium": {"min": 4, "max": 6}, "minor": {"min": 4, "max": 6}, "description": "Aqueous orb", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aqueousOrb.html#_aqueous-orb", "cost": "375 gp"},
       {"major": {"min": 7, "max": 8}, "medium": {"min": 7, "max": 8}, "minor": {"min": 7, "max": 8}, "description": "Arcane sight", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneSight.html#_arcane-sight", "cost": "375 gp"},
@@ -511,7 +511,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 97, "max": 99}, "medium": {"min": 97, "max": 99}, "minor": {"min": 97, "max": 99}, "description": "Nondetection", "url": "http://paizo.com/pathfinderRPG/prd/spells/nondetection.html#_nondetection", "cost": "425 gp"},
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Sepia snake sigil", "url": "http://paizo.com/pathfinderRPG/prd/spells/sepiaSnakeSigil.html#_sepia-snake-sigil", "cost": "875 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Bestow curse", "url": "http://paizo.com/pathfinderRPG/prd/spells/bestowCurse.html#_bestow-curse", "cost": "375 gp"},
       {"major": {"min": 4, "max": 8}, "medium": {"min": 4, "max": 8}, "minor": {"min": 4, "max": 8}, "description": "Call lightning", "url": "http://paizo.com/pathfinderRPG/prd/spells/callLightning.html#_call-lightning", "cost": "375 gp"},
       {"major": {"min": 9, "max": 15}, "medium": {"min": 9, "max": 15}, "minor": {"min": 9, "max": 15}, "description": "Cure serious wounds", "url": "http://paizo.com/pathfinderRPG/prd/spells/cureSeriousWounds.html#_cure-serious-wounds", "cost": "375 gp"},
@@ -543,7 +543,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 97}, "medium": {"min": 96, "max": 97}, "minor": {"min": 96, "max": 97}, "description": "Water walk", "url": "http://paizo.com/pathfinderRPG/prd/spells/waterWalk.html#_water-walk", "cost": "375 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Animate dead", "url": "http://paizo.com/pathfinderRPG/prd/spells/animateDead.html#_animate-dead", "cost": "625 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Aqueous orb", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aqueousOrb.html#_aqueous-orb", "cost": "375 gp"},
       {"major": {"min": 5, "max": 8}, "medium": {"min": 5, "max": 8}, "minor": {"min": 5, "max": 8}, "description": "Archon's aura", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/archonSAura.html#_archon's-aura", "cost": "375 gp"},
       {"major": {"min": 9, "max": 12}, "medium": {"min": 9, "max": 12}, "minor": {"min": 9, "max": 12}, "description": "Bestow insight", "cost": "375 gp"},
@@ -575,7 +575,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Symbol of healing", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/symbolOfHealing.html#_symbol-of-healing", "cost": "875 gp"}
     ]}
   ], "#4th-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Beast shape II", "url": "http://paizo.com/pathfinderRPG/prd/spells/beastShape.html#_beast-shape-ii", "cost": "700 gp"},
       {"major": {"min": 4, "max": 5}, "medium": {"min": 4, "max": 5}, "minor": {"min": 4, "max": 5}, "description": "Bestow curse", "url": "http://paizo.com/pathfinderRPG/prd/spells/bestowCurse.html#_bestow-curse", "cost": "700 gp"},
       {"major": {"min": 6, "max": 9}, "medium": {"min": 6, "max": 9}, "minor": {"min": 6, "max": 9}, "description": "Black tentacles", "url": "http://paizo.com/pathfinderRPG/prd/spells/blackTentacles.html#_black-tentacles", "cost": "700 gp"},
@@ -605,7 +605,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 93, "max": 97}, "medium": {"min": 93, "max": 97}, "minor": {"min": 93, "max": 97}, "description": "Stoneskin", "url": "http://paizo.com/pathfinderRPG/prd/spells/stoneskin.html#_stoneskin", "cost": "950 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Animate dead", "url": "http://paizo.com/pathfinderRPG/prd/spells/animateDead.html#_animate-dead", "cost": "1,050 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Acid pit", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/acidPit.html#_acid-pit-", "cost": "700 gp"},
       {"major": {"min": 3, "max": 6}, "medium": {"min": 3, "max": 6}, "minor": {"min": 3, "max": 6}, "description": "Arcane eye", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneEye.html#_arcane-eye", "cost": "700 gp"},
       {"major": {"min": 7, "max": 10}, "medium": {"min": 7, "max": 10}, "minor": {"min": 7, "max": 10}, "description": "Ball lightning", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/ballLightning.html#_ball-lightning", "cost": "700 gp"},
@@ -638,7 +638,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 98, "max": 99}, "medium": {"min": 98, "max": 99}, "minor": {"min": 98, "max": 99}, "description": "Fire trap", "url": "http://paizo.com/pathfinderRPG/prd/spells/fireTrap.html#_fire-trap", "cost": "725 gp"},
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Mnemonic enhancer", "url": "http://paizo.com/pathfinderRPG/prd/spells/mnemonicEnhancer.html#_mnemonic-enhancer", "cost": "750 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Air walk", "url": "http://paizo.com/pathfinderRPG/prd/spells/airWalk.html#_air-walk", "cost": "700 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Chaos hammer", "url": "http://paizo.com/pathfinderRPG/prd/spells/chaosHammer.html#_chaos-hammer", "cost": "700 gp"},
       {"major": {"min": 8, "max": 15}, "medium": {"min": 8, "max": 15}, "minor": {"min": 8, "max": 15}, "description": "Cure critical wounds", "url": "http://paizo.com/pathfinderRPG/prd/spells/cureCriticalWounds.html#_cure-critical-wounds", "cost": "700 gp"},
@@ -665,7 +665,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 94, "max": 96}, "medium": {"min": 94, "max": 96}, "minor": {"min": 94, "max": 96}, "description": "Planar ally, lesser", "url": "http://paizo.com/pathfinderRPG/prd/spells/planarAlly.html#_planar-ally-lesser", "cost": "1,200 gp"},
       {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Restoration", "url": "http://paizo.com/pathfinderRPG/prd/spells/restoration.html#_restoration", "cost": "1,700 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Absorb toxicity", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/absorbToxicity.html#_absorb-toxicity", "cost": "700 gp"},
       {"major": {"min": 5, "max": 6}, "medium": {"min": 5, "max": 6}, "minor": {"min": 5, "max": 6}, "description": "Antiplant shell", "url": "http://paizo.com/pathfinderRPG/prd/spells/antiplantShell.html#_antiplant-shell", "cost": "700 gp"},
       {"major": {"min": 7, "max": 11}, "medium": {"min": 7, "max": 11}, "minor": {"min": 7, "max": 11}, "description": "Aspect of the stag", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aspectOfTheStag.html#_aspect-of-the-stag", "cost": "700 gp"},
@@ -693,7 +693,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Symbol of slowing", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/symbolOfSlowing.html#_symbol-of-slowing", "cost": "1,700 gp"}
     ]}
   ], "#5th-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Baleful polymorph", "url": "http://paizo.com/pathfinderRPG/prd/spells/balefulPolymorph.html#_baleful-polymorph", "cost": "1,125 gp"},
       {"major": {"min": 4, "max": 7}, "medium": {"min": 4, "max": 7}, "minor": {"min": 4, "max": 7}, "description": "Beast shape III", "url": "http://paizo.com/pathfinderRPG/prd/spells/beastShape.html#_beast-shape-iii", "cost": "1,125 gp"},
       {"major": {"min": 8, "max": 10}, "medium": {"min": 8, "max": 10}, "minor": {"min": 8, "max": 10}, "description": "Break enchantment", "url": "http://paizo.com/pathfinderRPG/prd/spells/breakEnchantment.html#_break-enchantment", "cost": "1,125 gp"},
@@ -722,7 +722,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 97}, "medium": {"min": 96, "max": 97}, "minor": {"min": 96, "max": 97}, "description": "Symbol of pain", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfPain.html#_symbol-of-pain", "cost": "2,125 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Symbol of sleep", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfSleep.html#_symbol-of-sleep", "cost": "2,125 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Absorb toxicity", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/absorbToxicity.html#_absorb-toxicity", "cost": "1,125 gp"},
       {"major": {"min": 3, "max": 4}, "medium": {"min": 3, "max": 4}, "minor": {"min": 3, "max": 4}, "description": "Animal growth", "url": "http://paizo.com/pathfinderRPG/prd/spells/animalGrowth.html#_animal-growth", "cost": "1,125 gp"},
       {"major": {"min": 5, "max": 6}, "medium": {"min": 5, "max": 6}, "minor": {"min": 5, "max": 6}, "description": "Blight", "url": "http://paizo.com/pathfinderRPG/prd/spells/blight.html#_blight", "cost": "1,125 gp"},
@@ -757,7 +757,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 95, "max": 98}, "medium": {"min": 95, "max": 98}, "minor": {"min": 95, "max": 98}, "description": "Wind blades", "cost": "1,125 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "False vision", "url": "http://paizo.com/pathfinderRPG/prd/spells/falseVision.html#_false-vision", "cost": "1,375 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Animal growth", "url": "http://paizo.com/pathfinderRPG/prd/spells/animalGrowth.html#_animal-growth", "cost": "1,125 gp"},
       {"major": {"min": 3, "max": 4}, "medium": {"min": 3, "max": 4}, "minor": {"min": 3, "max": 4}, "description": "Atonement", "url": "http://paizo.com/pathfinderRPG/prd/spells/atonement.html#_atonement", "cost": "1,125 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Baleful polymorph", "url": "http://paizo.com/pathfinderRPG/prd/spells/balefulPolymorph.html#_baleful-polymorph", "cost": "1,125 gp"},
@@ -785,7 +785,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 92, "max": 94}, "medium": {"min": 92, "max": 94}, "minor": {"min": 92, "max": 94}, "description": "Awaken", "url": "http://paizo.com/pathfinderRPG/prd/spells/awaken.html#_awaken", "cost": "3,125 gp"},
       {"major": {"min": 95, "max": 100}, "medium": {"min": 95, "max": 100}, "minor": {"min": 95, "max": 100}, "description": "Raise dead", "url": "http://paizo.com/pathfinderRPG/prd/spells/raiseDead.html#_raise-dead", "cost": "6,125 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Air walk, communal", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/airWalk.html#_air-walk,-communal", "cost": "1,125 gp"},
       {"major": {"min": 4, "max": 8}, "medium": {"min": 4, "max": 8}, "minor": {"min": 4, "max": 8}, "description": "Aspect of the wolf", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aspectOfTheWolf.html#_aspect-of-the-wolf", "cost": "1,125 gp"},
       {"major": {"min": 9, "max": 11}, "medium": {"min": 9, "max": 11}, "minor": {"min": 9, "max": 11}, "description": "Blessing of the salamander", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/blessingOfTheSalamander.html#_blessing-of-the-salamander", "cost": "1,125 gp"},
@@ -818,7 +818,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Unhallow2", "url": "http://paizo.com/pathfinderRPG/prd/spells/unhallow.html#_unhallow", "cost": "6,125 gp"}
     ]}
   ], "#6th-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Acid fog", "url": "http://paizo.com/pathfinderRPG/prd/spells/acidFog.html#_acid-fog", "cost": "1,650 gp"},
       {"major": {"min": 4, "max": 7}, "medium": {"min": 4, "max": 7}, "minor": {"min": 4, "max": 7}, "description": "Antimagic field", "url": "http://paizo.com/pathfinderRPG/prd/spells/antimagicField.html#_antimagic-field", "cost": "1,650 gp"},
       {"major": {"min": 8, "max": 10}, "medium": {"min": 8, "max": 10}, "minor": {"min": 8, "max": 10}, "description": "Bear's endurance, mass", "url": "http://paizo.com/pathfinderRPG/prd/spells/bearSEndurance.html#_bear-s-endurance-mass", "cost": "1,650 gp"},
@@ -851,7 +851,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 97, "max": 98}, "medium": {"min": 97, "max": 98}, "minor": {"min": 97, "max": 98}, "description": "Circle of death", "url": "http://paizo.com/pathfinderRPG/prd/spells/circleOfDeath.html#_circle-of-death", "cost": "2,150 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Symbol of fear", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfFear.html#_symbol-of-fear", "cost": "2,650 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Analyze dweomer", "url": "http://paizo.com/pathfinderRPG/prd/spells/analyzeDweomer.html#_analyze-dweomer", "cost": "1,650 gp"},
       {"major": {"min": 5, "max": 8}, "medium": {"min": 5, "max": 8}, "minor": {"min": 5, "max": 8}, "description": "Battlemind link", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/battlemindLink.html#_battlemind-link", "cost": "1,650 gp"},
       {"major": {"min": 9, "max": 12}, "medium": {"min": 9, "max": 12}, "minor": {"min": 9, "max": 12}, "description": "Cloak of dreams", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/cloakOfDreams.html#_cloak-of-dreams", "cost": "1,650 gp"},
@@ -879,7 +879,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 98}, "medium": {"min": 96, "max": 98}, "minor": {"min": 96, "max": 98}, "description": "Undeath to death", "url": "http://paizo.com/pathfinderRPG/prd/spells/undeathToDeath.html#_undeath-to-death", "cost": "2,150 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Symbol of persuasion", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfPersuasion.html#_symbol-of-persuasion", "cost": "6,650 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 5}, "medium": {"min": 1, "max": 5}, "minor": {"min": 1, "max": 5}, "description": "Bear's endurance, mass", "url": "http://paizo.com/pathfinderRPG/prd/spells/bearSEndurance.html#_bear-s-endurance-mass", "cost": "1,650 gp"},
       {"major": {"min": 6, "max": 11}, "medium": {"min": 6, "max": 11}, "minor": {"min": 6, "max": 11}, "description": "Blade barrier", "url": "http://paizo.com/pathfinderRPG/prd/spells/bladeBarrier.html#_blade-barrier", "cost": "1,650 gp"},
       {"major": {"min": 12, "max": 16}, "medium": {"min": 12, "max": 16}, "minor": {"min": 12, "max": 16}, "description": "Bull's strength, mass", "url": "http://paizo.com/pathfinderRPG/prd/spells/bullSStrength.html#_bull-s-strength-mass", "cost": "1,650 gp"},
@@ -900,7 +900,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 92, "max": 96}, "medium": {"min": 92, "max": 96}, "minor": {"min": 92, "max": 96}, "description": "Word of recall", "url": "http://paizo.com/pathfinderRPG/prd/spells/wordOfRecall.html#_word-of-recall", "cost": "1,650 gp"},
       {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Planar ally", "url": "http://paizo.com/pathfinderRPG/prd/spells/planarAlly.html#_planar-ally", "cost": "2,900 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 5}, "medium": {"min": 1, "max": 5}, "minor": {"min": 1, "max": 5}, "description": "Animate objects", "url": "http://paizo.com/pathfinderRPG/prd/spells/animateObjects.html#_animate-objects", "cost": "1,650 gp"},
       {"major": {"min": 6, "max": 9}, "medium": {"min": 6, "max": 9}, "minor": {"min": 6, "max": 9}, "description": "Antilife shell", "url": "http://paizo.com/pathfinderRPG/prd/spells/antilifeShell.html#_antilife-shell", "cost": "1,650 gp"},
       {"major": {"min": 10, "max": 15}, "medium": {"min": 10, "max": 15}, "minor": {"min": 10, "max": 15}, "description": "Banishment", "url": "http://paizo.com/pathfinderRPG/prd/spells/banishment.html#_banishment", "cost": "1,650 gp"},
@@ -928,7 +928,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Symbol of persuasion", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfPersuasion.html#_symbol-of-persuasion", "cost": "6,650 gp"}
     ]}
   ], "#7th-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Arcane sight, greater", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneSight.html#_arcane-sight-greater", "cost": "2,275 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Banishment", "url": "http://paizo.com/pathfinderRPG/prd/spells/banishment.html#_banishment", "cost": "2,275 gp"},
       {"major": {"min": 8, "max": 13}, "medium": {"min": 8, "max": 13}, "minor": {"min": 8, "max": 13}, "description": "Delayed blast fireball", "url": "http://paizo.com/pathfinderRPG/prd/spells/delayedBlastFireball.html#_delayed-blast-fireball", "cost": "2,275 gp"},
@@ -954,7 +954,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 94, "max": 97}, "medium": {"min": 94, "max": 97}, "minor": {"min": 94, "max": 97}, "description": "Forcecage", "url": "http://paizo.com/pathfinderRPG/prd/spells/forcecage.html#_forcecage", "cost": "2,775 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Limited wish", "url": "http://paizo.com/pathfinderRPG/prd/spells/limitedWish.html#_limited-wish", "cost": "3,775 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Control undead", "url": "http://paizo.com/pathfinderRPG/prd/spells/controlUndead.html#_control-undead", "cost": "2,275 gp"},
       {"major": {"min": 4, "max": 7}, "medium": {"min": 4, "max": 7}, "minor": {"min": 4, "max": 7}, "description": "Control weather", "url": "http://paizo.com/pathfinderRPG/prd/spells/controlWeather.html#_control-weather", "cost": "2,275 gp"},
       {"major": {"min": 8, "max": 10}, "medium": {"min": 8, "max": 10}, "minor": {"min": 8, "max": 10}, "description": "Create demiplane, lesser", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/createDemiplane.html#_create-demiplane,-lesser", "cost": "2,275 gp"},
@@ -982,7 +982,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 97, "max": 98}, "medium": {"min": 97, "max": 98}, "minor": {"min": 97, "max": 98}, "description": "Symbol of weakness", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfWeakness.html#_symbol-of-weakness", "cost": "7,275 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Simulacrum", "url": "http://paizo.com/pathfinderRPG/prd/spells/simulacrum.html#_simulacrum", "cost": "8,775 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Blasphemy", "url": "http://paizo.com/pathfinderRPG/prd/spells/blasphemy.html#_blasphemy", "cost": "2,275 gp"},
       {"major": {"min": 5, "max": 10}, "medium": {"min": 5, "max": 10}, "minor": {"min": 5, "max": 10}, "description": "Control weather", "url": "http://paizo.com/pathfinderRPG/prd/spells/controlWeather.html#_control-weather", "cost": "2,275 gp"},
       {"major": {"min": 11, "max": 17}, "medium": {"min": 11, "max": 17}, "minor": {"min": 11, "max": 17}, "description": "Creeping doom", "url": "http://paizo.com/pathfinderRPG/prd/spells/creepingDoom.html#_creeping-doom", "cost": "2,275 gp"},
@@ -1003,7 +1003,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 90, "max": 94}, "medium": {"min": 90, "max": 94}, "minor": {"min": 90, "max": 94}, "description": "Restoration, greater", "url": "http://paizo.com/pathfinderRPG/prd/spells/restoration.html#_restoration-greater", "cost": "7,275 gp"},
       {"major": {"min": 95, "max": 100}, "medium": {"min": 95, "max": 100}, "minor": {"min": 95, "max": 100}, "description": "Resurrection", "url": "http://paizo.com/pathfinderRPG/prd/spells/resurrection.html#_resurrection", "cost": "12,275 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 8}, "medium": {"min": 1, "max": 8}, "minor": {"min": 1, "max": 8}, "description": "Animate plants", "url": "http://paizo.com/pathfinderRPG/prd/spells/animatePlants.html#_animate-plants", "cost": "2,275 gp"},
       {"major": {"min": 9, "max": 17}, "medium": {"min": 9, "max": 17}, "minor": {"min": 9, "max": 17}, "description": "Changestaff", "url": "http://paizo.com/pathfinderRPG/prd/spells/changestaff.html#_changestaff", "cost": "2,275 gp"},
       {"major": {"min": 18, "max": 24}, "medium": {"min": 18, "max": 24}, "minor": {"min": 18, "max": 24}, "description": "Circle of clarity", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/circleOfClarity.html#_circle-of-clarity", "cost": "2,275 gp"},
@@ -1020,7 +1020,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Symbol of weakness", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfWeakness.html#_symbol-of-weakness", "cost": "7,275 gp"}
     ]}
   ], "#8th-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 5}, "medium": {"min": 1, "max": 5}, "minor": {"min": 1, "max": 5}, "description": "Charm monster, mass", "url": "http://paizo.com/pathfinderRPG/prd/spells/charmMonster.html#_charm-monster-mass", "cost": "3,000 gp"},
       {"major": {"min": 6, "max": 9}, "medium": {"min": 6, "max": 9}, "minor": {"min": 6, "max": 9}, "description": "Demand", "url": "http://paizo.com/pathfinderRPG/prd/spells/demand.html#_demand", "cost": "3,000 gp"},
       {"major": {"min": 10, "max": 13}, "medium": {"min": 10, "max": 13}, "minor": {"min": 10, "max": 13}, "description": "Dimensional lock", "url": "http://paizo.com/pathfinderRPG/prd/spells/dimensionalLock.html#_dimensional-lock", "cost": "3,000 gp"},
@@ -1043,7 +1043,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 95, "max": 97}, "medium": {"min": 95, "max": 97}, "minor": {"min": 95, "max": 97}, "description": "Temporal stasis", "url": "http://paizo.com/pathfinderRPG/prd/spells/temporalStasis.html#_temporal-stasis", "cost": "8,000 gp"},
       {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Trap the soul", "url": "http://paizo.com/pathfinderRPG/prd/spells/trapTheSoul.html#_trap-the-soul", "cost": "23,000 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Antipathy", "url": "http://paizo.com/pathfinderRPG/prd/spells/antipathy.html#_antipathy", "cost": "3,000 gp"},
       {"major": {"min": 5, "max": 10}, "medium": {"min": 5, "max": 10}, "minor": {"min": 5, "max": 10}, "description": "Clenched fist", "url": "http://paizo.com/pathfinderRPG/prd/spells/clenchedFist.html#_clenched-fist", "cost": "3,000 gp"},
       {"major": {"min": 11, "max": 12}, "medium": {"min": 11, "max": 12}, "minor": {"min": 11, "max": 12}, "description": "Clone", "url": "http://paizo.com/pathfinderRPG/prd/spells/clone.html#_clone", "cost": "3,000 gp"},
@@ -1068,7 +1068,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 98}, "medium": {"min": 96, "max": 98}, "minor": {"min": 96, "max": 98}, "description": "Symbol of insanity", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfInsanity.html#_symbol-of-insanity", "cost": "8,000 gp"},
       {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Binding (chaining)", "url": "http://paizo.com/pathfinderRPG/prd/spells/binding.html#_binding", "cost": "13,000 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 8}, "medium": {"min": 1, "max": 8}, "minor": {"min": 1, "max": 8}, "description": "Antimagic field", "url": "http://paizo.com/pathfinderRPG/prd/spells/antimagicField.html#_antimagic-field", "cost": "3,000 gp"},
       {"major": {"min": 9, "max": 14}, "medium": {"min": 9, "max": 14}, "minor": {"min": 9, "max": 14}, "description": "Cloak of chaos", "url": "http://paizo.com/pathfinderRPG/prd/spells/cloakOfChaos.html#_cloak-of-chaos", "cost": "3,000 gp"},
       {"major": {"min": 15, "max": 23}, "medium": {"min": 15, "max": 23}, "minor": {"min": 15, "max": 23}, "description": "Cure critical wounds, mass", "url": "http://paizo.com/pathfinderRPG/prd/spells/cureCriticalWounds.html#_cure-critical-wounds-mass", "cost": "3,000 gp"},
@@ -1085,7 +1085,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 90, "max": 95}, "medium": {"min": 90, "max": 95}, "minor": {"min": 90, "max": 95}, "description": "Unholy aura", "url": "http://paizo.com/pathfinderRPG/prd/spells/unholyAura.html#_unholy-aura", "cost": "3,000 gp"},
       {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Planar ally, greater", "url": "http://paizo.com/pathfinderRPG/prd/spells/planarAlly.html#_planar-ally-greater", "cost": "5,500 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 7}, "medium": {"min": 1, "max": 7}, "minor": {"min": 1, "max": 7}, "description": "Animal shapes", "url": "http://paizo.com/pathfinderRPG/prd/spells/animalShapes.html#_animal-shapes", "cost": "3,000 gp"},
       {"major": {"min": 8, "max": 13}, "medium": {"min": 8, "max": 13}, "minor": {"min": 8, "max": 13}, "description": "Blood mist", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/bloodMist.html#_blood-mist", "cost": "3,000 gp"},
       {"major": {"min": 14, "max": 18}, "medium": {"min": 14, "max": 18}, "minor": {"min": 14, "max": 18}, "description": "Control plants", "url": "http://paizo.com/pathfinderRPG/prd/spells/controlPlants.html#_control-plants", "cost": "3,000 gp"},
@@ -1104,7 +1104,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Symbol of insanity", "url": "http://paizo.com/pathfinderRPG/prd/spells/symbolOfInsanity.html#_symbol-of-insanity", "cost": "8,000 gp"}
     ]}
   ], "#9th-level-scrolls-table": [
-    {"min": 1, "max": 45, "entries": [
+    {"range": {"min": 1, "max": 45}, "entries": [
       {"major": {"min": 1, "max": 6}, "medium": {"min": 1, "max": 6}, "minor": {"min": 1, "max": 6}, "description": "Dominate monster", "url": "http://paizo.com/pathfinderRPG/prd/spells/dominateMonster.html#_dominate-monster", "cost": "3,825 gp"},
       {"major": {"min": 7, "max": 11}, "medium": {"min": 7, "max": 11}, "minor": {"min": 7, "max": 11}, "description": "Energy drain", "url": "http://paizo.com/pathfinderRPG/prd/spells/energyDrain.html#_energy-drain", "cost": "3,825 gp"},
       {"major": {"min": 12, "max": 16}, "medium": {"min": 12, "max": 16}, "minor": {"min": 12, "max": 16}, "description": "Freedom", "url": "http://paizo.com/pathfinderRPG/prd/spells/freedom.html#_freedom", "cost": "3,825 gp"},
@@ -1123,7 +1123,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 91, "max": 96}, "medium": {"min": 91, "max": 96}, "minor": {"min": 91, "max": 96}, "description": "Teleportation circle", "url": "http://paizo.com/pathfinderRPG/prd/spells/teleportationCircle.html#_teleportation-circle", "cost": "4,825 gp"},
       {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Wish", "url": "http://paizo.com/pathfinderRPG/prd/spells/wish.html#_wish", "cost": "28,825 gp"}
     ]},
-    {"min": 46, "max": 60, "entries": [
+    {"range": {"min": 46, "max": 60}, "entries": [
       {"major": {"min": 1, "max": 6}, "medium": {"min": 1, "max": 6}, "minor": {"min": 1, "max": 6}, "description": "Create demiplane, greater", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/createDemiplane.html#_create-demiplane,-greater", "cost": "3,825 gp"},
       {"major": {"min": 7, "max": 15}, "medium": {"min": 7, "max": 15}, "minor": {"min": 7, "max": 15}, "description": "Crushing hand", "url": "http://paizo.com/pathfinderRPG/prd/spells/crushingHand.html#_crushing-hand", "cost": "3,825 gp"},
       {"major": {"min": 16, "max": 23}, "medium": {"min": 16, "max": 23}, "minor": {"min": 16, "max": 23}, "description": "Etherealness", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/armor.html#_armor-etherealness", "cost": "3,825 gp"},
@@ -1139,7 +1139,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 89, "max": 95}, "medium": {"min": 89, "max": 95}, "minor": {"min": 89, "max": 95}, "description": "Winds of vengeance", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/windsOfVengeance.html#_winds-of-vengeance", "cost": "3,825 gp"},
       {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Refuge", "url": "http://paizo.com/pathfinderRPG/prd/spells/refuge.html#_refuge", "cost": "4,325 gp"}
     ]},
-    {"min": 61, "max": 90, "entries": [
+    {"range": {"min": 61, "max": 90}, "entries": [
       {"major": {"min": 1, "max": 7}, "medium": {"min": 1, "max": 7}, "minor": {"min": 1, "max": 7}, "description": "Elemental swarm", "url": "http://paizo.com/pathfinderRPG/prd/spells/elementalSwarm.html#_elemental-swarm", "cost": "3,825 gp"},
       {"major": {"min": 8, "max": 15}, "medium": {"min": 8, "max": 15}, "minor": {"min": 8, "max": 15}, "description": "Energy drain", "url": "http://paizo.com/pathfinderRPG/prd/spells/energyDrain.html#_energy-drain", "cost": "3,825 gp"},
       {"major": {"min": 16, "max": 22}, "medium": {"min": 16, "max": 22}, "minor": {"min": 16, "max": 22}, "description": "Etherealness", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/armor.html#_armor-etherealness", "cost": "3,825 gp"},
@@ -1154,7 +1154,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 88, "max": 93}, "medium": {"min": 88, "max": 93}, "minor": {"min": 88, "max": 93}, "description": "Summon nature's ally IX", "url": "http://paizo.com/pathfinderRPG/prd/spells/summonNatureSAlly.html#_summon-nature-s-ally-ix", "cost": "3,825 gp"},
       {"major": {"min": 94, "max": 100}, "medium": {"min": 94, "max": 100}, "minor": {"min": 94, "max": 100}, "description": "True resurrection", "url": "http://paizo.com/pathfinderRPG/prd/spells/trueResurrection.html#_true-resurrection", "cost": "28,825 gp"}
     ]},
-    {"min": 91, "max": 100, "entries": [
+    {"range": {"min": 91, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 8}, "medium": {"min": 1, "max": 8}, "minor": {"min": 1, "max": 8}, "description": "Antipathy", "url": "http://paizo.com/pathfinderRPG/prd/spells/antipathy.html#_antipathy", "cost": "3,825 gp"},
       {"major": {"min": 9, "max": 15}, "medium": {"min": 9, "max": 15}, "minor": {"min": 9, "max": 15}, "description": "Clashing rocks", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/clashingRocks.html#_clashing-rocks", "cost": "3,825 gp"},
       {"major": {"min": 16, "max": 22}, "medium": {"min": 16, "max": 22}, "minor": {"min": 16, "max": 22}, "description": "Create demiplane, greater", "url": "http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/createDemiplane.html#_create-demiplane,-greater", "cost": "3,825 gp"},
@@ -1170,7 +1170,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 95, "max": 100}, "medium": {"min": 95, "max": 100}, "minor": {"min": 95, "max": 100}, "description": "Sympathy", "url": "http://paizo.com/pathfinderRPG/prd/spells/sympathy.html#_sympathy", "cost": "5,325 gp"}
     ]}
   ], "#0-level-wands-table": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 7}, "medium": {"min": 1, "max": 7}, "minor": {"min": 1, "max": 7}, "description": "Acid splash", "url": "http://paizo.com/pathfinderRPG/prd/spells/acidSplash.html#_acid-splash", "cost": "375 gp"},
       {"major": {"min": 8, "max": 14}, "medium": {"min": 8, "max": 14}, "minor": {"min": 8, "max": 14}, "description": "Create water", "url": "http://paizo.com/pathfinderRPG/prd/spells/createWater.html#_create-water", "cost": "375 gp"},
       {"major": {"min": 15, "max": 20}, "medium": {"min": 15, "max": 20}, "minor": {"min": 15, "max": 20}, "description": "Daze", "url": "http://paizo.com/pathfinderRPG/prd/spells/daze.html#_daze", "cost": "375 gp"},
@@ -1187,7 +1187,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 89, "max": 95}, "medium": {"min": 89, "max": 95}, "minor": {"min": 89, "max": 95}, "description": "Stabilize", "url": "http://paizo.com/pathfinderRPG/prd/spells/stabilize.html#_stabilize", "cost": "375 gp"},
       {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Touch of fatigue", "url": "http://paizo.com/pathfinderRPG/prd/spells/touchOfFatigue.html#_touch-of-fatigue", "cost": "375 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 6}, "medium": {"min": 1, "max": 6}, "minor": {"min": 1, "max": 6}, "description": "Arcane mark", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneMark.html#_arcane-mark", "cost": "375 gp"},
       {"major": {"min": 7, "max": 15}, "medium": {"min": 7, "max": 15}, "minor": {"min": 7, "max": 15}, "description": "Bleed", "url": "http://paizo.com/pathfinderRPG/prd/spells/bleed.html#_bleed", "cost": "375 gp"},
       {"major": {"min": 16, "max": 22}, "medium": {"min": 16, "max": 22}, "minor": {"min": 16, "max": 22}, "description": "Dancing lights", "url": "http://paizo.com/pathfinderRPG/prd/spells/dancingLights.html#_dancing-lights", "cost": "375 gp"},
@@ -1203,7 +1203,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 95, "max": 100}, "medium": {"min": 95, "max": 100}, "minor": {"min": 95, "max": 100}, "description": "Virtue", "url": "http://paizo.com/pathfinderRPG/prd/spells/virtue.html#_virtue", "cost": "375 gp"}
     ]}
   ], "#1st-level-wands-table": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Alarm", "url": "http://paizo.com/pathfinderRPG/prd/spells/alarm.html#_alarm", "cost": "750 gp"},
       {"major": {"min": 3, "max": 3}, "medium": {"min": 3, "max": 3}, "minor": {"min": 3, "max": 3}, "description": "Animate rope", "url": "http://paizo.com/pathfinderRPG/prd/spells/animateRope.html#_animate-rope", "cost": "750 gp"},
       {"major": {"min": 4, "max": 5}, "medium": {"min": 4, "max": 5}, "minor": {"min": 4, "max": 5}, "description": "Bane", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/weapons.html#_weapons-bane", "cost": "750 gp"},
@@ -1249,7 +1249,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 97, "max": 99}, "medium": {"min": 97, "max": 99}, "minor": {"min": 97, "max": 99}, "description": "True strike", "url": "http://paizo.com/pathfinderRPG/prd/spells/trueStrike.html#_true-strike", "cost": "750 gp"},
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Unseen servant", "url": "http://paizo.com/pathfinderRPG/prd/spells/unseenServant.html#_unseen-servant", "cost": "750 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Ant haul", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/antHaul.html#_ant-haul-", "cost": "750 gp"},
       {"major": {"min": 3, "max": 5}, "medium": {"min": 3, "max": 5}, "minor": {"min": 3, "max": 5}, "description": "Aspect of the falcon", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aspectOfTheFalcon.html#_aspect-of-the-falcon", "cost": "750 gp"},
       {"major": {"min": 6, "max": 7}, "medium": {"min": 6, "max": 7}, "minor": {"min": 6, "max": 7}, "description": "Bless weapon", "url": "http://paizo.com/pathfinderRPG/prd/spells/blessWeapon.html#_bless-weapon", "cost": "750 gp"},
@@ -1305,7 +1305,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Curse water", "url": "http://paizo.com/pathfinderRPG/prd/spells/curseWater.html#_curse-water", "cost": "2,000 gp"}
     ]}
   ], "#2nd-level-wands-table": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Acid arrow", "url": "http://paizo.com/pathfinderRPG/prd/spells/acidArrow.html#_acid-arrow", "cost": "4,500 gp"},
       {"major": {"min": 3, "max": 3}, "medium": {"min": 3, "max": 3}, "minor": {"min": 3, "max": 3}, "description": "Aid", "url": "http://paizo.com/pathfinderRPG/prd/spells/aid.html#_aid", "cost": "4,500 gp"},
       {"major": {"min": 4, "max": 5}, "medium": {"min": 4, "max": 5}, "minor": {"min": 4, "max": 5}, "description": "Alter self", "url": "http://paizo.com/pathfinderRPG/prd/spells/alterSelf.html#_alter-self", "cost": "4,500 gp"},
@@ -1355,7 +1355,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 98, "max": 99}, "medium": {"min": 98, "max": 99}, "minor": {"min": 98, "max": 99}, "description": "Augury", "url": "http://paizo.com/pathfinderRPG/prd/spells/augury.html#_augury", "cost": "5,750 gp"},
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Fire trap", "url": "http://paizo.com/pathfinderRPG/prd/spells/fireTrap.html#_fire-trap", "cost": "5,750 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Align weapon", "url": "http://paizo.com/pathfinderRPG/prd/spells/alignWeapon.html#_align-weapon", "cost": "4,500 gp"},
       {"major": {"min": 3, "max": 5}, "medium": {"min": 3, "max": 5}, "minor": {"min": 3, "max": 5}, "description": "Animal aspect", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/animalAspect.html#_animal-aspect", "cost": "4,500 gp"},
       {"major": {"min": 6, "max": 6}, "medium": {"min": 6, "max": 6}, "minor": {"min": 6, "max": 6}, "description": "Animal messenger", "url": "http://paizo.com/pathfinderRPG/prd/spells/animalMessenger.html#_animal-messenger", "cost": "4,500 gp"},
@@ -1409,7 +1409,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Phantom trap", "url": "http://paizo.com/pathfinderRPG/prd/spells/phantomTrap.html#_phantom-trap", "cost": "7,000 gp"}
     ]}
   ], "#3rd-level-wands-table": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Beast shape I", "url": "http://paizo.com/pathfinderRPG/prd/spells/beastShape.html#_beast-shape-i", "cost": "11,250 gp"},
       {"major": {"min": 3, "max": 4}, "medium": {"min": 3, "max": 4}, "minor": {"min": 3, "max": 4}, "description": "Blink", "url": "http://paizo.com/pathfinderRPG/prd/spells/blink.html#_blink", "cost": "11,250 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Call lightning", "url": "http://paizo.com/pathfinderRPG/prd/spells/callLightning.html#_call-lightning", "cost": "11,250 gp"},
@@ -1457,7 +1457,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 98, "max": 99}, "medium": {"min": 98, "max": 99}, "minor": {"min": 98, "max": 99}, "description": "Water breathing", "url": "http://paizo.com/pathfinderRPG/prd/spells/waterBreathing.html#_water-breathing", "cost": "11,250 gp"},
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Animate dead", "url": "http://paizo.com/pathfinderRPG/prd/spells/animateDead.html#_animate-dead", "cost": "23,750 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Animal aspect, greater", "url": "http://paizo.com/pathfinderRPG/prd/ultimateCombat/spells/animalAspect.html#_animal-aspect,-greater", "cost": "11,250 gp"},
       {"major": {"min": 5, "max": 6}, "medium": {"min": 5, "max": 6}, "minor": {"min": 5, "max": 6}, "description": "Aqueous orb", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aqueousOrb.html#_aqueous-orb", "cost": "11,250 gp"},
       {"major": {"min": 7, "max": 8}, "medium": {"min": 7, "max": 8}, "minor": {"min": 7, "max": 8}, "description": "Arcane sight", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneSight.html#_arcane-sight", "cost": "11,250 gp"},
@@ -1506,7 +1506,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Sepia snake sigil", "url": "http://paizo.com/pathfinderRPG/prd/spells/sepiaSnakeSigil.html#_sepia-snake-sigil", "cost": "36,250 gp"}
     ]}
   ], "#4th-level-wands-table": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Air walk", "url": "http://paizo.com/pathfinderRPG/prd/spells/airWalk.html#_air-walk", "cost": "21,000 gp"},
       {"major": {"min": 3, "max": 4}, "medium": {"min": 3, "max": 4}, "minor": {"min": 3, "max": 4}, "description": "Beast shape II", "url": "http://paizo.com/pathfinderRPG/prd/spells/beastShape.html#_beast-shape-ii", "cost": "21,000 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Black tentacles", "url": "http://paizo.com/pathfinderRPG/prd/spells/blackTentacles.html#_black-tentacles", "cost": "21,000 gp"},
@@ -1553,7 +1553,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 99, "max": 99}, "medium": {"min": 99, "max": 99}, "minor": {"min": 99, "max": 99}, "description": "Planar ally, lesser", "url": "http://paizo.com/pathfinderRPG/prd/spells/planarAlly.html#_planar-ally-lesser", "cost": "46,000 gp"},
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Restoration*", "url": "http://paizo.com/pathfinderRPG/prd/spells/restoration.html#_restoration", "cost": "71,000 gp"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Antiplant shell", "url": "http://paizo.com/pathfinderRPG/prd/spells/antiplantShell.html#_antiplant-shell", "cost": "21,000 gp"},
       {"major": {"min": 2, "max": 4}, "medium": {"min": 2, "max": 4}, "minor": {"min": 2, "max": 4}, "description": "Arcane eye", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneEye.html#_arcane-eye", "cost": "21,000 gp"},
       {"major": {"min": 5, "max": 7}, "medium": {"min": 5, "max": 7}, "minor": {"min": 5, "max": 7}, "description": "Aspect of the stag", "url": "http://paizo.com/pathfinderRPG/prd/advanced/spells/aspectOfTheStag.html#_aspect-of-the-stag", "cost": "21,000 gp"},
@@ -1602,18 +1602,18 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Legend lore", "url": "http://paizo.com/pathfinderRPG/prd/spells/legendLore.html#_legend-lore", "cost": "33,500 gp"}
     ]}
   ], "#magic-armor-and-shields-table-minor": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 80}, "medium": {"min": 1, "max": 80}, "minor": {"min": 1, "max": 80}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": []}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser minor specific armor or shield", "nextTableId": "#specific-placeholder-table-minor-lesser"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 26}, "medium": {"min": 1, "max": 26}, "minor": {"min": 1, "max": 26}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": []}},
       {"major": {"min": 27, "max": 53}, "medium": {"min": 27, "max": 53}, "minor": {"min": 27, "max": 53}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": []}},
       {"major": {"min": 54, "max": 80}, "medium": {"min": 54, "max": 80}, "minor": {"min": 54, "max": 80}, "description": "+1 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": ["1"]}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater minor specific armor or shield", "nextTableId": "#specific-placeholder-table-minor-greater"}
     ]}
   ], "#magic-armor-and-shields-table-medium": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+1 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": []}},
       {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": []}},
       {"major": {"min": 21, "max": 32}, "medium": {"min": 21, "max": 32}, "minor": {"min": 21, "max": 32}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 3, "abilities": []}},
@@ -1623,7 +1623,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+2 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": ["1"]}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser medium specific armor or shield", "nextTableId": "#specific-placeholder-table-medium-lesser"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+2 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": []}},
       {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 3, "abilities": []}},
       {"major": {"min": 23, "max": 32}, "medium": {"min": 23, "max": 32}, "minor": {"min": 23, "max": 32}, "description": "+1 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": ["1"]}},
@@ -1634,7 +1634,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater medium specific armor or shield", "nextTableId": "#specific-placeholder-table-medium-greater"}
     ]}
   ], "#magic-armor-and-shields-table-major": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+3 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 3, "abilities": []}},
       {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+4 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": []}},
       {"major": {"min": 23, "max": 32}, "medium": {"min": 23, "max": 32}, "minor": {"min": 23, "max": 32}, "description": "+1 armor or shield with one +2 special ability*", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": ["2"]}},
@@ -1644,7 +1644,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+4 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": ["1"]}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser major specific armor or shield", "nextTableId": "#specific-placeholder-table-major-lesser"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+4 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": []}},
       {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+5 armor or shield", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 5, "abilities": []}},
       {"major": {"min": 21, "max": 30}, "medium": {"min": 21, "max": 30}, "minor": {"min": 21, "max": 30}, "description": "+4 armor or shield with one +1 special ability*", "nextTableId": "#random-armor-or-shield-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": ["1"]}},
@@ -1660,18 +1660,18 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater major specific armor or shield", "nextTableId": "#specific-placeholder-table-major-greater"}
     ]}
   ], "#magic-weapon-table-minor": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 80}, "medium": {"min": 1, "max": 80}, "minor": {"min": 1, "max": 80}, "description": "+1 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": []}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser minor specific weapon", "nextTableId": "#specific-weapons-table-minor-lesser"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 26}, "medium": {"min": 1, "max": 26}, "minor": {"min": 1, "max": 26}, "description": "+1 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": []}},
       {"major": {"min": 27, "max": 53}, "medium": {"min": 27, "max": 53}, "minor": {"min": 27, "max": 53}, "description": "+2 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": []}},
       {"major": {"min": 54, "max": 80}, "medium": {"min": 54, "max": 80}, "minor": {"min": 54, "max": 80}, "description": "+1 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": ["1"]}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater minor specific weapon", "nextTableId": "#specific-weapons-table-minor-greater"}
     ]}
   ], "#magic-weapon-table-medium": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+1 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": []}},
       {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+2 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": []}},
       {"major": {"min": 21, "max": 32}, "medium": {"min": 21, "max": 32}, "minor": {"min": 21, "max": 32}, "description": "+3 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 3, "abilities": []}},
@@ -1681,7 +1681,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+2 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": ["1"]}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser medium specific weapon", "nextTableId": "#specific-weapons-table-medium-lesser"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+2 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 2, "abilities": []}},
       {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+3 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 3, "abilities": []}},
       {"major": {"min": 23, "max": 32}, "medium": {"min": 23, "max": 32}, "minor": {"min": 23, "max": 32}, "description": "+1 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": ["1"]}},
@@ -1692,7 +1692,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater medium specific weapon", "nextTableId": "#specific-weapons-table-medium-greater"}
     ]}
   ], "#magic-weapon-table-major": [
-    {"min": 1, "max": 75, "entries": [
+    {"range": {"min": 1, "max": 75}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+3 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 3, "abilities": []}},
       {"major": {"min": 11, "max": 22}, "medium": {"min": 11, "max": 22}, "minor": {"min": 11, "max": 22}, "description": "+4 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": []}},
       {"major": {"min": 23, "max": 32}, "medium": {"min": 23, "max": 32}, "minor": {"min": 23, "max": 32}, "description": "+1 weapon with one +2 special ability*", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 1, "abilities": ["2"]}},
@@ -1702,7 +1702,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 69, "max": 80}, "medium": {"min": 69, "max": 80}, "minor": {"min": 69, "max": 80}, "description": "+4 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": ["1"]}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Lesser major specific weapon", "nextTableId": "#specific-weapons-table-major-lesser"}
     ]},
-    {"min": 76, "max": 100, "entries": [
+    {"range": {"min": 76, "max": 100}, "entries": [
       {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "+4 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": []}},
       {"major": {"min": 11, "max": 20}, "medium": {"min": 11, "max": 20}, "minor": {"min": 11, "max": 20}, "description": "+5 weapon", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 5, "abilities": []}},
       {"major": {"min": 21, "max": 30}, "medium": {"min": 21, "max": 30}, "minor": {"min": 21, "max": 30}, "description": "+4 weapon with one +1 special ability*", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 4, "abilities": ["1"]}},
@@ -1717,7 +1717,7 @@ define({"#1st-level-potions-and-oils-table": [
       {"major": {"min": 78, "max": 80}, "medium": {"min": 78, "max": 80}, "minor": {"min": 78, "max": 80}, "description": "+5 weapon with one +3 special ability and one +2 special ability*", "nextTableId": "#random-weapon-table", "specialAbilitySpec": {"baseEnhancementBonus": 5, "abilities": ["3", "2"]}},
       {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Greater major specific weapon", "nextTableId": "#specific-weapons-table-major-greater"}
     ]}
-  ], "#table-15-2-random-magic-item-generation": {"min": 1, "max": 100, "entries": [
+  ], "#table-15-2-random-magic-item-generation": {"entries": [
     {"minor": {"min": 1, "max": 4}, "medium": {}, "major": {}, "description": "Armor and shields", "nextTableId": "#magic-armor-and-shields-table-minor", "url": "http://paizo.com/prd/magicItems/armor.html#_armor", "demuxId": "armor_shields_demux"},
     {"minor": {}, "medium": {"min": 1, "max": 10}, "major": {}, "description": "Armor and shields", "nextTableId": "#magic-armor-and-shields-table-medium", "url": "http://paizo.com/prd/magicItems/armor.html#_armor", "demuxId": "armor_shields_demux"},
     {"minor": {}, "medium": {}, "major": {"min": 1, "max": 10}, "description": "Armor and shields", "nextTableId": "#magic-armor-and-shields-table-major", "url": "http://paizo.com/prd/magicItems/armor.html#_armor", "demuxId": "armor_shields_demux"},
@@ -1733,18 +1733,18 @@ define({"#1st-level-potions-and-oils-table": [
     {"minor": {"min": 92, "max": 100}, "medium": {}, "major": {}, "description": "Wondrous items", "nextTableId": "#table-15-18-minor-wondrous-items", "url": "http://paizo.com/prd/magicItems/wondrousItems.html#_wondrous-items"},
     {"minor": {}, "medium": {"min": 84, "max": 100}, "major": {}, "description": "Wondrous items", "nextTableId": "#table-15-19-medium-wondrous-items", "url": "http://paizo.com/prd/magicItems/wondrousItems.html#_wondrous-items"},
     {"minor": {}, "medium": {}, "major": {"min": 81, "max": 100}, "description": "Wondrous items", "nextTableId": "#table-15-20-major-wondrous-items", "url": "http://paizo.com/prd/magicItems/wondrousItems.html#_wondrous-items"}
-  ]}, "#specific-armor-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-armor-table-minor-lesser": {"entries": [
     {"major": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "minor": {"min": 1, "max": 50}, "description": "Mithral shirt", "nextTableId": "undefined", "cost": "1,100 gp"},
     {"major": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "minor": {"min": 51, "max": 100}, "description": "Masterwork armor or nonmagicalarmor made with special material", "nextTableId": "undefined", "cost": "varies"}
-  ]}, "#specific-armor-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-armor-table-minor-greater": {"entries": [
     {"major": {"min": 1, "max": 33}, "medium": {"min": 1, "max": 33}, "minor": {"min": 1, "max": 33}, "description": "Mistmail", "nextTableId": "undefined", "cost": "2,250 gp"},
     {"major": {"min": 34, "max": 66}, "medium": {"min": 34, "max": 66}, "minor": {"min": 34, "max": 66}, "description": "Otyugh hide", "nextTableId": "undefined", "cost": "2,565 gp"},
     {"major": {"min": 67, "max": 100}, "medium": {"min": 67, "max": 100}, "minor": {"min": 67, "max": 100}, "description": "Dragonhide plate", "nextTableId": "undefined", "cost": "3,300 gp"}
-  ]}, "#specific-armor-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-armor-table-medium-lesser": {"entries": [
     {"major": {"min": 1, "max": 33}, "medium": {"min": 1, "max": 33}, "minor": {"min": 1, "max": 33}, "description": "Elven chain", "nextTableId": "undefined", "cost": "5,150 gp"},
     {"major": {"min": 34, "max": 66}, "medium": {"min": 34, "max": 66}, "minor": {"min": 34, "max": 66}, "description": "Rhino hide", "nextTableId": "undefined", "cost": "5,165 gp"},
     {"major": {"min": 67, "max": 100}, "medium": {"min": 67, "max": 100}, "minor": {"min": 67, "max": 100}, "description": "Morlock hide", "nextTableId": "undefined", "cost": "8,910 gp"}
-  ]}, "#specific-armor-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-armor-table-medium-greater": {"entries": [
     {"major": {"min": 1, "max": 15}, "medium": {"min": 1, "max": 15}, "minor": {"min": 1, "max": 15}, "description": "Adamantine breastplate", "nextTableId": "undefined", "cost": "10,200 gp"},
     {"major": {"min": 16, "max": 25}, "medium": {"min": 16, "max": 25}, "minor": {"min": 16, "max": 25}, "description": "Soothsayer's raiment", "nextTableId": "undefined", "cost": "10,300 gp"},
     {"major": {"min": 26, "max": 38}, "medium": {"min": 26, "max": 38}, "minor": {"min": 26, "max": 38}, "description": "Equestrian plate", "nextTableId": "undefined", "cost": "10,650 gp"},
@@ -1753,7 +1753,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 63, "max": 72}, "medium": {"min": 63, "max": 72}, "minor": {"min": 63, "max": 72}, "description": "Murderer's blackcloth", "nextTableId": "undefined", "cost": "12,405 gp"},
     {"major": {"min": 73, "max": 86}, "medium": {"min": 73, "max": 86}, "minor": {"min": 73, "max": 86}, "description": "Folding plate", "nextTableId": "undefined", "cost": "12,650 gp"},
     {"major": {"min": 87, "max": 100}, "medium": {"min": 87, "max": 100}, "minor": {"min": 87, "max": 100}, "description": "Breastplate of vanishing", "nextTableId": "undefined", "cost": "15,200 gp"}
-  ]}, "#specific-armor-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-armor-table-major-lesser": {"entries": [
     {"major": {"min": 1, "max": 13}, "medium": {"min": 1, "max": 13}, "minor": {"min": 1, "max": 13}, "description": "Armor of insults", "nextTableId": "undefined", "cost": "16,175 gp"},
     {"major": {"min": 14, "max": 29}, "medium": {"min": 14, "max": 29}, "minor": {"min": 14, "max": 29}, "description": "Dwarven plate", "nextTableId": "undefined", "cost": "16,500 gp"},
     {"major": {"min": 30, "max": 45}, "medium": {"min": 30, "max": 45}, "minor": {"min": 30, "max": 45}, "description": "Banded mail of luck", "nextTableId": "undefined", "cost": "18,900 gp"},
@@ -1761,7 +1761,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 59, "max": 71}, "medium": {"min": 59, "max": 71}, "minor": {"min": 59, "max": 71}, "description": "Celestial armor", "nextTableId": "undefined", "cost": "22,400 gp"},
     {"major": {"min": 72, "max": 84}, "medium": {"min": 72, "max": 84}, "minor": {"min": 72, "max": 84}, "description": "Buccaneer's breastplate", "nextTableId": "undefined", "cost": "23,850 gp"},
     {"major": {"min": 85, "max": 100}, "medium": {"min": 85, "max": 100}, "minor": {"min": 85, "max": 100}, "description": "Plate armor of the deep", "nextTableId": "undefined", "cost": "24,650 gp"}
-  ]}, "#specific-armor-table-major-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-armor-table-major-greater": {"entries": [
     {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "Breastplate of command", "nextTableId": "undefined", "cost": "25,400 gp"},
     {"major": {"min": 11, "max": 14}, "medium": {"min": 11, "max": 14}, "minor": {"min": 11, "max": 14}, "description": "Forsaken banded mail", "nextTableId": "undefined", "cost": "25,400 gp"},
     {"major": {"min": 15, "max": 24}, "medium": {"min": 15, "max": 24}, "minor": {"min": 15, "max": 24}, "description": "Mithral full plate of speed", "nextTableId": "undefined", "cost": "26,500 gp"},
@@ -1779,40 +1779,40 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 83, "max": 88}, "medium": {"min": 83, "max": 88}, "minor": {"min": 83, "max": 88}, "description": "Daystar half-plate", "nextTableId": "undefined", "cost": "81,250 gp"},
     {"major": {"min": 89, "max": 96}, "medium": {"min": 89, "max": 96}, "minor": {"min": 89, "max": 96}, "description": "Invincible armor", "nextTableId": "undefined", "cost": "137,650 gp"},
     {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Prismatic plate", "nextTableId": "undefined", "cost": "160,650 gp"}
-  ]}, "#specific-shields-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-shields-table-minor-lesser": {"entries": [
     {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Living steel heavy shield", "nextTableId": "undefined", "cost": "120 gp"},
     {"major": {"min": 21, "max": 45}, "medium": {"min": 21, "max": 45}, "minor": {"min": 21, "max": 45}, "description": "Darkwood buckler", "nextTableId": "undefined", "cost": "203 gp"},
     {"major": {"min": 46, "max": 70}, "medium": {"min": 46, "max": 70}, "minor": {"min": 46, "max": 70}, "description": "Darkwood shield", "nextTableId": "undefined", "cost": "257 gp"},
     {"major": {"min": 71, "max": 100}, "medium": {"min": 71, "max": 100}, "minor": {"min": 71, "max": 100}, "description": "Mithral heavy shield", "nextTableId": "undefined", "cost": "1,020 gp"}
-  ]}, "#specific-shields-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-shields-table-minor-greater": {"entries": [
     {"major": {"min": 1, "max": 30}, "medium": {"min": 1, "max": 30}, "minor": {"min": 1, "max": 30}, "description": "Zombie skin shield", "nextTableId": "undefined", "cost": "2,159 gp"},
     {"major": {"min": 31, "max": 75}, "medium": {"min": 31, "max": 75}, "minor": {"min": 31, "max": 75}, "description": "Caster's shield", "nextTableId": "undefined", "cost": "3,153 gp"},
     {"major": {"min": 76, "max": 100}, "medium": {"min": 76, "max": 100}, "minor": {"min": 76, "max": 100}, "description": "Burglar's buckler", "nextTableId": "undefined", "cost": "4,655 gp"}
-  ]}, "#specific-shields-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-shields-table-medium-lesser": {"entries": [
     {"major": {"min": 1, "max": 35}, "medium": {"min": 1, "max": 35}, "minor": {"min": 1, "max": 35}, "description": "Spined shield", "nextTableId": "undefined", "cost": "5,580 gp"},
     {"major": {"min": 36, "max": 50}, "medium": {"min": 36, "max": 50}, "minor": {"min": 36, "max": 50}, "description": "Dragonslayer's shield", "nextTableId": "undefined", "cost": "7,170 gp"},
     {"major": {"min": 51, "max": 65}, "medium": {"min": 51, "max": 65}, "minor": {"min": 51, "max": 65}, "description": "Collapsible tower", "nextTableId": "undefined", "cost": "8,170 gp"},
     {"major": {"min": 66, "max": 100}, "medium": {"min": 66, "max": 100}, "minor": {"min": 66, "max": 100}, "description": "Lion's shield", "nextTableId": "undefined", "cost": "9,170 gp"}
-  ]}, "#specific-shields-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-shields-table-medium-greater": {"entries": [
     {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Caster shield, greater", "nextTableId": "undefined", "cost": "10,153 gp"},
     {"major": {"min": 21, "max": 40}, "medium": {"min": 21, "max": 40}, "minor": {"min": 21, "max": 40}, "description": "Celestial shield", "nextTableId": "undefined", "cost": "13,170 gp"},
     {"major": {"min": 41, "max": 60}, "medium": {"min": 41, "max": 60}, "minor": {"min": 41, "max": 60}, "description": "Maelstrom shield", "nextTableId": "undefined", "cost": "14,170 gp"},
     {"major": {"min": 61, "max": 80}, "medium": {"min": 61, "max": 80}, "minor": {"min": 61, "max": 80}, "description": "Volcanic shield", "nextTableId": "undefined", "cost": "14,170 gp"},
     {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Tempest shield", "nextTableId": "undefined", "cost": "15,170 gp"}
-  ]}, "#specific-shields-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-shields-table-major-lesser": {"entries": [
     {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Battlement shield", "nextTableId": "undefined", "cost": "16,180 gp"},
     {"major": {"min": 21, "max": 40}, "medium": {"min": 21, "max": 40}, "minor": {"min": 21, "max": 40}, "description": "Winged shield", "nextTableId": "undefined", "cost": "17,257 gp"},
     {"major": {"min": 41, "max": 60}, "medium": {"min": 41, "max": 60}, "minor": {"min": 41, "max": 60}, "description": "Avalanche shield", "nextTableId": "undefined", "cost": "19,170 gp"},
     {"major": {"min": 61, "max": 80}, "medium": {"min": 61, "max": 80}, "minor": {"min": 61, "max": 80}, "description": "Fortress shield", "nextTableId": "undefined", "cost": "19,180 gp"},
     {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Wyrmslayer's shield", "nextTableId": "undefined", "cost": "20,170 gp"}
-  ]}, "#specific-shields-table-major-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-shields-table-major-greater": {"entries": [
     {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Spell ward tower shield", "nextTableId": "undefined", "cost": "25,180 gp"},
     {"major": {"min": 21, "max": 35}, "medium": {"min": 21, "max": 35}, "minor": {"min": 21, "max": 35}, "description": "Quick block buckler", "nextTableId": "undefined", "cost": "36,155 gp"},
     {"major": {"min": 36, "max": 50}, "medium": {"min": 36, "max": 50}, "minor": {"min": 36, "max": 50}, "description": "Belligerent shield", "nextTableId": "undefined", "cost": "36,170 gp"},
     {"major": {"min": 51, "max": 65}, "medium": {"min": 51, "max": 65}, "minor": {"min": 51, "max": 65}, "description": "Force tower", "nextTableId": "undefined", "cost": "46,030 gp"},
     {"major": {"min": 66, "max": 85}, "medium": {"min": 66, "max": 85}, "minor": {"min": 66, "max": 85}, "description": "Absorbing shield", "nextTableId": "undefined", "cost": "50,170 gp"},
     {"major": {"min": 86, "max": 100}, "medium": {"min": 86, "max": 100}, "minor": {"min": 86, "max": 100}, "description": "Elysian shield", "nextTableId": "undefined", "cost": "52,620 gp"}
-  ]}, "#specific-weapons-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-weapons-table-minor-lesser": {"entries": [
     {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Tracer bullet", "nextTableId": "undefined", "cost": "100 gp"},
     {"major": {"min": 3, "max": 8}, "medium": {"min": 3, "max": 8}, "minor": {"min": 3, "max": 8}, "description": "Sleep arrow", "nextTableId": "undefined", "cost": "132 gp"},
     {"major": {"min": 9, "max": 10}, "medium": {"min": 9, "max": 10}, "minor": {"min": 9, "max": 10}, "description": "Dustburst bullet", "nextTableId": "undefined", "cost": "196 gp"},
@@ -1829,14 +1829,14 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 83, "max": 84}, "medium": {"min": 83, "max": 84}, "minor": {"min": 83, "max": 84}, "description": "Burrowing bullet, lesser", "nextTableId": "undefined", "cost": "1,722 gp"},
     {"major": {"min": 85, "max": 92}, "medium": {"min": 85, "max": 92}, "minor": {"min": 85, "max": 92}, "description": "Dust bolt", "nextTableId": "undefined", "cost": "1,730 gp"},
     {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Slaying arrow", "nextTableId": "undefined", "cost": "2,282 gp"}
-  ]}, "#specific-weapons-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-weapons-table-minor-greater": {"entries": [
     {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Adamantine dagger", "nextTableId": "undefined", "cost": "3,002 gp"},
     {"major": {"min": 21, "max": 40}, "medium": {"min": 21, "max": 40}, "minor": {"min": 21, "max": 40}, "description": "Adamantine battleaxe", "nextTableId": "undefined", "cost": "3,010 gp"},
     {"major": {"min": 41, "max": 50}, "medium": {"min": 41, "max": 50}, "minor": {"min": 41, "max": 50}, "description": "Burrowing bullet, greater", "nextTableId": "undefined", "cost": "3,447 gp"},
     {"major": {"min": 51, "max": 70}, "medium": {"min": 51, "max": 70}, "minor": {"min": 51, "max": 70}, "description": "Slaying arrow, greater", "nextTableId": "undefined", "cost": "4,057 gp"},
     {"major": {"min": 71, "max": 80}, "medium": {"min": 71, "max": 80}, "minor": {"min": 71, "max": 80}, "description": "Lance of jousting", "nextTableId": "undefined", "cost": "4,310 gp"},
     {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Shatterspike", "nextTableId": "undefined", "cost": "4,315 gp"}
-  ]}, "#specific-weapons-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-weapons-table-medium-lesser": {"entries": [
     {"major": {"min": 1, "max": 3}, "medium": {"min": 1, "max": 3}, "minor": {"min": 1, "max": 3}, "description": "Bloodletting kukri", "nextTableId": "undefined", "cost": "6,308 gp"},
     {"major": {"min": 4, "max": 9}, "medium": {"min": 4, "max": 9}, "minor": {"min": 4, "max": 9}, "description": "Boulderhead mace", "nextTableId": "undefined", "cost": "6,812 gp"},
     {"major": {"min": 10, "max": 14}, "medium": {"min": 10, "max": 14}, "minor": {"min": 10, "max": 14}, "description": "Beaststrike club", "nextTableId": "undefined", "cost": "7,300 gp"},
@@ -1855,7 +1855,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 80, "max": 85}, "medium": {"min": 80, "max": 85}, "minor": {"min": 80, "max": 85}, "description": "Polarity hammer", "nextTableId": "undefined", "cost": "12,310 gp"},
     {"major": {"min": 86, "max": 93}, "medium": {"min": 86, "max": 93}, "minor": {"min": 86, "max": 93}, "description": "Blade of binding", "nextTableId": "undefined", "cost": "12,350 gp"},
     {"major": {"min": 94, "max": 100}, "medium": {"min": 94, "max": 100}, "minor": {"min": 94, "max": 100}, "description": "Shifter's sorrow", "nextTableId": "undefined", "cost": "12,780 gp"}
-  ]}, "#specific-weapons-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-weapons-table-medium-greater": {"entries": [
     {"major": {"min": 1, "max": 7}, "medium": {"min": 1, "max": 7}, "minor": {"min": 1, "max": 7}, "description": "Dragoncatch guisarme", "nextTableId": "undefined", "cost": "13,308 gp"},
     {"major": {"min": 8, "max": 15}, "medium": {"min": 8, "max": 15}, "minor": {"min": 8, "max": 15}, "description": "Ten-ring sword", "nextTableId": "undefined", "cost": "14,315 gp"},
     {"major": {"min": 16, "max": 21}, "medium": {"min": 16, "max": 21}, "minor": {"min": 16, "max": 21}, "description": "Triton's trident", "nextTableId": "undefined", "cost": "15,065 gp"},
@@ -1872,7 +1872,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 86, "max": 90}, "medium": {"min": 86, "max": 90}, "minor": {"min": 86, "max": 90}, "description": "Luck blade (0 wishes)", "nextTableId": "undefined", "cost": "22,060 gp"},
     {"major": {"min": 91, "max": 95}, "medium": {"min": 91, "max": 95}, "minor": {"min": 91, "max": 95}, "description": "Sword of subtlety", "nextTableId": "undefined", "cost": "22,310 gp"},
     {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Sword of the planes", "nextTableId": "undefined", "cost": "22,315 gp"}
-  ]}, "#specific-weapons-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-weapons-table-major-lesser": {"entries": [
     {"major": {"min": 1, "max": 12}, "medium": {"min": 1, "max": 12}, "minor": {"min": 1, "max": 12}, "description": "Nine lives stealer", "nextTableId": "undefined", "cost": "23,057 gp"},
     {"major": {"min": 13, "max": 26}, "medium": {"min": 13, "max": 26}, "minor": {"min": 13, "max": 26}, "description": "Undercutting axe", "nextTableId": "undefined", "cost": "23,310 gp"},
     {"major": {"min": 27, "max": 40}, "medium": {"min": 27, "max": 40}, "minor": {"min": 27, "max": 40}, "description": "Spirit caller", "nextTableId": "undefined", "cost": "25,302 gp"},
@@ -1880,7 +1880,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 56, "max": 70}, "medium": {"min": 56, "max": 70}, "minor": {"min": 56, "max": 70}, "description": "Oathbow", "nextTableId": "undefined", "cost": "25,600 gp"},
     {"major": {"min": 71, "max": 85}, "medium": {"min": 71, "max": 85}, "minor": {"min": 71, "max": 85}, "description": "Sword of life stealing", "nextTableId": "undefined", "cost": "25,715 gp"},
     {"major": {"min": 86, "max": 100}, "medium": {"min": 86, "max": 100}, "minor": {"min": 86, "max": 100}, "description": "Cutthroat's apprentice", "nextTableId": "undefined", "cost": "33,910 gp"}
-  ]}, "#specific-weapons-table-major-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-weapons-table-major-greater": {"entries": [
     {"major": {"min": 1, "max": 2}, "medium": {"min": 1, "max": 2}, "minor": {"min": 1, "max": 2}, "description": "Ghoul's lament", "nextTableId": "undefined", "cost": "35,312 gp"},
     {"major": {"min": 3, "max": 5}, "medium": {"min": 3, "max": 5}, "minor": {"min": 3, "max": 5}, "description": "Mace of terror", "nextTableId": "undefined", "cost": "38,552 gp"},
     {"major": {"min": 6, "max": 7}, "medium": {"min": 6, "max": 7}, "minor": {"min": 6, "max": 7}, "description": "Hellscourge", "nextTableId": "undefined", "cost": "39,305 gp"},
@@ -1911,7 +1911,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 90, "max": 92}, "medium": {"min": 90, "max": 92}, "minor": {"min": 90, "max": 92}, "description": "Holy avenger", "nextTableId": "undefined", "cost": "120,630 gp"},
     {"major": {"min": 93, "max": 96}, "medium": {"min": 93, "max": 96}, "minor": {"min": 93, "max": 96}, "description": "Bastard's sting", "nextTableId": "undefined", "cost": "123,035 gp"},
     {"major": {"min": 97, "max": 100}, "medium": {"min": 97, "max": 100}, "minor": {"min": 97, "max": 100}, "description": "Luck blade (3 wishes)", "nextTableId": "undefined", "cost": "142,960 gp"}
-  ]}, "#random-armor-or-shield-table": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#random-armor-or-shield-table": {"entries": [
     {"major": {"min": 1, "max": 4}, "medium": {"min": 1, "max": 4}, "minor": {"min": 1, "max": 4}, "description": "Banded mail", "specialAbilityTableId": "#armor-special-abilities-table"},
     {"major": {"min": 5, "max": 11}, "medium": {"min": 5, "max": 11}, "minor": {"min": 5, "max": 11}, "description": "Breastplate", "specialAbilityTableId": "#armor-special-abilities-table"},
     {"major": {"min": 12, "max": 14}, "medium": {"min": 12, "max": 14}, "minor": {"min": 12, "max": 14}, "description": "Buckler", "specialAbilityTableId": "#armor-special-abilities-table"},
@@ -1934,7 +1934,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 94, "max": 95}, "medium": {"min": 94, "max": 95}, "minor": {"min": 94, "max": 95}, "description": "Other medium armor (GM's choice)", "specialAbilityTableId": "#armor-special-abilities-table"},
     {"major": {"min": 96, "max": 98}, "medium": {"min": 96, "max": 98}, "minor": {"min": 96, "max": 98}, "description": "Other heavy armor (GM's choice)", "specialAbilityTableId": "#armor-special-abilities-table"},
     {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Other shield (GM's choice)", "specialAbilityTableId": "#shield-special-abilities-table"}
-  ]}, "#random-weapon-table": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#random-weapon-table": {"entries": [
     {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Bastard sword", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 2, "max": 5}, "medium": {"min": 2, "max": 5}, "minor": {"min": 2, "max": 5}, "description": "Battleaxe", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 6, "max": 6}, "medium": {"min": 6, "max": 6}, "minor": {"min": 6, "max": 6}, "description": "Bolas", "specialAbilityTableId": "#ranged-weapon-special-abilities-table"},
@@ -1976,7 +1976,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 95, "max": 96}, "medium": {"min": 95, "max": 96}, "minor": {"min": 95, "max": 96}, "description": "Other one-handed melee weapon*", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 97, "max": 98}, "medium": {"min": 97, "max": 98}, "minor": {"min": 97, "max": 98}, "description": "Other two-handed melee weapon*", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Other ranged weapon*", "specialAbilityTableId": "#melee-weapon-special-abilities-table"}
-  ]}, "#shield-special-abilities-table1": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#shield-special-abilities-table1": {"entries": [
     {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "Poison-resistant", "nextTableId": "undefined", "cost": "+2,250 gp"},
     {"major": {"min": 11, "max": 19}, "medium": {"min": 11, "max": 19}, "minor": {"min": 11, "max": 19}, "description": "Arrow catching", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-arrow-catching", "cost": "+1 bonus"},
     {"major": {"min": 20, "max": 28}, "medium": {"min": 20, "max": 28}, "minor": {"min": 20, "max": 28}, "description": "Bashing", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-bashing", "cost": "+1 bonus"},
@@ -1988,24 +1988,24 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 74, "max": 82}, "medium": {"min": 74, "max": 82}, "minor": {"min": 74, "max": 82}, "description": "Impervious", "nextTableId": "undefined", "cost": "+1 bonus"},
     {"major": {"min": 83, "max": 91}, "medium": {"min": 83, "max": 91}, "minor": {"min": 83, "max": 91}, "description": "Mirrored", "nextTableId": "undefined", "cost": "+1 bonus"},
     {"major": {"min": 92, "max": 100}, "medium": {"min": 92, "max": 100}, "minor": {"min": 92, "max": 100}, "description": "Ramming", "nextTableId": "undefined", "cost": "+1 bonus"}
-  ]}, "#shield-special-abilities-table2": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#shield-special-abilities-table2": {"entries": [
     {"major": {"min": 1, "max": 15}, "medium": {"min": 1, "max": 15}, "minor": {"min": 1, "max": 15}, "description": "Rallying", "nextTableId": "undefined", "cost": "+5,000 gp"},
     {"major": {"min": 16, "max": 30}, "medium": {"min": 16, "max": 30}, "minor": {"min": 16, "max": 30}, "description": "Wyrmsbreath", "nextTableId": "undefined", "cost": "+5,000 gp"},
     {"major": {"min": 31, "max": 50}, "medium": {"min": 31, "max": 50}, "minor": {"min": 31, "max": 50}, "description": "Animated", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-animated", "cost": "+2 bonus"},
     {"major": {"min": 51, "max": 67}, "medium": {"min": 51, "max": 67}, "minor": {"min": 51, "max": 67}, "description": "Arrow deflection", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-arrow-deflection", "cost": "+2 bonus"},
     {"major": {"min": 68, "max": 82}, "medium": {"min": 68, "max": 82}, "minor": {"min": 68, "max": 82}, "description": "Merging", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 83, "max": 100}, "medium": {"min": 83, "max": 100}, "minor": {"min": 83, "max": 100}, "description": "Spell resistance (13)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-spell-resistance", "cost": "+2 bonus"}
-  ]}, "#shield-special-abilities-table3": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#shield-special-abilities-table3": {"entries": [
     {"major": {"min": 1, "max": 15}, "medium": {"min": 1, "max": 15}, "minor": {"min": 1, "max": 15}, "description": "Hosteling", "nextTableId": "undefined", "cost": "+7,500 gp"},
     {"major": {"min": 16, "max": 32}, "medium": {"min": 16, "max": 32}, "minor": {"min": 16, "max": 32}, "description": "Radiant", "nextTableId": "undefined", "cost": "+7,500 gp"},
     {"major": {"min": 33, "max": 49}, "medium": {"min": 33, "max": 49}, "minor": {"min": 33, "max": 49}, "description": "Fortification (moderate)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-fortification", "cost": "+3 bonus"},
     {"major": {"min": 50, "max": 66}, "medium": {"min": 50, "max": 66}, "minor": {"min": 50, "max": 66}, "description": "Ghost touch", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/weapons.html#_weapons-ghost-touch", "cost": "+3 bonus"},
     {"major": {"min": 67, "max": 83}, "medium": {"min": 67, "max": 83}, "minor": {"min": 67, "max": 83}, "description": "Spell resistance (15)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-spell-resistance", "cost": "+3 bonus"},
     {"major": {"min": 84, "max": 98}, "medium": {"min": 84, "max": 98}, "minor": {"min": 84, "max": 98}, "description": "Wild", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-wild", "cost": "+3 bonus "}
-  ]}, "#shield-special-abilities-table4": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#shield-special-abilities-table4": {"entries": [
     {"major": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "minor": {"min": 1, "max": 50}, "description": "Energy resistance", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-energy-resistance", "cost": "+18,000 gp"},
     {"major": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "minor": {"min": 51, "max": 100}, "description": "Spell resistance (17)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-spell-resistance", "cost": "+4 bonus "}
-  ]}, "#melee-weapon-special-abilities-table1": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#melee-weapon-special-abilities-table1": {"entries": [
     {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Impervious", "nextTableId": "undefined", "cost": "+3,000 gp"},
     {"major": {"min": 2, "max": 2}, "medium": {"min": 2, "max": 2}, "minor": {"min": 2, "max": 2}, "description": "Glamered", "nextTableId": "undefined", "cost": "+4,000 gp"},
     {"major": {"min": 3, "max": 3}, "medium": {"min": 3, "max": 3}, "minor": {"min": 3, "max": 3}, "description": "Allying", "nextTableId": "undefined", "cost": "+1 bonus"},
@@ -2050,7 +2050,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 92, "max": 96}, "medium": {"min": 92, "max": 96}, "minor": {"min": 92, "max": 96}, "description": "Thundering ", "nextTableId": "undefined", "cost": "+1 bonus"},
     {"major": {"min": 97, "max": 97}, "medium": {"min": 97, "max": 97}, "minor": {"min": 97, "max": 97}, "description": "Valiant", "nextTableId": "undefined", "cost": "+1 bonus"},
     {"major": {"min": 98, "max": 100}, "medium": {"min": 98, "max": 100}, "minor": {"min": 98, "max": 100}, "description": "Vicious", "nextTableId": "undefined", "cost": "+1 bonus"}
-  ]}, "#melee-weapon-special-abilities-table2": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#melee-weapon-special-abilities-table2": {"entries": [
     {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Advancing", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 2, "max": 10}, "medium": {"min": 2, "max": 10}, "minor": {"min": 2, "max": 10}, "description": "Anarchic", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 11, "max": 19}, "medium": {"min": 11, "max": 19}, "minor": {"min": 11, "max": 19}, "description": "Anchoring", "nextTableId": "undefined", "cost": "+2 bonus"},
@@ -2075,18 +2075,18 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 84, "max": 84}, "medium": {"min": 84, "max": 84}, "minor": {"min": 84, "max": 84}, "description": "Stalking", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 85, "max": 91}, "medium": {"min": 85, "max": 91}, "minor": {"min": 85, "max": 91}, "description": "Unholy", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 92, "max": 100}, "medium": {"min": 92, "max": 100}, "minor": {"min": 92, "max": 100}, "description": "Wounding", "nextTableId": "undefined", "cost": "+2 bonus"}
-  ]}, "#melee-weapon-special-abilities-table3": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#melee-weapon-special-abilities-table3": {"entries": [
     {"major": {"min": 1, "max": 20}, "medium": {"min": 1, "max": 20}, "minor": {"min": 1, "max": 20}, "description": "Nullifying", "nextTableId": "undefined", "cost": "+3 bonus"},
     {"major": {"min": 21, "max": 40}, "medium": {"min": 21, "max": 40}, "minor": {"min": 21, "max": 40}, "description": "Repositioning", "nextTableId": "undefined", "cost": "+3 bonus"},
     {"major": {"min": 41, "max": 80}, "medium": {"min": 41, "max": 80}, "minor": {"min": 41, "max": 80}, "description": "Speed", "nextTableId": "undefined", "cost": "+3 bonus"},
     {"major": {"min": 81, "max": 100}, "medium": {"min": 81, "max": 100}, "minor": {"min": 81, "max": 100}, "description": "Spellstealing", "nextTableId": "undefined", "cost": "+3 bonus"}
-  ]}, "#melee-weapon-special-abilities-table4": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#melee-weapon-special-abilities-table4": {"entries": [
     {"major": {"min": 1, "max": 40}, "medium": {"min": 1, "max": 40}, "minor": {"min": 1, "max": 40}, "description": "Brilliant energy", "nextTableId": "undefined", "cost": "+4 bonus"},
     {"major": {"min": 41, "max": 80}, "medium": {"min": 41, "max": 80}, "minor": {"min": 41, "max": 80}, "description": "Dancing", "nextTableId": "undefined", "cost": "+4 bonus"},
     {"major": {"min": 81, "max": 90}, "medium": {"min": 81, "max": 90}, "minor": {"min": 81, "max": 90}, "description": "Vorpal3", "nextTableId": "undefined", "cost": "+5 bonus"},
     {"major": {"min": 91, "max": 95}, "medium": {"min": 91, "max": 95}, "minor": {"min": 91, "max": 95}, "description": "Transformative", "nextTableId": "undefined", "cost": "+10,000 gp"},
     {"major": {"min": 96, "max": 100}, "medium": {"min": 96, "max": 100}, "minor": {"min": 96, "max": 100}, "description": "Dueling", "nextTableId": "undefined", "cost": "+14,000 gp"}
-  ]}, "#ranged-weapon-special-abilities-table1": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#ranged-weapon-special-abilities-table1": {"entries": [
     {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Adaptive2", "nextTableId": "undefined", "cost": "+1,000 gp"},
     {"major": {"min": 2, "max": 2}, "medium": {"min": 2, "max": 2}, "minor": {"min": 2, "max": 2}, "description": "Impervious", "nextTableId": "undefined", "cost": "+3,000 gp"},
     {"major": {"min": 3, "max": 3}, "medium": {"min": 3, "max": 3}, "minor": {"min": 3, "max": 3}, "description": "Glamered", "nextTableId": "undefined", "cost": "+4,000 gp"},
@@ -2112,7 +2112,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 77, "max": 84}, "medium": {"min": 77, "max": 84}, "minor": {"min": 77, "max": 84}, "description": "Seeking", "nextTableId": "undefined", "cost": "+1 bonus"},
     {"major": {"min": 85, "max": 92}, "medium": {"min": 85, "max": 92}, "minor": {"min": 85, "max": 92}, "description": "Shock3", "nextTableId": "undefined", "cost": "+1 bonus"},
     {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Thundering3", "nextTableId": "undefined", "cost": "+1 bonus"}
-  ]}, "#ranged-weapon-special-abilities-table2": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#ranged-weapon-special-abilities-table2": {"entries": [
     {"major": {"min": 1, "max": 10}, "medium": {"min": 1, "max": 10}, "minor": {"min": 1, "max": 10}, "description": "Anarchic3", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 11, "max": 13}, "medium": {"min": 11, "max": 13}, "minor": {"min": 11, "max": 13}, "description": "Anchoring6", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 14, "max": 23}, "medium": {"min": 14, "max": 23}, "minor": {"min": 14, "max": 23}, "description": "Axiomatic3", "nextTableId": "undefined", "cost": "+2 bonus"},
@@ -2127,16 +2127,16 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 77, "max": 86}, "medium": {"min": 77, "max": 86}, "minor": {"min": 77, "max": 86}, "description": "Shocking burst3", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 87, "max": 90}, "medium": {"min": 87, "max": 90}, "minor": {"min": 87, "max": 90}, "description": "Stalking", "nextTableId": "undefined", "cost": "+2 bonus"},
     {"major": {"min": 91, "max": 100}, "medium": {"min": 91, "max": 100}, "minor": {"min": 91, "max": 100}, "description": "Unholy3", "nextTableId": "undefined", "cost": "+2 bonus"}
-  ]}, "#ranged-weapon-special-abilities-table3": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#ranged-weapon-special-abilities-table3": {"entries": [
     {"major": {"min": 1, "max": 25}, "medium": {"min": 1, "max": 25}, "minor": {"min": 1, "max": 25}, "description": "Lucky, greater5", "nextTableId": "undefined", "cost": "+3 bonus"},
     {"major": {"min": 26, "max": 45}, "medium": {"min": 26, "max": 45}, "minor": {"min": 26, "max": 45}, "description": "Reliable, greater5", "nextTableId": "undefined", "cost": "+3 bonus"},
     {"major": {"min": 46, "max": 85}, "medium": {"min": 46, "max": 85}, "minor": {"min": 46, "max": 85}, "description": "Speed", "nextTableId": "undefined", "cost": "+3 bonus"}
-  ]}, "#ranged-weapon-special-abilities-table4": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#ranged-weapon-special-abilities-table4": {"entries": [
     {"major": {"min": 86, "max": 94}, "medium": {"min": 86, "max": 94}, "minor": {"min": 86, "max": 94}, "description": "Brilliant energy3", "nextTableId": "undefined", "cost": "+4 bonus"},
     {"major": {"min": 95, "max": 96}, "medium": {"min": 95, "max": 96}, "minor": {"min": 95, "max": 96}, "description": "Designating, greater", "nextTableId": "undefined", "cost": "+4 bonus"},
     {"major": {"min": 97, "max": 98}, "medium": {"min": 97, "max": 98}, "minor": {"min": 97, "max": 98}, "description": "Nimble shot", "nextTableId": "undefined", "cost": "+4 bonus"},
     {"major": {"min": 99, "max": 100}, "medium": {"min": 99, "max": 100}, "minor": {"min": 99, "max": 100}, "description": "Second chance3", "nextTableId": "undefined", "cost": "+4 bonus"}
-  ]}, "#armor-special-abilities-table1": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#armor-special-abilities-table1": {"entries": [
     {"major": {"min": 1, "max": 6}, "medium": {"min": 1, "max": 6}, "minor": {"min": 1, "max": 6}, "description": "Benevolent", "nextTableId": "undefined", "cost": "+2,000 gp"},
     {"major": {"min": 7, "max": 12}, "medium": {"min": 7, "max": 12}, "minor": {"min": 7, "max": 12}, "description": "Poison-resistant", "nextTableId": "undefined", "cost": "+2,250 gp"},
     {"major": {"min": 13, "max": 18}, "medium": {"min": 13, "max": 18}, "minor": {"min": 13, "max": 18}, "description": "Balanced", "nextTableId": "undefined", "cost": "+1 bonus"},
@@ -2154,7 +2154,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 83, "max": 88}, "medium": {"min": 83, "max": 88}, "minor": {"min": 83, "max": 88}, "description": "Spell storing", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/weapons.html#_spell-storing", "cost": "+1 bonus"},
     {"major": {"min": 89, "max": 94}, "medium": {"min": 89, "max": 94}, "minor": {"min": 89, "max": 94}, "description": "Stanching", "nextTableId": "undefined", "cost": "+1 bonus"},
     {"major": {"min": 95, "max": 100}, "medium": {"min": 95, "max": 100}, "minor": {"min": 95, "max": 100}, "description": "Warding", "nextTableId": "undefined", "cost": "+1 bonus"}
-  ]}, "#armor-special-abilities-table2": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#armor-special-abilities-table2": {"entries": [
     {"major": {"min": 1, "max": 12}, "medium": {"min": 1, "max": 12}, "minor": {"min": 1, "max": 12}, "description": "Glamered", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-glamered", "cost": "+2,700 gp"},
     {"major": {"min": 13, "max": 24}, "medium": {"min": 13, "max": 24}, "minor": {"min": 13, "max": 24}, "description": "Jousting", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/advanced/magicItems/armor.html#_jousting", "cost": "+3,750 gp"},
     {"major": {"min": 25, "max": 38}, "medium": {"min": 25, "max": 38}, "minor": {"min": 25, "max": 38}, "description": "Shadow", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-shadow", "cost": "+3,750 gp"},
@@ -2163,7 +2163,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 65, "max": 76}, "medium": {"min": 65, "max": 76}, "minor": {"min": 65, "max": 76}, "description": "Creeping", "nextTableId": "undefined", "cost": "+5,000 gp"},
     {"major": {"min": 77, "max": 88}, "medium": {"min": 77, "max": 88}, "minor": {"min": 77, "max": 88}, "description": "Rallying", "nextTableId": "undefined", "cost": "+5,000 gp"},
     {"major": {"min": 89, "max": 100}, "medium": {"min": 89, "max": 100}, "minor": {"min": 89, "max": 100}, "description": "Spell resistance (13)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-spell-resistance", "cost": "+2 bonus"}
-  ]}, "#armor-special-abilities-table3": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#armor-special-abilities-table3": {"entries": [
     {"major": {"min": 1, "max": 8}, "medium": {"min": 1, "max": 8}, "minor": {"min": 1, "max": 8}, "description": "Adhesive", "nextTableId": "undefined", "cost": "+7,000 gp"},
     {"major": {"min": 9, "max": 17}, "medium": {"min": 9, "max": 17}, "minor": {"min": 9, "max": 17}, "description": "Hosteling", "nextTableId": "undefined", "cost": "+7,500 gp"},
     {"major": {"min": 18, "max": 26}, "medium": {"min": 18, "max": 26}, "minor": {"min": 18, "max": 26}, "description": "Radiant", "nextTableId": "undefined", "cost": "+7,500 gp"},
@@ -2175,14 +2175,14 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 75, "max": 84}, "medium": {"min": 75, "max": 84}, "minor": {"min": 75, "max": 84}, "description": "Spell resistance (15)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-spell-resistance", "cost": "+3 bonus"},
     {"major": {"min": 85, "max": 92}, "medium": {"min": 85, "max": 92}, "minor": {"min": 85, "max": 92}, "description": "Titanic", "nextTableId": "undefined", "cost": "+3 bonus"},
     {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Wild", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-wild", "cost": "+3 bonus"}
-  ]}, "#armor-special-abilities-table4": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#armor-special-abilities-table4": {"entries": [
     {"major": {"min": 1, "max": 16}, "medium": {"min": 1, "max": 16}, "minor": {"min": 1, "max": 16}, "description": "Harmonizing", "nextTableId": "undefined", "cost": "+15,000 gp"},
     {"major": {"min": 17, "max": 33}, "medium": {"min": 17, "max": 33}, "minor": {"min": 17, "max": 33}, "description": "Shadow, improved", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-shadow-improved", "cost": "+15,000 gp"},
     {"major": {"min": 34, "max": 50}, "medium": {"min": 34, "max": 50}, "minor": {"min": 34, "max": 50}, "description": "Slick, improved", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-slick-improved", "cost": "+15,000 gp"},
     {"major": {"min": 51, "max": 67}, "medium": {"min": 51, "max": 67}, "minor": {"min": 51, "max": 67}, "description": "Energy resistance", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-energy-resistance", "cost": "+18,000 gp"},
     {"major": {"min": 68, "max": 83}, "medium": {"min": 68, "max": 83}, "minor": {"min": 68, "max": 83}, "description": "Martyring", "nextTableId": "undefined", "cost": "+18,000 gp"},
     {"major": {"min": 84, "max": 100}, "medium": {"min": 84, "max": 100}, "minor": {"min": 84, "max": 100}, "description": "Spell resistance (17)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-spell-resistance", "cost": "+4 bonus"}
-  ]}, "#armor-special-abilities-table5": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#armor-special-abilities-table5": {"entries": [
     {"major": {"min": 1, "max": 8}, "medium": {"min": 1, "max": 8}, "minor": {"min": 1, "max": 8}, "description": "Righteous", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/advanced/magicItems/armor.html#_righteous", "cost": "+27,000 gp"},
     {"major": {"min": 9, "max": 15}, "medium": {"min": 9, "max": 15}, "minor": {"min": 9, "max": 15}, "description": "Unbound", "nextTableId": "undefined", "cost": "+27,000 gp"},
     {"major": {"min": 16, "max": 23}, "medium": {"min": 16, "max": 23}, "minor": {"min": 16, "max": 23}, "description": "Unrighteous", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/advanced/magicItems/armor.html#_unrighteous", "cost": "+27,000 gp"},
@@ -2196,12 +2196,12 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 77, "max": 84}, "medium": {"min": 77, "max": 84}, "minor": {"min": 77, "max": 84}, "description": "Energy resistance, greater", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-energy-resistance-greater", "cost": "+66,000 gp"},
     {"major": {"min": 85, "max": 92}, "medium": {"min": 85, "max": 92}, "minor": {"min": 85, "max": 92}, "description": "Fortification (heavy)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-fortification", "cost": "+5 bonus"},
     {"major": {"min": 93, "max": 100}, "medium": {"min": 93, "max": 100}, "minor": {"min": 93, "max": 100}, "description": "Spell resistance (19)", "nextTableId": "undefined", "url": "http://paizo.com/prd//pathfinderRPG/prd/magicItems/armor.html#_armor-spell-resistance", "cost": "+5 bonus"}
-  ]}, "#table-15-12-potions": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-12-potions": {"entries": [
     {"minor": {"min": 1, "max": 20}, "medium": {}, "major": {}, "description": "0 level spell", "nextTableId": "#0-level-potions-and-oils-table", "demuxId": "potions_demux"},
     {"minor": {"min": 21, "max": 60}, "medium": {"min": 1, "max": 20}, "major": {}, "description": "1st level spell", "nextTableId": "#1st-level-potions-and-oils-table", "demuxId": "potions_demux"},
     {"minor": {"min": 61, "max": 100}, "medium": {"min": 21, "max": 60}, "major": {"min": 1, "max": 20}, "description": "2nd level spell", "nextTableId": "#2nd-level-potions-and-oils-table", "demuxId": "potions_demux"},
     {"minor": {}, "medium": {"min": 61, "max": 100}, "major": {"min": 21, "max": 100}, "description": "3rd level spell", "nextTableId": "#3rd-level-potions-and-oils-table", "demuxId": "potions_demux"}
-  ]}, "#table-15-15-scrolls": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-15-scrolls": {"entries": [
     {"minor": {"min": 1, "max": 5}, "medium": {}, "major": {}, "description": "0 level spell", "nextTableId": "#0-level-scrolls-table", "demuxId": "scrolls_demux"},
     {"minor": {"min": 6, "max": 50}, "medium": {}, "major": {}, "description": "1st level spell", "nextTableId": "#1st-level-scrolls-table", "demuxId": "scrolls_demux"},
     {"minor": {"min": 51, "max": 95}, "medium": {"min": 1, "max": 5}, "major": {}, "description": "2nd level spell", "nextTableId": "#2nd-level-scrolls-table", "demuxId": "scrolls_demux"},
@@ -2212,13 +2212,13 @@ define({"#1st-level-potions-and-oils-table": [
     {"minor": {}, "medium": {}, "major": {"min": 71, "max": 85}, "description": "7th level spell", "nextTableId": "#7th-level-scrolls-table", "demuxId": "scrolls_demux"},
     {"minor": {}, "medium": {}, "major": {"min": 86, "max": 95}, "description": "8th level spell", "nextTableId": "#8th-level-scrolls-table", "demuxId": "scrolls_demux"},
     {"minor": {}, "medium": {}, "major": {"min": 96, "max": 100}, "description": "9th level spell", "nextTableId": "#9th-level-scrolls-table", "demuxId": "scrolls_demux"}
-  ]}, "#table-15-17-wands": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-17-wands": {"entries": [
     {"minor": {"min": 1, "max": 5}, "medium": {}, "major": {}, "description": "0 level spell", "nextTableId": "#0-level-wands-table", "demuxId": "wands_demux"},
     {"minor": {"min": 6, "max": 60}, "medium": {}, "major": {}, "description": "1st level spell", "nextTableId": "#1st-level-wands-table", "demuxId": "wands_demux"},
     {"minor": {"min": 61, "max": 100}, "medium": {"min": 1, "max": 60}, "major": {}, "description": "2nd level spell", "nextTableId": "#2nd-level-wands-table", "demuxId": "wands_demux"},
     {"minor": {}, "medium": {"min": 61, "max": 100}, "major": {"min": 1, "max": 60}, "description": "3rd level spell", "nextTableId": "#3rd-level-wands-table", "demuxId": "wands_demux"},
     {"minor": {}, "medium": {}, "major": {"min": 61, "max": 100}, "description": "4th level spell", "nextTableId": "#4th-level-wands-table", "demuxId": "wands_demux"}
-  ]}, "#table-15-13-rings": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-13-rings": {"entries": [
     {"minor": {"min": 1, "max": 18}, "medium": {}, "major": {}, "description": "Protection +1", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rings.html#_ring-of-protection", "cost": "2,000 gp"},
     {"minor": {"min": 19, "max": 28}, "medium": {}, "major": {}, "description": "Feather falling", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rings.html#_ring-of-feather-falling", "cost": "2,200 gp"},
     {"minor": {"min": 29, "max": 36}, "medium": {}, "major": {}, "description": "Sustenance", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rings.html#_ring-of-sustenance", "cost": "2,500 gp"},
@@ -2265,7 +2265,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"minor": {}, "medium": {}, "major": {"min": 98, "max": 98}, "description": "Elemental command (fire) ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rings.html#_ring-of-elemental-command", "cost": "200,000 gp"},
     {"minor": {}, "medium": {}, "major": {"min": 99, "max": 99}, "description": "Elemental command (water) ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rings.html#_ring-of-elemental-command", "cost": "200,000 gp"},
     {"minor": {}, "medium": {}, "major": {"min": 100, "max": 100}, "description": "Spell storing, major", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rings.html#_ring-of-spell-storing-major", "cost": "200,000 gp"}
-  ]}, "#table-15-14-rods": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-14-rods": {"entries": [
     {"minor": {}, "medium": {"min": 1, "max": 7}, "major": {}, "description": "Metamagic, Enlarge, lesser", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rods.html#metamagic-enlarge", "cost": "3,000 gp"},
     {"minor": {}, "medium": {"min": 8, "max": 14}, "major": {}, "description": "Metamagic, Extend, lesser", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rods.html#metamagic-extend", "cost": "3,000 gp"},
     {"minor": {}, "medium": {"min": 15, "max": 21}, "major": {}, "description": "Metamagic, Silent, lesser", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rods.html#metamagic-silent", "cost": "3,000 gp"},
@@ -2302,7 +2302,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"minor": {}, "medium": {}, "major": {"min": 97, "max": 98}, "description": "Alertness", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rods.html#rod-of-alertness", "cost": "85,000 gp"},
     {"minor": {}, "medium": {}, "major": {"min": 99, "max": 99}, "description": "Metamagic, Maximize, greater", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rods.html#metamagic-maximize", "cost": "121,500 gp"},
     {"minor": {}, "medium": {}, "major": {"min": 100, "max": 100}, "description": "Metamagic, Quicken, greater", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/rods.html#metamagic-quicken", "cost": "170,000 gp"}
-  ]}, "#table-15-16-staves": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-16-staves": {"entries": [
     {"minor": {}, "medium": {"min": 1, "max": 15}, "major": {"min": 1, "max": 3}, "description": "Charming", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/staves.html#staff-of-charming", "cost": "17,600 gp"},
     {"minor": {}, "medium": {"min": 16, "max": 30}, "major": {"min": 4, "max": 9}, "description": "Fire", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/staves.html#staff-of-fire", "cost": "18,950 gp"},
     {"minor": {}, "medium": {"min": 31, "max": 40}, "major": {"min": 10, "max": 11}, "description": "Swarming insects", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/staves.html#staff-of-swarming-insects", "cost": "22,800 gp"},
@@ -2324,7 +2324,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"minor": {}, "medium": {}, "major": {"min": 91, "max": 95}, "description": "Life", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/staves.html#staff-of-life", "cost": "109,400 gp"},
     {"minor": {}, "medium": {}, "major": {"min": 96, "max": 98}, "description": "Passage", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/staves.html#staff-of-passage", "cost": "206,900 gp"},
     {"minor": {}, "medium": {}, "major": {"min": 99, "max": 100}, "description": "Power", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/staves.html#staff-of-power", "cost": "235,000 gp"}
-  ]}, "#table-15-18-minor-wondrous-items": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-18-minor-wondrous-items": {"entries": [
     {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Feather token, anchor ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#feather-token", "cost": "50 gp"},
     {"major": {"min": 2, "max": 2}, "medium": {"min": 2, "max": 2}, "minor": {"min": 2, "max": 2}, "description": "Universal solvent ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#universal-solvent", "cost": "50 gp"},
     {"major": {"min": 3, "max": 3}, "medium": {"min": 3, "max": 3}, "minor": {"min": 3, "max": 3}, "description": "Elixir of love ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#elixir-of-love", "cost": "150 gp"},
@@ -2425,7 +2425,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 98, "max": 98}, "medium": {"min": 98, "max": 98}, "minor": {"min": 98, "max": 98}, "description": "Periapt of health ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#periapt-of-health", "cost": "7,400 gp"},
     {"major": {"min": 99, "max": 99}, "medium": {"min": 99, "max": 99}, "minor": {"min": 99, "max": 99}, "description": "Boots of levitation ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#boots-of-levitation", "cost": "7,500 gp"},
     {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Harp of charming ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#harp-of-charming", "cost": "7,500 gp"}
-  ]}, "#table-15-19-medium-wondrous-items": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-19-medium-wondrous-items": {"entries": [
     {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Amulet of natural armor +2 ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#amulet-of-natural-armor", "cost": "8,000 gp"},
     {"major": {"min": 2, "max": 2}, "medium": {"min": 2, "max": 2}, "minor": {"min": 2, "max": 2}, "description": "Golem manual, flesh ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#golem-manual", "cost": "8,000 gp"},
     {"major": {"min": 3, "max": 3}, "medium": {"min": 3, "max": 3}, "minor": {"min": 3, "max": 3}, "description": "Hand of glory ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#hand-of-glory", "cost": "8,000 gp"},
@@ -2526,7 +2526,7 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 98, "max": 98}, "medium": {"min": 98, "max": 98}, "minor": {"min": 98, "max": 98}, "description": "Tome of clear thought +1 ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#tome-of-clear-thought", "cost": "27,500 gp"},
     {"major": {"min": 99, "max": 99}, "medium": {"min": 99, "max": 99}, "minor": {"min": 99, "max": 99}, "description": "Tome of leadership and influence +1 ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#tome-of-leadership-and-influence", "cost": "27,500 gp"},
     {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Tome of understanding +1 ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#tome-of-understanding", "cost": "27,500 gp"}
-  ]}, "#table-15-20-major-wondrous-items": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#table-15-20-major-wondrous-items": {"entries": [
     {"major": {"min": 1, "max": 1}, "medium": {"min": 1, "max": 1}, "minor": {"min": 1, "max": 1}, "description": "Dimensional shackles ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#dimensional-shackles", "cost": "28,000 gp"},
     {"major": {"min": 2, "max": 2}, "medium": {"min": 2, "max": 2}, "minor": {"min": 2, "max": 2}, "description": "Figurine of wondrous power, obsidian steed ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#figurines-of-wondrous-power", "cost": "28,500 gp"},
     {"major": {"min": 3, "max": 3}, "medium": {"min": 3, "max": 3}, "minor": {"min": 3, "max": 3}, "description": "Drums of panic ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#drums-of-panic", "cost": "30,000 gp"},
@@ -2627,23 +2627,31 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 98, "max": 98}, "medium": {"min": 98, "max": 98}, "minor": {"min": 98, "max": 98}, "description": "Cubic gate ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#cubic-gate", "cost": "164,000 gp"},
     {"major": {"min": 99, "max": 99}, "medium": {"min": 99, "max": 99}, "minor": {"min": 99, "max": 99}, "description": "Iron flask ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#iron-flask", "cost": "170,000 gp"},
     {"major": {"min": 100, "max": 100}, "medium": {"min": 100, "max": 100}, "minor": {"min": 100, "max": 100}, "description": "Mirror of life trapping ", "url": "http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#mirror-of-life-trapping", "cost": "200,000 gp"}
-  ]}, "#specific-placeholder-table-minor-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-placeholder-table-minor-lesser": {"entries": [
     {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-minor-lesser"},
     {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-minor-lesser"}
-  ]}, "#specific-placeholder-table-minor-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-placeholder-table-minor-greater": {"entries": [
     {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-minor-greater"},
     {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-minor-greater"}
-  ]}, "#specific-placeholder-table-medium-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-placeholder-table-medium-lesser": {"entries": [
     {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-medium-lesser"},
     {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-medium-lesser"}
-  ]}, "#specific-placeholder-table-medium-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-placeholder-table-medium-greater": {"entries": [
     {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-medium-greater"},
     {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-medium-greater"}
-  ]}, "#specific-placeholder-table-major-lesser": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-placeholder-table-major-lesser": {"entries": [
     {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-major-lesser"},
     {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-major-lesser"}
-  ]}, "#specific-placeholder-table-major-greater": {"min": 1, "max": 100, "entries": [
+  ], "range": {"min": 1, "max": 100}}, "#specific-placeholder-table-major-greater": {"entries": [
     {"minor": {"min": 1, "max": 50}, "medium": {"min": 1, "max": 50}, "major": {"min": 1, "max": 50}, "nextTableId": "#specific-armor-table-major-greater"},
     {"minor": {"min": 51, "max": 100}, "medium": {"min": 51, "max": 100}, "major": {"min": 51, "max": 100}, "nextTableId": "#specific-shields-table-major-greater"}
-  ]}}
+  ], "range": {"min": 1, "max": 100}}, "#0-level-potions-and-oils-table": {"entries": [
+    {"major": {"min": 1, "max": 14}, "medium": {"min": 1, "max": 14}, "minor": {"min": 1, "max": 14}, "description": "Arcane mark", "url": "http://paizo.com/pathfinderRPG/prd/spells/arcaneMark.html#_arcane-mark", "cost": "25 gp"},
+    {"major": {"min": 15, "max": 28}, "medium": {"min": 15, "max": 28}, "minor": {"min": 15, "max": 28}, "description": "Guidance", "url": "http://paizo.com/pathfinderRPG/prd/spells/guidance.html#_guidance", "cost": "25 gp"},
+    {"major": {"min": 29, "max": 44}, "medium": {"min": 29, "max": 44}, "minor": {"min": 29, "max": 44}, "description": "Light", "url": "http://paizo.com/pathfinderRPG/prd/spells/light.html#_light", "cost": "25 gp"},
+    {"major": {"min": 45, "max": 58}, "medium": {"min": 45, "max": 58}, "minor": {"min": 45, "max": 58}, "description": "Purify food and drink", "url": "http://paizo.com/pathfinderRPG/prd/spells/purifyFoodAndDrink.html#_purify-food-and-drink", "cost": "25 gp"},
+    {"major": {"min": 59, "max": 72}, "medium": {"min": 59, "max": 72}, "minor": {"min": 59, "max": 72}, "description": "Resistance", "url": "http://paizo.com/pathfinderRPG/prd/spells/resistance.html#_resistance", "cost": "25 gp"},
+    {"major": {"min": 73, "max": 86}, "medium": {"min": 73, "max": 86}, "minor": {"min": 73, "max": 86}, "description": "Stabilize", "url": "http://paizo.com/pathfinderRPG/prd/spells/stabilize.html#_stabilize", "cost": "25 gp"},
+    {"major": {"min": 87, "max": 100}, "medium": {"min": 87, "max": 100}, "minor": {"min": 87, "max": 100}, "description": "Virtue", "url": "http://paizo.com/pathfinderRPG/prd/spells/virtue.html#_virtue", "cost": "25 gp"}
+  ], "range": {"min": 1, "max": 100}}}
 );
