@@ -20,9 +20,9 @@ function (itemGenerator, $, Ractive, template) {
   var initialLoot = itemGenerator.generateSeveralItems(initialSpecs)
 
   var ractive = new Ractive({
-    el: 'magicItemGenerator',
+    el: 'itemsContainer',
     template: template,
-    append: true,
+    append: false,
     data: {
       formattedItems: initialLoot,
       specs: initialSpecs,
