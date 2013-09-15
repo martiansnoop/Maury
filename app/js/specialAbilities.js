@@ -1,4 +1,4 @@
-define([], function(){
+define(["./dataWrapper"], function(database){
   var priceTable = {
     1: 1000,
     2: 4000,
@@ -12,7 +12,7 @@ define([], function(){
     10: 100000
   };
 
-  return function getSpecialAbilities(rawComponents, pickEntry) {
+  return function getSpecialAbilities(rawComponents) {
     var spec = {};
     var baseTableId;
 
@@ -32,7 +32,7 @@ define([], function(){
       var tableToRollOn = baseTableId.concat(spec.abilities[i]);
 
       //minor/med/major are all the same given how the specials are currently organized
-      var specialAbility = pickEntry(tableToRollOn,  "minor");
+      var specialAbility = database.lookupRandomEntry(tableToRollOn,  "minor");
 
       //TODO: make this less of an eyesore
       if(specialAbility.cost && specialAbility.cost.indexOf("bonus") > -1) {

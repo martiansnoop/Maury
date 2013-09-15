@@ -2,15 +2,11 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
 
   //Private
 
-  function pickEntry(tableId, itemAwesomeness) {
-    return database.lookupRandomEntry(tableId, itemAwesomeness);
-  }
-
   function buildItemRecursively(tableId, itemAwesomeness) {
     if(!database.tableExists(tableId)) //check tableExists, not !tableId, because not all tables are parsed yet
       return []; //return empty array to not add undefined value to recursive array concat
 
-    const intermediaryResult = pickEntry(tableId, itemAwesomeness);
+    const intermediaryResult = database.lookupRandomEntry(tableId, itemAwesomeness);
     return [intermediaryResult].concat(buildItemRecursively(intermediaryResult.nextTableId, itemAwesomeness));
   }
 
@@ -23,7 +19,7 @@ define(["./dataWrapper", "./formatter", "./specialAbilities", "./dice"], functio
 
   function generateItem(awesomeness) {
     const rawComponents = rollForItem(awesomeness);
-    const specialAbilities = specialPicker(rawComponents, pickEntry);
+    const specialAbilities = specialPicker(rawComponents);
 
     return formatter.format(awesomeness, rawComponents, specialAbilities);
   }
