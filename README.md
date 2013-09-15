@@ -4,8 +4,8 @@ This is a basic magic item generator for the Pathfinder role playing system. It'
 
 ## Notable things left undone:
 
-4. Fix random-weapon-table to include data for missing segments (possibly just GM whim)
-5. Format data in a saner way to allow for cleaner code (OMGWTFBBQ demultiplexers what was I thinking when I wrote that code?)
+4. Fix random-weapon-table to include data for missing segments not provided by Paizo (currently just GM whim)
+5. Format data in a saner way to allow for cleaner code 
 6. Add keyboard shortcuts (change fields, run generator, toggle debug)
 7. Add checks to avoid illegal weapon special abilities (like a keen greatclub)
 8. Get proper reference URLs for weapon/armor/shields
@@ -13,7 +13,7 @@ This is a basic magic item generator for the Pathfinder role playing system. It'
     * special abilities
     * specific weapons/armor
 9. Make it more prettier 
-10. Clean up special ability handling code 
+10. Clean up special ability handling code (and data)
 11. Clean up item formatter code
 12. Build/minification step
 
