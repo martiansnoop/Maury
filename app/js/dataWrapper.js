@@ -33,10 +33,6 @@ define(["./data", "./dice", "jquery", "underscore"], function(dataTables, d, $, 
   function lookup(tableId, awesomeness) {
     const table =  dataTables[tableId];
 
-    //WTF: There have been some instances of empty items generated,
-    //mostly with #random-weapon-table. This is because the numbers 65-85
-    //missing from the table. I will fix this either by forcing a reroll
-    //or adding things to the table myself.
     return recurseUntilEntry(table, awesomeness);
   }
 

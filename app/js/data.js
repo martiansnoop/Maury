@@ -1968,6 +1968,10 @@ define({"#1st-level-potions-and-oils-table": [
     {"major": {"min": 61, "max": 61}, "medium": {"min": 61, "max": 61}, "minor": {"min": 61, "max": 61}, "description": "Nunchaku", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 62, "max": 63}, "medium": {"min": 62, "max": 63}, "minor": {"min": 62, "max": 63}, "description": "Quarterstaff", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 64, "max": 65}, "medium": {"min": 64, "max": 65}, "minor": {"min": 64, "max": 65}, "description": "Rapier", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
+
+    {"major": {"min": 66, "max": 75}, "medium": {"min": 66, "max": 75}, "minor": {"min": 66, "max": 75}, "description": "Melee weapon, GM fiat", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
+    {"major": {"min": 76, "max": 84}, "medium": {"min": 76, "max": 84}, "minor": {"min": 76, "max": 84}, "description": "Ranged weapon, GM fiat", "specialAbilityTableId": "#ranged-weapon-special-abilities-table"},
+
     {"major": {"min": 85, "max": 87}, "medium": {"min": 85, "max": 87}, "minor": {"min": 85, "max": 87}, "description": "Spear", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 88, "max": 88}, "medium": {"min": 88, "max": 88}, "minor": {"min": 88, "max": 88}, "description": "Trident", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
     {"major": {"min": 89, "max": 91}, "medium": {"min": 89, "max": 91}, "minor": {"min": 89, "max": 91}, "description": "Warhammer", "specialAbilityTableId": "#melee-weapon-special-abilities-table"},
