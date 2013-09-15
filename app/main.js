@@ -19,7 +19,9 @@ require.config({
 
 define(["./js/generator", "jquery", "ractive", "text!./template.html"],
 function (itemGenerator, $, Ractive, template) {
-  var initialSpecs = [{count:5, awesomeness: "minor"}, {count:4, awesomeness: "medium"}, {count:3, awesomeness: "major"} ];
+  var initialSpecs = [{count:undefined, awesomeness: "minor"},
+                      {count:undefined, awesomeness: "medium"},
+                      {count:undefined, awesomeness: "major"}];
   var initialLoot = itemGenerator.generateSeveralItems(initialSpecs);
 
   var ractive = new Ractive({
